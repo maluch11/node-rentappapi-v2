@@ -1,0 +1,29 @@
+HOW2 DEPLOY ON SERVER ATTHOST.PL
+
+1. IF(server.js) 'server.js' name have to be changed to 'app.js'
+
+2. IF(config.port != 3000) PRODUCTION PORT have to be set to 3000 in config.js
+
+3. copy all files from project to webserver catalogue
+
+example:
+COPY
+from
+    WebStormProjects/node-testapi
+to
+    ftp-server: wec.atthost.pl user:wec password: c...0 folder on the server /websites/testapi
+
+#without DOCS and SQL-CREATE-DB folders
+
+4. RESTART APP FROM UI AT ATTHOST.PL
+-goto Aplikacje
+-Wylacz
+-Wlacz
+-in Szczegoly you see where the APP resides
+
+
+
+HOW2 prepare ATTHOST.PL
+
+https://atthost.pl/help/jak-uruchomic-aplikacje-w-nodejs/
+

@@ -1,0 +1,182 @@
+--- NEW API -------------------------
+Add new /api/ in app.js file - use Generic.[functions/methods]
+under // =======================
+      // ADD APIS HERE    ======
+      // =======================
+
+to work with CATS
+apiRoutes.get('/cats', (req, res) => Generic.getAllItems(req, res)); //SELECT ALL
+apiRoutes.get('/cat/:id', (req, res) => Generic.getItem(req, res)); //SELECT:id
+apiRoutes.post('/cat/:id', (req, res) => Generic.postItem(req, res)); //INSERT:id OR UPDATE:id (if exists) //fields and values in BODY
+apiRoutes.post('/cat', (req, res) => Generic.postItem(req, res)); //INSERT (Generated:id) //fields and values in BODY
+apiRoutes.put('/cat/:id/catcolor/:catcolor', (req, res) => Generic.putItem(req, res)); //UPDATE:id //fields and values in PATH
+
+
+
+---AUTHENTICATE---
+POST
+http://localhost:8080/api/authenticate
+
+PARAMS BODY
+userlogin: admin
+userpassword: adminpassword
+
+RETURN
+{
+    "success": true,
+    "message": "Here U have token!",
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc2FkbWluIjoxLCJ1c2VyaWQiOiJXTEZFMkpHSEM3TDEyMUNNT01VOEcxQlZXVFExTkk4MyIsImlhdCI6MTUzMjk3ODM4NSwiZXhwIjoxNTMzMDY0Nzg1fQ.HMcF8lui60sAFv4MlMEX4pypruel2InczaE5bSga_ak",
+    "username": "Admin  Name"
+}
+
+
+
+
+---USER INSERT---
+POST
+http://localhost:8080/api/user
+?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc2FkbWluIjoxLCJ1c2VyaWQiOiJLSkpOMENWQzVWOVlXVjlER0JQMDZRMThHME1LT0k3VSIsImlhdCI6MTUzMjk3NDc1NCwiZXhwIjoxNTMzMDYxMTU0fQ.Ynd-TjcmHELC4goPfuslGryzw4Hp68HJAI4JT9CHvBg
+
+PARAMS BODY
+userlogin: admin
+userpassword: adminpassword
+userid: WLFE2JGHC7L121CMOMU8G1BVWTQ1NI83
+username: Admin
+
+(OPTIONAL)
+isuseradmin: 0|1
+newuserpassword:
+isusermanager: 0|1
+... (any other table column)
+
+1. URL trzeba uzupelnic o:
+?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc2FkbWluIjoxLCJ1c2VyaWQiOiJLSkpOMENWQzVWOVlXVjlER0JQMDZRMThHME1LT0k3VSIsImlhdCI6MTUzMjk3NDc1NCwiZXhwIjoxNTMzMDYxMTU0fQ.Ynd-TjcmHELC4goPfuslGryzw4Hp68HJAI4JT9CHvBg
+
+TESTOWE TOKENY:
+userlogin/userpassword/token
+admin/adminpassword/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc2FkbWluIjoxLCJ1c2VyaWQiOiJXTEZFMkpHSEM3TDEyMUNNT01VOEcxQlZXVFExTkk4MyIsImlhdCI6MTUzMjk3ODM4NSwiZXhwIjoxNTMzMDY0Nzg1fQ.HMcF8lui60sAFv4MlMEX4pypruel2InczaE5bSga_ak
+admin/adminpassword/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc2FkbWluIjoxLCJpc21hbmFnZXIiOjEsInVzZXJpZCI6IldMRkUySkdIQzdMMTIxQ01PTVU4RzFCVldUUTFOSTgzIiwiaWF0IjoxNTMzMDI0MTAwLCJleHAiOjE1MzMxMTA1MDB9.i--DJ4eCvtLWJev4Do0wAwUlv5KafRn03UfPtinxkdQ
+
+2. Token zawiera payload w ktorym sa nastepujace CLAIMS:
+isadmin: 0|1
+ismanager: 0|1
+userid: ...
+iat: ...
+exp: ...
+
+3. Tylko isadmin:1 w CLAIMS uprawnia do stworzenia uzytkownika
+
+
+
+
+---USER UPDATE---
+POST
+http://localhost:8080/api/user?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc2FkbWluIjoxLCJ1c2VyaWQiOiJLSkpOMENWQzVWOVlXVjlER0JQMDZRMThHME1LT0k3VSIsImlhdCI6MTUzMjk3NDc1NCwiZXhwIjoxNTMzMDYxMTU0fQ.Ynd-TjcmHELC4goPfuslGryzw4Hp68HJAI4JT9CHvBg
+
+PARAMS BODY
+userlogin: admin
+userpassword: adminpassword
+userid: WLFE2JGHC7L121CMOMU8G1BVWTQ1NI83
+
+(OPTIONAL)
+username:
+isuseradmin: 0|1
+newuserpassword:
+isusermanager: 0|1
+... (any other table column)
+
+1. URL trzeba uzupelnic o:
+?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc2FkbWluIjoxLCJ1c2VyaWQiOiJLSkpOMENWQzVWOVlXVjlER0JQMDZRMThHME1LT0k3VSIsImlhdCI6MTUzMjk3NDc1NCwiZXhwIjoxNTMzMDYxMTU0fQ.Ynd-TjcmHELC4goPfuslGryzw4Hp68HJAI4JT9CHvBg
+
+TESTOWE TOKENY:
+userlogin/userpassword/token
+admin/adminpassword/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc2FkbWluIjoxLCJ1c2VyaWQiOiJXTEZFMkpHSEM3TDEyMUNNT01VOEcxQlZXVFExTkk4MyIsImlhdCI6MTUzMjk3ODM4NSwiZXhwIjoxNTMzMDY0Nzg1fQ.HMcF8lui60sAFv4MlMEX4pypruel2InczaE5bSga_ak
+
+2. Token zawiera payload w ktorym sa nastepujace CLAIMS:
+isadmin: 0|1
+ismanager: 0|1
+userid: ...
+iat: ...
+exp: ...
+
+
+
+---USER GET---
+GET
+http://localhost:8080/api/user/:userlogin?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc2FkbWluIjoxLCJ1c2VyaWQiOiJLSkpOMENWQzVWOVlXVjlER0JQMDZRMThHME1LT0k3VSIsImlhdCI6MTUzMjk3NDc1NCwiZXhwIjoxNTMzMDYxMTU0fQ.Ynd-TjcmHELC4goPfuslGryzw4Hp68HJAI4JT9CHvBg
+http://testapi.wec.atthost24.pl/api/user/admin?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc2FkbWluIjoxLCJpc21hbmFnZXIiOjEsInVzZXJpZCI6IldMRkUySkdIQzdMMTIxQ01PTVU4RzFCVldUUTFOSTgzIiwiaWF0IjoxNTMzMDI0NDYwLCJleHAiOjE1MzMxMTA4NjB9.CruBw9YZZ7Udb24Uh-ciQR4flMsgTM35N4juGa4Hmdg
+
+PARAMS URL
+userlogin: admin
+
+1. URL trzeba uzupelnic o:
+?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc2FkbWluIjoxLCJ1c2VyaWQiOiJLSkpOMENWQzVWOVlXVjlER0JQMDZRMThHME1LT0k3VSIsImlhdCI6MTUzMjk3NDc1NCwiZXhwIjoxNTMzMDYxMTU0fQ.Ynd-TjcmHELC4goPfuslGryzw4Hp68HJAI4JT9CHvBg
+
+TESTOWE TOKENY:
+userlogin/userpassword/token
+admin/adminpassword/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc2FkbWluIjoxLCJ1c2VyaWQiOiJXTEZFMkpHSEM3TDEyMUNNT01VOEcxQlZXVFExTkk4MyIsImlhdCI6MTUzMjk3ODM4NSwiZXhwIjoxNTMzMDY0Nzg1fQ.HMcF8lui60sAFv4MlMEX4pypruel2InczaE5bSga_ak
+
+
+
+
+
+---------GENERIC---------
+1. Tables collect items
+2. Tables have to be named with s (at the end) (i.e. table:tests)
+3. PRIMARY_KEY have to be named [item]+id (i.e. table:tests, column:testid)
+4. PRIMARY_KEY have to be VARCHAR(45)
+5. DB is MySQL
+6. Table must have column [item]+autoinc (i.e. table:tests, column: testautoinc AUTO_INCREMENT)
+
+
+---//SELECT ALL /table(with s)---
+GET
+http://localhost:8080/api/[entity-name]s?token=
+http://localhost:8080/api/tests?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc2FkbWluIjoxLCJ1c2VyaWQiOiJXTEZFMkpHSEM3TDEyMUNNT01VOEcxQlZXVFExTkk4MyIsImlhdCI6MTUzMjk3ODM4NSwiZXhwIjoxNTMzMDY0Nzg1fQ.HMcF8lui60sAFv4MlMEX4pypruel2InczaE5bSga_ak
+getAllItems: function (req, res)
+
+---//SELECT /table(without s)/:tableid---
+GET
+http://localhost:8080/api/[entity-name]/[:id]?token=
+http://localhost:8080/api/test/X4UHJRIVQK40FX2N44940NIRHXKHCUCU?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc2FkbWluIjoxLCJ1c2VyaWQiOiJXTEZFMkpHSEM3TDEyMUNNT01VOEcxQlZXVFExTkk4MyIsImlhdCI6MTUzMjk3ODM4NSwiZXhwIjoxNTMzMDY0Nzg1fQ.HMcF8lui60sAFv4MlMEX4pypruel2InczaE5bSga_ak
+getItem: function (req, res)
+
+
+
+---//INSERT /table(without s) (BODY PROCESSED)---
+POST
+http://localhost:8080/api/[entity-name]?token=
+http://localhost:8080/api/test?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc2FkbWluIjoxLCJ1c2VyaWQiOiJXTEZFMkpHSEM3TDEyMUNNT01VOEcxQlZXVFExTkk4MyIsImlhdCI6MTUzMjk3ODM4NSwiZXhwIjoxNTMzMDY0Nzg1fQ.HMcF8lui60sAFv4MlMEX4pypruel2InczaE5bSga_ak
+postItem: function (req, res)
+
+1. [entity]id is generated by procedure
+2. All parameters in BODY of POST message are processes as column:value and uses in sql statement
+
+
+---//INSERT /table(without s)/:[entity]id (BODY PROCESSED)---
+POST
+http://localhost:8080/api/[entity-name]/:[entity]id?token=
+http://localhost:8080/api/test/X4UHJRIVQK40FX2N44940NIRHXKHCUCU?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc2FkbWluIjoxLCJ1c2VyaWQiOiJXTEZFMkpHSEM3TDEyMUNNT01VOEcxQlZXVFExTkk4MyIsImlhdCI6MTUzMjk3ODM4NSwiZXhwIjoxNTMzMDY0Nzg1fQ.HMcF8lui60sAFv4MlMEX4pypruel2InczaE5bSga_ak
+postItem: function (req, res)
+
+1. [entity]id have to be given in path; IF [entity]id doesn't exist in DB then INSERT is performed with [entity]id given in path
+2. All parameters in BODY of POST message are processes as column:value and uses in sql statement
+
+
+---//UPDATE /table(without s)/:[entity]id IF EXISTS (BODY PROCESSED)---
+POST
+http://localhost:8080/api/[entity-name]/:[entity]id?token=
+http://localhost:8080/api/test/X4UHJRIVQK40FX2N44940NIRHXKHCUCU/X4UHJRIVQK40FX2N44940NIRHXKHCUCU?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc2FkbWluIjoxLCJ1c2VyaWQiOiJXTEZFMkpHSEM3TDEyMUNNT01VOEcxQlZXVFExTkk4MyIsImlhdCI6MTUzMjk3ODM4NSwiZXhwIjoxNTMzMDY0Nzg1fQ.HMcF8lui60sAFv4MlMEX4pypruel2InczaE5bSga_ak
+postItem: function (req, res)
+
+1. [entity]id have to be given in path; IF [entity]id exists in DB then INSERT is performed; [entity]id is taken in where clause of sql statement
+2. All parameters in BODY of POST message are processes as column:value and uses in sql statement
+
+
+
+//UPDATE/table(without s)/:[entity]id/column1/:value1/column2/:value2/... (BODY IGNORED)
+PUT
+http://localhost:8080/api/[entity-name]/:[entity]id/[column]/:[value]/[column]/:[value]/[column]/:[value]/...?token=
+http://localhost:8080/api/test/X4UHJRIVQK40FX2N44940NIRHXKHCUCU/testname/ala-ma-kota?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc2FkbWluIjoxLCJ1c2VyaWQiOiJXTEZFMkpHSEM3TDEyMUNNT01VOEcxQlZXVFExTkk4MyIsImlhdCI6MTUzMjk3ODM4NSwiZXhwIjoxNTMzMDY0Nzg1fQ.HMcF8lui60sAFv4MlMEX4pypruel2InczaE5bSga_ak
+putItem: function (req, res)
+

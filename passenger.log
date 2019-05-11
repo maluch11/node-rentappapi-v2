@@ -1,0 +1,733 @@
+[ N 2018-08-16 08:23:47.2213 2908064/T1 age/Wat/WatchdogMain.cpp:1267 ]: Starting Passenger watchdog...
+[ N 2018-08-16 08:23:47.2278 2908067/T1 age/Cor/CoreMain.cpp:1165 ]: Starting Passenger core...
+[ N 2018-08-16 08:23:47.2280 2908067/T1 age/Cor/CoreMain.cpp:249 ]: Passenger core running in multi-application mode.
+[ N 2018-08-16 08:23:47.2469 2908067/T1 age/Cor/CoreMain.cpp:905 ]: Passenger core online, PID 2908067
+App 2908154 stdout: 
+[ E 2018-08-16 08:23:49.4586 2908067/T5 age/Cor/SecurityUpdateChecker.h:376 ]: A security update is available for your version (5.1.11) of Passenger, we strongly recommend upgrading to version 5.3.4.
+[ E 2018-08-16 08:23:49.4586 2908067/T5 age/Cor/SecurityUpdateChecker.h:381 ]:  Additional information: 
+- [Fixed in 5.3.2] [CVE-2018-12026 - 12027 - 12028] There are local denial of service, local information disclosure and local privilege escalation vulnerabilities that could be exploited by malicious applications or malicious users on the system.
+App 2908154 stdout: Server listening at port:3000
+App 2908154 stdout: [0mHEAD /home/malucha/sockets/node_testapi [33m404 [0m3.000 ms - 173[0m
+App 2908154 stdout: [0mGET / [32m200 [0m2.322 ms - 34[0m
+App 2908154 stdout: [0mPOST /api/authenticate [32m200 [0m8.296 ms - 304[0m
+App 2908154 stdout: [0mGET /api/checktoken?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc2FkbWluIjoxLCJpc21hbmFnZXIiOjEsInVzZXJpZCI6IldMRkUySkdIQzdMMTIxQ01PTVU4RzFCVldUUTFOSTgzIiwiaWF0IjoxNTM0NDAwNjQ3LCJleHAiOjE1MzQ0ODcwNDd9.mF_st_2JXAbnA5wuAAT7cKKakO1JbVzj0XoCNNLJqNs [32m200 [0m1.907 ms - 40[0m
+App 2908154 stdout: [0mGET /api/checktoken?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc2FkbWluIjoxLCJpc21hbmFnZXIiOjEsInVzZXJpZCI6IldMRkUySkdIQzdMMTIxQ01PTVU4RzFCVldUUTFOSTgzIiwiaWF0IjoxNTM0NDAwNjQ3LCJleHAiOjE1MzQ0ODcwNDd9.mF_st_2JXAbnA5wuAAT7cKKakO1JbVzj0XoCNNLJqNs [36m304 [0m0.718 ms - -[0m
+App 2908154 stdout: [0mGET /api/checktoken?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc2FkbWluIjoxLCJpc21hbmFnZXIiOjEsInVzZXJpZCI6IldMRkUySkdIQzdMMTIxQ01PTVU4RzFCVldUUTFOSTgzIiwiaWF0IjoxNTM0NDAwNjQ3LCJleHAiOjE1MzQ0ODcwNDd9.mF_st_2JXAbnA5wuAAT7cKKakO1JbVzj0XoCNNLJqNs [36m304 [0m0.662 ms - -[0m
+App 2908154 stdout: [0mGET /api/wynajem_bill_czynsz?token=undefined [32m200 [0m0.377 ms - 59[0m
+App 2908154 stderr: events.js:167
+App 2908154 stderr:       throw er; // Unhandled 'error' event
+App 2908154 stderr:       ^
+App 2908154 stderr: 
+App 2908154 stderr: Error: Connection lost: The server closed the connection.
+App 2908154 stderr:     at Protocol.end (/home/malucha/websites/_dev/node_testapi/node_modules/mysql/lib/protocol/Protocol.js:112:13)
+App 2908154 stderr:     at Socket.<anonymous> (/home/malucha/websites/_dev/node_testapi/node_modules/mysql/lib/Connection.js:97:28)
+App 2908154 stderr:     at Socket.<anonymous> (/home/malucha/websites/_dev/node_testapi/node_modules/mysql/lib/Connection.js:502:10)
+App 2908154 stderr:     at Socket.emit (events.js:187:15)
+App 2908154 stderr:     at endReadableNT (_stream_readable.js:1081:12)
+App 2908154 stderr:     at process._tickCallback (internal/process/next_tick.js:63:19)
+App 2908154 stderr: Emitted 'error' event at:
+App 2908154 stderr:     at Connection._handleProtocolError (/home/malucha/websites/_dev/node_testapi/node_modules/mysql/lib/Connection.js:425:8)
+App 2908154 stderr:     at Protocol.emit (events.js:182:13)
+App 2908154 stderr:     at Protocol._delegateError (/home/malucha/websites/_dev/node_testapi/node_modules/mysql/lib/protocol/Protocol.js:390:10)
+App 2908154 stderr:     at Protocol.end (/home/malucha/websites/_dev/node_testapi/node_modules/mysql/lib/protocol/Protocol.js:116:8)
+App 2908154 stderr:     at Socket.<anonymous> (/home/malucha/websites/_dev/node_testapi/node_modules/mysql/lib/Connection.js:97:28)
+App 2908154 stderr:     [... lines matching original stack trace ...]
+App 2908154 stderr:     at process._tickCallback (internal/process/next_tick.js:63:19)
+[ W 2018-08-16 16:24:10.0218 2908067/T4 age/Cor/App/Poo/AnalyticsCollection.cpp:102 ]: Process (pid=2908154, group=/home/malucha/websites/_dev/node_testapi/public (production)) no longer exists! Detaching it from the pool.
+[ N 2018-08-16 16:24:10.0219 2908067/T4 age/Cor/CoreMain.cpp:994 ]: Checking whether to disconnect long-running connections for process 2908154, application /home/malucha/websites/_dev/node_testapi/public (production)
+App 3485220 stdout: 
+App 3485220 stdout: Server listening at port:3000
+App 3485220 stdout: [0mGET /api/checktoken?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc2FkbWluIjoxLCJpc21hbmFnZXIiOjEsInVzZXJpZCI6IldMRkUySkdIQzdMMTIxQ01PTVU4RzFCVldUUTFOSTgzIiwiaWF0IjoxNTM0NDAwNjQ3LCJleHAiOjE1MzQ0ODcwNDd9.mF_st_2JXAbnA5wuAAT7cKKakO1JbVzj0XoCNNLJqNs [36m304 [0m5.726 ms - -[0m
+App 3485220 stdout: [0mGET /api/checktoken?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc2FkbWluIjoxLCJpc21hbmFnZXIiOjEsInVzZXJpZCI6IldMRkUySkdIQzdMMTIxQ01PTVU4RzFCVldUUTFOSTgzIiwiaWF0IjoxNTM0NDAwNjQ3LCJleHAiOjE1MzQ0ODcwNDd9.mF_st_2JXAbnA5wuAAT7cKKakO1JbVzj0XoCNNLJqNs [36m304 [0m0.628 ms - -[0m
+App 3485220 stdout: [0mGET /api/checktoken?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc2FkbWluIjoxLCJpc21hbmFnZXIiOjEsInVzZXJpZCI6IldMRkUySkdIQzdMMTIxQ01PTVU4RzFCVldUUTFOSTgzIiwiaWF0IjoxNTM0NDAwNjQ3LCJleHAiOjE1MzQ0ODcwNDd9.mF_st_2JXAbnA5wuAAT7cKKakO1JbVzj0XoCNNLJqNs [36m304 [0m0.519 ms - -[0m
+App 3485220 stdout: [0mGET /api/checktoken?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc2FkbWluIjoxLCJpc21hbmFnZXIiOjEsInVzZXJpZCI6IldMRkUySkdIQzdMMTIxQ01PTVU4RzFCVldUUTFOSTgzIiwiaWF0IjoxNTM0NDAwNjQ3LCJleHAiOjE1MzQ0ODcwNDd9.mF_st_2JXAbnA5wuAAT7cKKakO1JbVzj0XoCNNLJqNs [36m304 [0m0.341 ms - -[0m
+App 3485220 stdout: [0mGET /api/checktoken?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc2FkbWluIjoxLCJpc21hbmFnZXIiOjEsInVzZXJpZCI6IldMRkUySkdIQzdMMTIxQ01PTVU4RzFCVldUUTFOSTgzIiwiaWF0IjoxNTM0NDAwNjQ3LCJleHAiOjE1MzQ0ODcwNDd9.mF_st_2JXAbnA5wuAAT7cKKakO1JbVzj0XoCNNLJqNs [36m304 [0m0.356 ms - -[0m
+App 3485220 stdout: [0mGET /api/checktoken?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc2FkbWluIjoxLCJpc21hbmFnZXIiOjEsInVzZXJpZCI6IldMRkUySkdIQzdMMTIxQ01PTVU4RzFCVldUUTFOSTgzIiwiaWF0IjoxNTM0NDAwNjQ3LCJleHAiOjE1MzQ0ODcwNDd9.mF_st_2JXAbnA5wuAAT7cKKakO1JbVzj0XoCNNLJqNs [36m304 [0m0.391 ms - -[0m
+App 3485220 stdout: [0mGET /api/checktoken?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc2FkbWluIjoxLCJpc21hbmFnZXIiOjEsInVzZXJpZCI6IldMRkUySkdIQzdMMTIxQ01PTVU4RzFCVldUUTFOSTgzIiwiaWF0IjoxNTM0NDAwNjQ3LCJleHAiOjE1MzQ0ODcwNDd9.mF_st_2JXAbnA5wuAAT7cKKakO1JbVzj0XoCNNLJqNs [36m304 [0m6.121 ms - -[0m
+App 3485220 stdout: [0mGET /api/checktoken?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc2FkbWluIjoxLCJpc21hbmFnZXIiOjEsInVzZXJpZCI6IldMRkUySkdIQzdMMTIxQ01PTVU4RzFCVldUUTFOSTgzIiwiaWF0IjoxNTM0NDAwNjQ3LCJleHAiOjE1MzQ0ODcwNDd9.mF_st_2JXAbnA5wuAAT7cKKakO1JbVzj0XoCNNLJqNs [36m304 [0m0.606 ms - -[0m
+App 3485220 stdout: [0mGET /api/checktoken?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc2FkbWluIjoxLCJpc21hbmFnZXIiOjEsInVzZXJpZCI6IldMRkUySkdIQzdMMTIxQ01PTVU4RzFCVldUUTFOSTgzIiwiaWF0IjoxNTM0NDAwNjQ3LCJleHAiOjE1MzQ0ODcwNDd9.mF_st_2JXAbnA5wuAAT7cKKakO1JbVzj0XoCNNLJqNs [36m304 [0m0.370 ms - -[0m
+App 3485220 stdout: [0mGET /api/checktoken?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc2FkbWluIjoxLCJpc21hbmFnZXIiOjEsInVzZXJpZCI6IldMRkUySkdIQzdMMTIxQ01PTVU4RzFCVldUUTFOSTgzIiwiaWF0IjoxNTM0NDAwNjQ3LCJleHAiOjE1MzQ0ODcwNDd9.mF_st_2JXAbnA5wuAAT7cKKakO1JbVzj0XoCNNLJqNs [36m304 [0m0.671 ms - -[0m
+App 3485220 stdout: [0mGET /api/wynajem_bill_czynsz?token=undefined [36m304 [0m0.353 ms - -[0m
+App 3485220 stdout: [0mGET /api/wynajem_bill_czynsz?token=undefined [36m304 [0m0.227 ms - -[0m
+App 3485220 stdout: [0mGET /api/checktoken?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc2FkbWluIjoxLCJpc21hbmFnZXIiOjEsInVzZXJpZCI6IldMRkUySkdIQzdMMTIxQ01PTVU4RzFCVldUUTFOSTgzIiwiaWF0IjoxNTM0NDAwNjQ3LCJleHAiOjE1MzQ0ODcwNDd9.mF_st_2JXAbnA5wuAAT7cKKakO1JbVzj0XoCNNLJqNs [36m304 [0m0.431 ms - -[0m
+App 3485220 stdout: [0mGET /api/checktoken?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc2FkbWluIjoxLCJpc21hbmFnZXIiOjEsInVzZXJpZCI6IldMRkUySkdIQzdMMTIxQ01PTVU4RzFCVldUUTFOSTgzIiwiaWF0IjoxNTM0NDAwNjQ3LCJleHAiOjE1MzQ0ODcwNDd9.mF_st_2JXAbnA5wuAAT7cKKakO1JbVzj0XoCNNLJqNs [36m304 [0m0.298 ms - -[0m
+App 3485220 stdout: [0mGET /api/wynajem_bill_czynsz?token=undefined [36m304 [0m0.223 ms - -[0m
+App 3485220 stdout: [0mGET /api/checktoken?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc2FkbWluIjoxLCJpc21hbmFnZXIiOjEsInVzZXJpZCI6IldMRkUySkdIQzdMMTIxQ01PTVU4RzFCVldUUTFOSTgzIiwiaWF0IjoxNTM0NDAwNjQ3LCJleHAiOjE1MzQ0ODcwNDd9.mF_st_2JXAbnA5wuAAT7cKKakO1JbVzj0XoCNNLJqNs [36m304 [0m0.333 ms - -[0m
+App 3485220 stdout: [0mGET /api/wynajem_bill_czynsz?token=undefined [36m304 [0m0.228 ms - -[0m
+App 3485220 stdout: [0mGET /api/checktoken?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc2FkbWluIjoxLCJpc21hbmFnZXIiOjEsInVzZXJpZCI6IldMRkUySkdIQzdMMTIxQ01PTVU4RzFCVldUUTFOSTgzIiwiaWF0IjoxNTM0NDAwNjQ3LCJleHAiOjE1MzQ0ODcwNDd9.mF_st_2JXAbnA5wuAAT7cKKakO1JbVzj0XoCNNLJqNs [36m304 [0m0.309 ms - -[0m
+App 3485220 stdout: [0mGET /api/wynajem_bill_czynsz?token=undefined [36m304 [0m0.219 ms - -[0m
+App 3485220 stdout: [0mGET /api/wynajem_bill_czynsz?token=undefined [36m304 [0m0.299 ms - -[0m
+App 3485220 stdout: [0mGET /api/checktoken?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc2FkbWluIjoxLCJpc21hbmFnZXIiOjEsInVzZXJpZCI6IldMRkUySkdIQzdMMTIxQ01PTVU4RzFCVldUUTFOSTgzIiwiaWF0IjoxNTM0NDAwNjQ3LCJleHAiOjE1MzQ0ODcwNDd9.mF_st_2JXAbnA5wuAAT7cKKakO1JbVzj0XoCNNLJqNs [36m304 [0m0.353 ms - -[0m
+App 3485220 stdout: [0mGET /api/wynajem_bill_czynsz?token=undefined [36m304 [0m0.226 ms - -[0m
+App 3485220 stdout: [0mGET /api/checktoken?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc2FkbWluIjoxLCJpc21hbmFnZXIiOjEsInVzZXJpZCI6IldMRkUySkdIQzdMMTIxQ01PTVU4RzFCVldUUTFOSTgzIiwiaWF0IjoxNTM0NDAwNjQ3LCJleHAiOjE1MzQ0ODcwNDd9.mF_st_2JXAbnA5wuAAT7cKKakO1JbVzj0XoCNNLJqNs [36m304 [0m0.314 ms - -[0m
+App 3485220 stdout: [0mGET /api/wynajem_bill_czynsz?token=undefined [36m304 [0m0.192 ms - -[0m
+App 3485220 stdout: [0mGET /api/checktoken?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc2FkbWluIjoxLCJpc21hbmFnZXIiOjEsInVzZXJpZCI6IldMRkUySkdIQzdMMTIxQ01PTVU4RzFCVldUUTFOSTgzIiwiaWF0IjoxNTM0NDAwNjQ3LCJleHAiOjE1MzQ0ODcwNDd9.mF_st_2JXAbnA5wuAAT7cKKakO1JbVzj0XoCNNLJqNs [36m304 [0m0.340 ms - -[0m
+App 3485220 stdout: [0mGET /api/checktoken?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc2FkbWluIjoxLCJpc21hbmFnZXIiOjEsInVzZXJpZCI6IldMRkUySkdIQzdMMTIxQ01PTVU4RzFCVldUUTFOSTgzIiwiaWF0IjoxNTM0NDAwNjQ3LCJleHAiOjE1MzQ0ODcwNDd9.mF_st_2JXAbnA5wuAAT7cKKakO1JbVzj0XoCNNLJqNs [36m304 [0m0.626 ms - -[0m
+App 3485220 stdout: [0mGET /api/wynajem_bill_czynsz?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc2FkbWluIjoxLCJpc21hbmFnZXIiOjEsInVzZXJpZCI6IldMRkUySkdIQzdMMTIxQ01PTVU4RzFCVldUUTFOSTgzIiwiaWF0IjoxNTM0NDAwNjQ3LCJleHAiOjE1MzQ0ODcwNDd9.mF_st_2JXAbnA5wuAAT7cKKakO1JbVzj0XoCNNLJqNs [32m200 [0m354.393 ms - 4193[0m
+App 3485220 stdout: [0mGET /api/checktoken?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc2FkbWluIjoxLCJpc21hbmFnZXIiOjEsInVzZXJpZCI6IldMRkUySkdIQzdMMTIxQ01PTVU4RzFCVldUUTFOSTgzIiwiaWF0IjoxNTM0NDAwNjQ3LCJleHAiOjE1MzQ0ODcwNDd9.mF_st_2JXAbnA5wuAAT7cKKakO1JbVzj0XoCNNLJqNs [36m304 [0m0.373 ms - -[0m
+App 3485220 stdout: [0mGET /api/wynajem_bill_czynsz?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc2FkbWluIjoxLCJpc21hbmFnZXIiOjEsInVzZXJpZCI6IldMRkUySkdIQzdMMTIxQ01PTVU4RzFCVldUUTFOSTgzIiwiaWF0IjoxNTM0NDAwNjQ3LCJleHAiOjE1MzQ0ODcwNDd9.mF_st_2JXAbnA5wuAAT7cKKakO1JbVzj0XoCNNLJqNs [36m304 [0m1.897 ms - -[0m
+App 3485220 stdout: [0mGET /api/checktoken?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc2FkbWluIjoxLCJpc21hbmFnZXIiOjEsInVzZXJpZCI6IldMRkUySkdIQzdMMTIxQ01PTVU4RzFCVldUUTFOSTgzIiwiaWF0IjoxNTM0NDAwNjQ3LCJleHAiOjE1MzQ0ODcwNDd9.mF_st_2JXAbnA5wuAAT7cKKakO1JbVzj0XoCNNLJqNs [36m304 [0m0.369 ms - -[0m
+App 3485220 stdout: [0mGET /api/checktoken?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc2FkbWluIjoxLCJpc21hbmFnZXIiOjEsInVzZXJpZCI6IldMRkUySkdIQzdMMTIxQ01PTVU4RzFCVldUUTFOSTgzIiwiaWF0IjoxNTM0NDAwNjQ3LCJleHAiOjE1MzQ0ODcwNDd9.mF_st_2JXAbnA5wuAAT7cKKakO1JbVzj0XoCNNLJqNs [36m304 [0m0.350 ms - -[0m
+App 3485220 stdout: [0mGET /api/wynajem_bill_czynsz?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc2FkbWluIjoxLCJpc21hbmFnZXIiOjEsInVzZXJpZCI6IldMRkUySkdIQzdMMTIxQ01PTVU4RzFCVldUUTFOSTgzIiwiaWF0IjoxNTM0NDAwNjQ3LCJleHAiOjE1MzQ0ODcwNDd9.mF_st_2JXAbnA5wuAAT7cKKakO1JbVzj0XoCNNLJqNs [36m304 [0m3.163 ms - -[0m
+App 3485220 stdout: [0mGET /api/checktoken?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc2FkbWluIjoxLCJpc21hbmFnZXIiOjEsInVzZXJpZCI6IldMRkUySkdIQzdMMTIxQ01PTVU4RzFCVldUUTFOSTgzIiwiaWF0IjoxNTM0NDAwNjQ3LCJleHAiOjE1MzQ0ODcwNDd9.mF_st_2JXAbnA5wuAAT7cKKakO1JbVzj0XoCNNLJqNs [36m304 [0m0.358 ms - -[0m
+App 3485220 stdout: [0mGET /api/checktoken?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc2FkbWluIjoxLCJpc21hbmFnZXIiOjEsInVzZXJpZCI6IldMRkUySkdIQzdMMTIxQ01PTVU4RzFCVldUUTFOSTgzIiwiaWF0IjoxNTM0NDAwNjQ3LCJleHAiOjE1MzQ0ODcwNDd9.mF_st_2JXAbnA5wuAAT7cKKakO1JbVzj0XoCNNLJqNs [36m304 [0m0.362 ms - -[0m
+App 3485220 stdout: [0mGET /api/checktoken?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc2FkbWluIjoxLCJpc21hbmFnZXIiOjEsInVzZXJpZCI6IldMRkUySkdIQzdMMTIxQ01PTVU4RzFCVldUUTFOSTgzIiwiaWF0IjoxNTM0NDAwNjQ3LCJleHAiOjE1MzQ0ODcwNDd9.mF_st_2JXAbnA5wuAAT7cKKakO1JbVzj0XoCNNLJqNs [36m304 [0m0.392 ms - -[0m
+App 3485220 stdout: [0mGET /api/checktoken?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc2FkbWluIjoxLCJpc21hbmFnZXIiOjEsInVzZXJpZCI6IldMRkUySkdIQzdMMTIxQ01PTVU4RzFCVldUUTFOSTgzIiwiaWF0IjoxNTM0NDAwNjQ3LCJleHAiOjE1MzQ0ODcwNDd9.mF_st_2JXAbnA5wuAAT7cKKakO1JbVzj0XoCNNLJqNs [36m304 [0m0.404 ms - -[0m
+App 3485220 stdout: [0mGET /api/checktoken?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc2FkbWluIjoxLCJpc21hbmFnZXIiOjEsInVzZXJpZCI6IldMRkUySkdIQzdMMTIxQ01PTVU4RzFCVldUUTFOSTgzIiwiaWF0IjoxNTM0NDAwNjQ3LCJleHAiOjE1MzQ0ODcwNDd9.mF_st_2JXAbnA5wuAAT7cKKakO1JbVzj0XoCNNLJqNs [36m304 [0m0.336 ms - -[0m
+App 3485220 stdout: [0mGET /api/wynajem_bill_czynsz?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc2FkbWluIjoxLCJpc21hbmFnZXIiOjEsInVzZXJpZCI6IldMRkUySkdIQzdMMTIxQ01PTVU4RzFCVldUUTFOSTgzIiwiaWF0IjoxNTM0NDAwNjQ3LCJleHAiOjE1MzQ0ODcwNDd9.mF_st_2JXAbnA5wuAAT7cKKakO1JbVzj0XoCNNLJqNs [36m304 [0m1.961 ms - -[0m
+App 3485220 stdout: [0mGET /api/checktoken?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc2FkbWluIjoxLCJpc21hbmFnZXIiOjEsInVzZXJpZCI6IldMRkUySkdIQzdMMTIxQ01PTVU4RzFCVldUUTFOSTgzIiwiaWF0IjoxNTM0NDAwNjQ3LCJleHAiOjE1MzQ0ODcwNDd9.mF_st_2JXAbnA5wuAAT7cKKakO1JbVzj0XoCNNLJqNs [36m304 [0m0.346 ms - -[0m
+App 3485220 stdout: [0mGET /api/checktoken?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc2FkbWluIjoxLCJpc21hbmFnZXIiOjEsInVzZXJpZCI6IldMRkUySkdIQzdMMTIxQ01PTVU4RzFCVldUUTFOSTgzIiwiaWF0IjoxNTM0NDAwNjQ3LCJleHAiOjE1MzQ0ODcwNDd9.mF_st_2JXAbnA5wuAAT7cKKakO1JbVzj0XoCNNLJqNs [36m304 [0m0.691 ms - -[0m
+App 3485220 stdout: [0mGET /api/checktoken?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc2FkbWluIjoxLCJpc21hbmFnZXIiOjEsInVzZXJpZCI6IldMRkUySkdIQzdMMTIxQ01PTVU4RzFCVldUUTFOSTgzIiwiaWF0IjoxNTM0NDAwNjQ3LCJleHAiOjE1MzQ0ODcwNDd9.mF_st_2JXAbnA5wuAAT7cKKakO1JbVzj0XoCNNLJqNs [36m304 [0m0.635 ms - -[0m
+App 3485220 stdout: [0mGET /api/wynajem_bill_czynsz?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc2FkbWluIjoxLCJpc21hbmFnZXIiOjEsInVzZXJpZCI6IldMRkUySkdIQzdMMTIxQ01PTVU4RzFCVldUUTFOSTgzIiwiaWF0IjoxNTM0NDAwNjQ3LCJleHAiOjE1MzQ0ODcwNDd9.mF_st_2JXAbnA5wuAAT7cKKakO1JbVzj0XoCNNLJqNs [36m304 [0m2.372 ms - -[0m
+App 3485220 stdout: [0mGET /api/checktoken?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc2FkbWluIjoxLCJpc21hbmFnZXIiOjEsInVzZXJpZCI6IldMRkUySkdIQzdMMTIxQ01PTVU4RzFCVldUUTFOSTgzIiwiaWF0IjoxNTM0NDAwNjQ3LCJleHAiOjE1MzQ0ODcwNDd9.mF_st_2JXAbnA5wuAAT7cKKakO1JbVzj0XoCNNLJqNs [36m304 [0m0.526 ms - -[0m
+App 3485220 stdout: [0mGET /api/wynajem_bill_czynsz?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc2FkbWluIjoxLCJpc21hbmFnZXIiOjEsInVzZXJpZCI6IldMRkUySkdIQzdMMTIxQ01PTVU4RzFCVldUUTFOSTgzIiwiaWF0IjoxNTM0NDAwNjQ3LCJleHAiOjE1MzQ0ODcwNDd9.mF_st_2JXAbnA5wuAAT7cKKakO1JbVzj0XoCNNLJqNs [36m304 [0m2.207 ms - -[0m
+App 3485220 stdout: [0mGET /api/checktoken?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc2FkbWluIjoxLCJpc21hbmFnZXIiOjEsInVzZXJpZCI6IldMRkUySkdIQzdMMTIxQ01PTVU4RzFCVldUUTFOSTgzIiwiaWF0IjoxNTM0NDAwNjQ3LCJleHAiOjE1MzQ0ODcwNDd9.mF_st_2JXAbnA5wuAAT7cKKakO1JbVzj0XoCNNLJqNs [36m304 [0m0.370 ms - -[0m
+App 3485220 stdout: [0mGET /api/checktoken?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc2FkbWluIjoxLCJpc21hbmFnZXIiOjEsInVzZXJpZCI6IldMRkUySkdIQzdMMTIxQ01PTVU4RzFCVldUUTFOSTgzIiwiaWF0IjoxNTM0NDAwNjQ3LCJleHAiOjE1MzQ0ODcwNDd9.mF_st_2JXAbnA5wuAAT7cKKakO1JbVzj0XoCNNLJqNs [36m304 [0m0.579 ms - -[0m
+App 3485220 stdout: [0mGET /api/checktoken?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc2FkbWluIjoxLCJpc21hbmFnZXIiOjEsInVzZXJpZCI6IldMRkUySkdIQzdMMTIxQ01PTVU4RzFCVldUUTFOSTgzIiwiaWF0IjoxNTM0NDAwNjQ3LCJleHAiOjE1MzQ0ODcwNDd9.mF_st_2JXAbnA5wuAAT7cKKakO1JbVzj0XoCNNLJqNs [36m304 [0m0.897 ms - -[0m
+App 3485220 stdout: [0mGET /api/checktoken?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc2FkbWluIjoxLCJpc21hbmFnZXIiOjEsInVzZXJpZCI6IldMRkUySkdIQzdMMTIxQ01PTVU4RzFCVldUUTFOSTgzIiwiaWF0IjoxNTM0NDAwNjQ3LCJleHAiOjE1MzQ0ODcwNDd9.mF_st_2JXAbnA5wuAAT7cKKakO1JbVzj0XoCNNLJqNs [36m304 [0m0.375 ms - -[0m
+App 3485220 stdout: [0mGET /api/checktoken?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc2FkbWluIjoxLCJpc21hbmFnZXIiOjEsInVzZXJpZCI6IldMRkUySkdIQzdMMTIxQ01PTVU4RzFCVldUUTFOSTgzIiwiaWF0IjoxNTM0NDAwNjQ3LCJleHAiOjE1MzQ0ODcwNDd9.mF_st_2JXAbnA5wuAAT7cKKakO1JbVzj0XoCNNLJqNs [36m304 [0m2.977 ms - -[0m
+App 3485220 stdout: [0mGET /api/checktoken?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc2FkbWluIjoxLCJpc21hbmFnZXIiOjEsInVzZXJpZCI6IldMRkUySkdIQzdMMTIxQ01PTVU4RzFCVldUUTFOSTgzIiwiaWF0IjoxNTM0NDAwNjQ3LCJleHAiOjE1MzQ0ODcwNDd9.mF_st_2JXAbnA5wuAAT7cKKakO1JbVzj0XoCNNLJqNs [36m304 [0m0.378 ms - -[0m
+App 3485220 stdout: [0mGET /api/checktoken?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc2FkbWluIjoxLCJpc21hbmFnZXIiOjEsInVzZXJpZCI6IldMRkUySkdIQzdMMTIxQ01PTVU4RzFCVldUUTFOSTgzIiwiaWF0IjoxNTM0NDAwNjQ3LCJleHAiOjE1MzQ0ODcwNDd9.mF_st_2JXAbnA5wuAAT7cKKakO1JbVzj0XoCNNLJqNs [36m304 [0m0.321 ms - -[0m
+App 3485220 stdout: [0mGET /api/checktoken?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc2FkbWluIjoxLCJpc21hbmFnZXIiOjEsInVzZXJpZCI6IldMRkUySkdIQzdMMTIxQ01PTVU4RzFCVldUUTFOSTgzIiwiaWF0IjoxNTM0NDAwNjQ3LCJleHAiOjE1MzQ0ODcwNDd9.mF_st_2JXAbnA5wuAAT7cKKakO1JbVzj0XoCNNLJqNs [36m304 [0m0.383 ms - -[0m
+App 3485220 stdout: [0mGET /api/checktoken?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc2FkbWluIjoxLCJpc21hbmFnZXIiOjEsInVzZXJpZCI6IldMRkUySkdIQzdMMTIxQ01PTVU4RzFCVldUUTFOSTgzIiwiaWF0IjoxNTM0NDAwNjQ3LCJleHAiOjE1MzQ0ODcwNDd9.mF_st_2JXAbnA5wuAAT7cKKakO1JbVzj0XoCNNLJqNs [36m304 [0m0.350 ms - -[0m
+App 3485220 stdout: [0mGET /api/wynajem_bill_czynsz?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc2FkbWluIjoxLCJpc21hbmFnZXIiOjEsInVzZXJpZCI6IldMRkUySkdIQzdMMTIxQ01PTVU4RzFCVldUUTFOSTgzIiwiaWF0IjoxNTM0NDAwNjQ3LCJleHAiOjE1MzQ0ODcwNDd9.mF_st_2JXAbnA5wuAAT7cKKakO1JbVzj0XoCNNLJqNs [36m304 [0m2.861 ms - -[0m
+App 3485220 stdout: [0mGET /api/checktoken?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc2FkbWluIjoxLCJpc21hbmFnZXIiOjEsInVzZXJpZCI6IldMRkUySkdIQzdMMTIxQ01PTVU4RzFCVldUUTFOSTgzIiwiaWF0IjoxNTM0NDAwNjQ3LCJleHAiOjE1MzQ0ODcwNDd9.mF_st_2JXAbnA5wuAAT7cKKakO1JbVzj0XoCNNLJqNs [36m304 [0m0.399 ms - -[0m
+App 3485220 stdout: [0mGET /api/checktoken?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc2FkbWluIjoxLCJpc21hbmFnZXIiOjEsInVzZXJpZCI6IldMRkUySkdIQzdMMTIxQ01PTVU4RzFCVldUUTFOSTgzIiwiaWF0IjoxNTM0NDAwNjQ3LCJleHAiOjE1MzQ0ODcwNDd9.mF_st_2JXAbnA5wuAAT7cKKakO1JbVzj0XoCNNLJqNs [36m304 [0m0.386 ms - -[0m
+App 3485220 stdout: [0mGET /api/wynajem_bill_czynsz?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc2FkbWluIjoxLCJpc21hbmFnZXIiOjEsInVzZXJpZCI6IldMRkUySkdIQzdMMTIxQ01PTVU4RzFCVldUUTFOSTgzIiwiaWF0IjoxNTM0NDAwNjQ3LCJleHAiOjE1MzQ0ODcwNDd9.mF_st_2JXAbnA5wuAAT7cKKakO1JbVzj0XoCNNLJqNs [36m304 [0m1.760 ms - -[0m
+App 3485220 stdout: [0mGET /api/checktoken?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc2FkbWluIjoxLCJpc21hbmFnZXIiOjEsInVzZXJpZCI6IldMRkUySkdIQzdMMTIxQ01PTVU4RzFCVldUUTFOSTgzIiwiaWF0IjoxNTM0NDAwNjQ3LCJleHAiOjE1MzQ0ODcwNDd9.mF_st_2JXAbnA5wuAAT7cKKakO1JbVzj0XoCNNLJqNs [36m304 [0m0.344 ms - -[0m
+App 3485220 stdout: [0mGET /api/checktoken?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc2FkbWluIjoxLCJpc21hbmFnZXIiOjEsInVzZXJpZCI6IldMRkUySkdIQzdMMTIxQ01PTVU4RzFCVldUUTFOSTgzIiwiaWF0IjoxNTM0NDAwNjQ3LCJleHAiOjE1MzQ0ODcwNDd9.mF_st_2JXAbnA5wuAAT7cKKakO1JbVzj0XoCNNLJqNs [36m304 [0m0.375 ms - -[0m
+App 3485220 stdout: [0mGET /api/wynajem_bill_czynsz?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc2FkbWluIjoxLCJpc21hbmFnZXIiOjEsInVzZXJpZCI6IldMRkUySkdIQzdMMTIxQ01PTVU4RzFCVldUUTFOSTgzIiwiaWF0IjoxNTM0NDAwNjQ3LCJleHAiOjE1MzQ0ODcwNDd9.mF_st_2JXAbnA5wuAAT7cKKakO1JbVzj0XoCNNLJqNs [36m304 [0m1.865 ms - -[0m
+App 3485220 stdout: [0mGET /api/checktoken?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc2FkbWluIjoxLCJpc21hbmFnZXIiOjEsInVzZXJpZCI6IldMRkUySkdIQzdMMTIxQ01PTVU4RzFCVldUUTFOSTgzIiwiaWF0IjoxNTM0NDAwNjQ3LCJleHAiOjE1MzQ0ODcwNDd9.mF_st_2JXAbnA5wuAAT7cKKakO1JbVzj0XoCNNLJqNs [36m304 [0m0.696 ms - -[0m
+App 3485220 stdout: [0mGET /api/wynajem_bill_czynsz?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc2FkbWluIjoxLCJpc21hbmFnZXIiOjEsInVzZXJpZCI6IldMRkUySkdIQzdMMTIxQ01PTVU4RzFCVldUUTFOSTgzIiwiaWF0IjoxNTM0NDAwNjQ3LCJleHAiOjE1MzQ0ODcwNDd9.mF_st_2JXAbnA5wuAAT7cKKakO1JbVzj0XoCNNLJqNs [36m304 [0m1.630 ms - -[0m
+App 3485220 stdout: [0mGET /api/wynajem_bill_czynsz?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc2FkbWluIjoxLCJpc21hbmFnZXIiOjEsInVzZXJpZCI6IldMRkUySkdIQzdMMTIxQ01PTVU4RzFCVldUUTFOSTgzIiwiaWF0IjoxNTM0NDAwNjQ3LCJleHAiOjE1MzQ0ODcwNDd9.mF_st_2JXAbnA5wuAAT7cKKakO1JbVzj0XoCNNLJqNs [36m304 [0m2.568 ms - -[0m
+App 3485220 stdout: [0mGET /api/checktoken?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc2FkbWluIjoxLCJpc21hbmFnZXIiOjEsInVzZXJpZCI6IldMRkUySkdIQzdMMTIxQ01PTVU4RzFCVldUUTFOSTgzIiwiaWF0IjoxNTM0NDAwNjQ3LCJleHAiOjE1MzQ0ODcwNDd9.mF_st_2JXAbnA5wuAAT7cKKakO1JbVzj0XoCNNLJqNs [36m304 [0m0.357 ms - -[0m
+App 3485220 stdout: [0mGET /api/checktoken?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc2FkbWluIjoxLCJpc21hbmFnZXIiOjEsInVzZXJpZCI6IldMRkUySkdIQzdMMTIxQ01PTVU4RzFCVldUUTFOSTgzIiwiaWF0IjoxNTM0NDAwNjQ3LCJleHAiOjE1MzQ0ODcwNDd9.mF_st_2JXAbnA5wuAAT7cKKakO1JbVzj0XoCNNLJqNs [36m304 [0m0.367 ms - -[0m
+App 3485220 stdout: [0mGET /api/wynajem_bill_czynsz?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc2FkbWluIjoxLCJpc21hbmFnZXIiOjEsInVzZXJpZCI6IldMRkUySkdIQzdMMTIxQ01PTVU4RzFCVldUUTFOSTgzIiwiaWF0IjoxNTM0NDAwNjQ3LCJleHAiOjE1MzQ0ODcwNDd9.mF_st_2JXAbnA5wuAAT7cKKakO1JbVzj0XoCNNLJqNs [36m304 [0m1.952 ms - -[0m
+App 3485220 stdout: [0mGET /api/wynajem_bill_czynsz?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc2FkbWluIjoxLCJpc21hbmFnZXIiOjEsInVzZXJpZCI6IldMRkUySkdIQzdMMTIxQ01PTVU4RzFCVldUUTFOSTgzIiwiaWF0IjoxNTM0NDAwNjQ3LCJleHAiOjE1MzQ0ODcwNDd9.mF_st_2JXAbnA5wuAAT7cKKakO1JbVzj0XoCNNLJqNs [36m304 [0m6.095 ms - -[0m
+App 3485220 stdout: [0mGET /api/checktoken?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc2FkbWluIjoxLCJpc21hbmFnZXIiOjEsInVzZXJpZCI6IldMRkUySkdIQzdMMTIxQ01PTVU4RzFCVldUUTFOSTgzIiwiaWF0IjoxNTM0NDAwNjQ3LCJleHAiOjE1MzQ0ODcwNDd9.mF_st_2JXAbnA5wuAAT7cKKakO1JbVzj0XoCNNLJqNs [36m304 [0m0.341 ms - -[0m
+App 3485220 stdout: [0mGET /api/wynajem_bill_czynsz?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc2FkbWluIjoxLCJpc21hbmFnZXIiOjEsInVzZXJpZCI6IldMRkUySkdIQzdMMTIxQ01PTVU4RzFCVldUUTFOSTgzIiwiaWF0IjoxNTM0NDAwNjQ3LCJleHAiOjE1MzQ0ODcwNDd9.mF_st_2JXAbnA5wuAAT7cKKakO1JbVzj0XoCNNLJqNs [36m304 [0m6.497 ms - -[0m
+App 3485220 stdout: [0mGET /api/wynajem_bill_czynsz?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc2FkbWluIjoxLCJpc21hbmFnZXIiOjEsInVzZXJpZCI6IldMRkUySkdIQzdMMTIxQ01PTVU4RzFCVldUUTFOSTgzIiwiaWF0IjoxNTM0NDAwNjQ3LCJleHAiOjE1MzQ0ODcwNDd9.mF_st_2JXAbnA5wuAAT7cKKakO1JbVzj0XoCNNLJqNs [36m304 [0m1.444 ms - -[0m
+App 3485220 stdout: [0mGET /api/checktoken?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc2FkbWluIjoxLCJpc21hbmFnZXIiOjEsInVzZXJpZCI6IldMRkUySkdIQzdMMTIxQ01PTVU4RzFCVldUUTFOSTgzIiwiaWF0IjoxNTM0NDAwNjQ3LCJleHAiOjE1MzQ0ODcwNDd9.mF_st_2JXAbnA5wuAAT7cKKakO1JbVzj0XoCNNLJqNs [36m304 [0m0.367 ms - -[0m
+App 3485220 stdout: [0mGET /api/wynajem_bill_czynsz?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc2FkbWluIjoxLCJpc21hbmFnZXIiOjEsInVzZXJpZCI6IldMRkUySkdIQzdMMTIxQ01PTVU4RzFCVldUUTFOSTgzIiwiaWF0IjoxNTM0NDAwNjQ3LCJleHAiOjE1MzQ0ODcwNDd9.mF_st_2JXAbnA5wuAAT7cKKakO1JbVzj0XoCNNLJqNs [36m304 [0m2.639 ms - -[0m
+App 3485220 stdout: [0mGET /api/checktoken?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc2FkbWluIjoxLCJpc21hbmFnZXIiOjEsInVzZXJpZCI6IldMRkUySkdIQzdMMTIxQ01PTVU4RzFCVldUUTFOSTgzIiwiaWF0IjoxNTM0NDAwNjQ3LCJleHAiOjE1MzQ0ODcwNDd9.mF_st_2JXAbnA5wuAAT7cKKakO1JbVzj0XoCNNLJqNs [36m304 [0m0.366 ms - -[0m
+App 3485220 stdout: [0mGET /api/wynajem_bill_czynsz?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc2FkbWluIjoxLCJpc21hbmFnZXIiOjEsInVzZXJpZCI6IldMRkUySkdIQzdMMTIxQ01PTVU4RzFCVldUUTFOSTgzIiwiaWF0IjoxNTM0NDAwNjQ3LCJleHAiOjE1MzQ0ODcwNDd9.mF_st_2JXAbnA5wuAAT7cKKakO1JbVzj0XoCNNLJqNs [36m304 [0m1.682 ms - -[0m
+App 3485220 stdout: [0mGET /api/wynajem_bill_czynsz?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc2FkbWluIjoxLCJpc21hbmFnZXIiOjEsInVzZXJpZCI6IldMRkUySkdIQzdMMTIxQ01PTVU4RzFCVldUUTFOSTgzIiwiaWF0IjoxNTM0NDAwNjQ3LCJleHAiOjE1MzQ0ODcwNDd9.mF_st_2JXAbnA5wuAAT7cKKakO1JbVzj0XoCNNLJqNs [36m304 [0m1.574 ms - -[0m
+App 3485220 stderr: events.js:167
+App 3485220 stderr:       throw er; // Unhandled 'error' event
+App 3485220 stderr:       ^
+App 3485220 stderr: 
+App 3485220 stderr: Error: Connection lost: The server closed the connection.
+App 3485220 stderr:     at Protocol.end (/home/malucha/websites/_dev/node_testapi/node_modules/mysql/lib/protocol/Protocol.js:112:13)
+App 3485220 stderr:     at Socket.<anonymous> (/home/malucha/websites/_dev/node_testapi/node_modules/mysql/lib/Connection.js:97:28)
+App 3485220 stderr:     at Socket.<anonymous> (/home/malucha/websites/_dev/node_testapi/node_modules/mysql/lib/Connection.js:502:10)
+App 3485220 stderr:     at Socket.emit (events.js:187:15)
+App 3485220 stderr:     at endReadableNT (_stream_readable.js:1081:12)
+App 3485220 stderr:     at process._tickCallback (internal/process/next_tick.js:63:19)
+App 3485220 stderr: Emitted 'error' event at:
+App 3485220 stderr:     at Connection._handleProtocolError (/home/malucha/websites/_dev/node_testapi/node_modules/mysql/lib/Connection.js:425:8)
+App 3485220 stderr:     at Protocol.emit (events.js:182:13)
+App 3485220 stderr:     at Protocol._delegateError (/home/malucha/websites/_dev/node_testapi/node_modules/mysql/lib/protocol/Protocol.js:390:10)
+App 3485220 stderr:     at Protocol.end (/home/malucha/websites/_dev/node_testapi/node_modules/mysql/lib/protocol/Protocol.js:116:8)
+App 3485220 stderr:     at Socket.<anonymous> (/home/malucha/websites/_dev/node_testapi/node_modules/mysql/lib/Connection.js:97:28)
+App 3485220 stderr:     [... lines matching original stack trace ...]
+App 3485220 stderr:     at process._tickCallback (internal/process/next_tick.js:63:19)
+[ W 2018-08-17 06:50:50.0244 2908067/T4 age/Cor/App/Poo/AnalyticsCollection.cpp:102 ]: Process (pid=3485220, group=/home/malucha/websites/_dev/node_testapi/public (production)) no longer exists! Detaching it from the pool.
+[ N 2018-08-17 06:50:50.0244 2908067/T4 age/Cor/CoreMain.cpp:994 ]: Checking whether to disconnect long-running connections for process 3485220, application /home/malucha/websites/_dev/node_testapi/public (production)
+App 394481 stdout: 
+App 394481 stdout: Server listening at port:3000
+App 394481 stdout: [0mGET /api/checktoken?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc2FkbWluIjoxLCJpc21hbmFnZXIiOjEsInVzZXJpZCI6IldMRkUySkdIQzdMMTIxQ01PTVU4RzFCVldUUTFOSTgzIiwiaWF0IjoxNTM0NDAwNjQ3LCJleHAiOjE1MzQ0ODcwNDd9.mF_st_2JXAbnA5wuAAT7cKKakO1JbVzj0XoCNNLJqNs [36m304 [0m5.536 ms - -[0m
+App 394481 stdout: [0mGET /api/wynajem_bill_czynsz?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc2FkbWluIjoxLCJpc21hbmFnZXIiOjEsInVzZXJpZCI6IldMRkUySkdIQzdMMTIxQ01PTVU4RzFCVldUUTFOSTgzIiwiaWF0IjoxNTM0NDAwNjQ3LCJleHAiOjE1MzQ0ODcwNDd9.mF_st_2JXAbnA5wuAAT7cKKakO1JbVzj0XoCNNLJqNs [36m304 [0m5.477 ms - -[0m
+App 394481 stdout: [0mGET /api/checktoken?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc2FkbWluIjoxLCJpc21hbmFnZXIiOjEsInVzZXJpZCI6IldMRkUySkdIQzdMMTIxQ01PTVU4RzFCVldUUTFOSTgzIiwiaWF0IjoxNTM0NDAwNjQ3LCJleHAiOjE1MzQ0ODcwNDd9.mF_st_2JXAbnA5wuAAT7cKKakO1JbVzj0XoCNNLJqNs [36m304 [0m0.442 ms - -[0m
+App 394481 stdout: [0mGET /api/checktoken?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc2FkbWluIjoxLCJpc21hbmFnZXIiOjEsInVzZXJpZCI6IldMRkUySkdIQzdMMTIxQ01PTVU4RzFCVldUUTFOSTgzIiwiaWF0IjoxNTM0NDAwNjQ3LCJleHAiOjE1MzQ0ODcwNDd9.mF_st_2JXAbnA5wuAAT7cKKakO1JbVzj0XoCNNLJqNs [36m304 [0m0.397 ms - -[0m
+App 394481 stdout: [0mGET /api/wynajem_bill_czynsz?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc2FkbWluIjoxLCJpc21hbmFnZXIiOjEsInVzZXJpZCI6IldMRkUySkdIQzdMMTIxQ01PTVU4RzFCVldUUTFOSTgzIiwiaWF0IjoxNTM0NDAwNjQ3LCJleHAiOjE1MzQ0ODcwNDd9.mF_st_2JXAbnA5wuAAT7cKKakO1JbVzj0XoCNNLJqNs [36m304 [0m2.151 ms - -[0m
+App 394481 stdout: [0mGET /api/checktoken?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc2FkbWluIjoxLCJpc21hbmFnZXIiOjEsInVzZXJpZCI6IldMRkUySkdIQzdMMTIxQ01PTVU4RzFCVldUUTFOSTgzIiwiaWF0IjoxNTM0NDAwNjQ3LCJleHAiOjE1MzQ0ODcwNDd9.mF_st_2JXAbnA5wuAAT7cKKakO1JbVzj0XoCNNLJqNs [36m304 [0m0.323 ms - -[0m
+App 394481 stdout: [0mGET /api/wynajem_bill_czynsz?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc2FkbWluIjoxLCJpc21hbmFnZXIiOjEsInVzZXJpZCI6IldMRkUySkdIQzdMMTIxQ01PTVU4RzFCVldUUTFOSTgzIiwiaWF0IjoxNTM0NDAwNjQ3LCJleHAiOjE1MzQ0ODcwNDd9.mF_st_2JXAbnA5wuAAT7cKKakO1JbVzj0XoCNNLJqNs [36m304 [0m1.574 ms - -[0m
+App 394481 stdout: [0mGET /api/checktoken?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc2FkbWluIjoxLCJpc21hbmFnZXIiOjEsInVzZXJpZCI6IldMRkUySkdIQzdMMTIxQ01PTVU4RzFCVldUUTFOSTgzIiwiaWF0IjoxNTM0NDAwNjQ3LCJleHAiOjE1MzQ0ODcwNDd9.mF_st_2JXAbnA5wuAAT7cKKakO1JbVzj0XoCNNLJqNs [36m304 [0m0.443 ms - -[0m
+App 394481 stdout: [0mGET /api/wynajem_bill_czynsz?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc2FkbWluIjoxLCJpc21hbmFnZXIiOjEsInVzZXJpZCI6IldMRkUySkdIQzdMMTIxQ01PTVU4RzFCVldUUTFOSTgzIiwiaWF0IjoxNTM0NDAwNjQ3LCJleHAiOjE1MzQ0ODcwNDd9.mF_st_2JXAbnA5wuAAT7cKKakO1JbVzj0XoCNNLJqNs [36m304 [0m2.166 ms - -[0m
+App 394481 stdout: [0mGET /api/checktoken?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc2FkbWluIjoxLCJpc21hbmFnZXIiOjEsInVzZXJpZCI6IldMRkUySkdIQzdMMTIxQ01PTVU4RzFCVldUUTFOSTgzIiwiaWF0IjoxNTM0NDAwNjQ3LCJleHAiOjE1MzQ0ODcwNDd9.mF_st_2JXAbnA5wuAAT7cKKakO1JbVzj0XoCNNLJqNs [36m304 [0m0.337 ms - -[0m
+App 394481 stdout: [0mGET /api/checktoken?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc2FkbWluIjoxLCJpc21hbmFnZXIiOjEsInVzZXJpZCI6IldMRkUySkdIQzdMMTIxQ01PTVU4RzFCVldUUTFOSTgzIiwiaWF0IjoxNTM0NDAwNjQ3LCJleHAiOjE1MzQ0ODcwNDd9.mF_st_2JXAbnA5wuAAT7cKKakO1JbVzj0XoCNNLJqNs [36m304 [0m0.335 ms - -[0m
+App 394481 stdout: [0mGET /api/checktoken?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc2FkbWluIjoxLCJpc21hbmFnZXIiOjEsInVzZXJpZCI6IldMRkUySkdIQzdMMTIxQ01PTVU4RzFCVldUUTFOSTgzIiwiaWF0IjoxNTM0NDAwNjQ3LCJleHAiOjE1MzQ0ODcwNDd9.mF_st_2JXAbnA5wuAAT7cKKakO1JbVzj0XoCNNLJqNs [36m304 [0m0.620 ms - -[0m
+App 394481 stdout: [0mGET /api/checktoken?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc2FkbWluIjoxLCJpc21hbmFnZXIiOjEsInVzZXJpZCI6IldMRkUySkdIQzdMMTIxQ01PTVU4RzFCVldUUTFOSTgzIiwiaWF0IjoxNTM0NDAwNjQ3LCJleHAiOjE1MzQ0ODcwNDd9.mF_st_2JXAbnA5wuAAT7cKKakO1JbVzj0XoCNNLJqNs [36m304 [0m0.428 ms - -[0m
+App 394481 stdout: [0mGET /api/wynajem_bill_czynsz?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc2FkbWluIjoxLCJpc21hbmFnZXIiOjEsInVzZXJpZCI6IldMRkUySkdIQzdMMTIxQ01PTVU4RzFCVldUUTFOSTgzIiwiaWF0IjoxNTM0NDAwNjQ3LCJleHAiOjE1MzQ0ODcwNDd9.mF_st_2JXAbnA5wuAAT7cKKakO1JbVzj0XoCNNLJqNs [36m304 [0m1.665 ms - -[0m
+App 394481 stdout: [0mGET /api/checktoken?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc2FkbWluIjoxLCJpc21hbmFnZXIiOjEsInVzZXJpZCI6IldMRkUySkdIQzdMMTIxQ01PTVU4RzFCVldUUTFOSTgzIiwiaWF0IjoxNTM0NDAwNjQ3LCJleHAiOjE1MzQ0ODcwNDd9.mF_st_2JXAbnA5wuAAT7cKKakO1JbVzj0XoCNNLJqNs [36m304 [0m0.333 ms - -[0m
+App 394481 stdout: [0mGET /api/wynajem_bill_czynsz?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc2FkbWluIjoxLCJpc21hbmFnZXIiOjEsInVzZXJpZCI6IldMRkUySkdIQzdMMTIxQ01PTVU4RzFCVldUUTFOSTgzIiwiaWF0IjoxNTM0NDAwNjQ3LCJleHAiOjE1MzQ0ODcwNDd9.mF_st_2JXAbnA5wuAAT7cKKakO1JbVzj0XoCNNLJqNs [36m304 [0m1.513 ms - -[0m
+App 394481 stdout: [0mGET /api/checktoken?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc2FkbWluIjoxLCJpc21hbmFnZXIiOjEsInVzZXJpZCI6IldMRkUySkdIQzdMMTIxQ01PTVU4RzFCVldUUTFOSTgzIiwiaWF0IjoxNTM0NDAwNjQ3LCJleHAiOjE1MzQ0ODcwNDd9.mF_st_2JXAbnA5wuAAT7cKKakO1JbVzj0XoCNNLJqNs [36m304 [0m0.503 ms - -[0m
+App 394481 stdout: [0mGET /api/checktoken?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc2FkbWluIjoxLCJpc21hbmFnZXIiOjEsInVzZXJpZCI6IldMRkUySkdIQzdMMTIxQ01PTVU4RzFCVldUUTFOSTgzIiwiaWF0IjoxNTM0NDAwNjQ3LCJleHAiOjE1MzQ0ODcwNDd9.mF_st_2JXAbnA5wuAAT7cKKakO1JbVzj0XoCNNLJqNs [36m304 [0m0.329 ms - -[0m
+App 394481 stdout: [0mGET /api/wynajem_bill_czynsz?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc2FkbWluIjoxLCJpc21hbmFnZXIiOjEsInVzZXJpZCI6IldMRkUySkdIQzdMMTIxQ01PTVU4RzFCVldUUTFOSTgzIiwiaWF0IjoxNTM0NDAwNjQ3LCJleHAiOjE1MzQ0ODcwNDd9.mF_st_2JXAbnA5wuAAT7cKKakO1JbVzj0XoCNNLJqNs [36m304 [0m1.669 ms - -[0m
+App 394481 stdout: [0mGET /api/checktoken?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc2FkbWluIjoxLCJpc21hbmFnZXIiOjEsInVzZXJpZCI6IldMRkUySkdIQzdMMTIxQ01PTVU4RzFCVldUUTFOSTgzIiwiaWF0IjoxNTM0NDAwNjQ3LCJleHAiOjE1MzQ0ODcwNDd9.mF_st_2JXAbnA5wuAAT7cKKakO1JbVzj0XoCNNLJqNs [36m304 [0m0.338 ms - -[0m
+App 394481 stdout: [0mGET /api/wynajem_bill_czynsz?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc2FkbWluIjoxLCJpc21hbmFnZXIiOjEsInVzZXJpZCI6IldMRkUySkdIQzdMMTIxQ01PTVU4RzFCVldUUTFOSTgzIiwiaWF0IjoxNTM0NDAwNjQ3LCJleHAiOjE1MzQ0ODcwNDd9.mF_st_2JXAbnA5wuAAT7cKKakO1JbVzj0XoCNNLJqNs [36m304 [0m1.771 ms - -[0m
+App 394481 stdout: [0mGET /api/checktoken?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc2FkbWluIjoxLCJpc21hbmFnZXIiOjEsInVzZXJpZCI6IldMRkUySkdIQzdMMTIxQ01PTVU4RzFCVldUUTFOSTgzIiwiaWF0IjoxNTM0NDAwNjQ3LCJleHAiOjE1MzQ0ODcwNDd9.mF_st_2JXAbnA5wuAAT7cKKakO1JbVzj0XoCNNLJqNs [36m304 [0m0.376 ms - -[0m
+App 394481 stdout: [0mGET /api/wynajem_bill_czynsz?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc2FkbWluIjoxLCJpc21hbmFnZXIiOjEsInVzZXJpZCI6IldMRkUySkdIQzdMMTIxQ01PTVU4RzFCVldUUTFOSTgzIiwiaWF0IjoxNTM0NDAwNjQ3LCJleHAiOjE1MzQ0ODcwNDd9.mF_st_2JXAbnA5wuAAT7cKKakO1JbVzj0XoCNNLJqNs [36m304 [0m2.115 ms - -[0m
+App 394481 stdout: [0mGET /api/checktoken?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc2FkbWluIjoxLCJpc21hbmFnZXIiOjEsInVzZXJpZCI6IldMRkUySkdIQzdMMTIxQ01PTVU4RzFCVldUUTFOSTgzIiwiaWF0IjoxNTM0NDAwNjQ3LCJleHAiOjE1MzQ0ODcwNDd9.mF_st_2JXAbnA5wuAAT7cKKakO1JbVzj0XoCNNLJqNs [36m304 [0m0.320 ms - -[0m
+App 394481 stdout: [0mGET /api/wynajem_bill_czynsz?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc2FkbWluIjoxLCJpc21hbmFnZXIiOjEsInVzZXJpZCI6IldMRkUySkdIQzdMMTIxQ01PTVU4RzFCVldUUTFOSTgzIiwiaWF0IjoxNTM0NDAwNjQ3LCJleHAiOjE1MzQ0ODcwNDd9.mF_st_2JXAbnA5wuAAT7cKKakO1JbVzj0XoCNNLJqNs [36m304 [0m2.112 ms - -[0m
+App 394481 stdout: [0mGET /api/checktoken?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc2FkbWluIjoxLCJpc21hbmFnZXIiOjEsInVzZXJpZCI6IldMRkUySkdIQzdMMTIxQ01PTVU4RzFCVldUUTFOSTgzIiwiaWF0IjoxNTM0NDAwNjQ3LCJleHAiOjE1MzQ0ODcwNDd9.mF_st_2JXAbnA5wuAAT7cKKakO1JbVzj0XoCNNLJqNs [36m304 [0m0.363 ms - -[0m
+App 394481 stdout: [0mGET /api/checktoken?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc2FkbWluIjoxLCJpc21hbmFnZXIiOjEsInVzZXJpZCI6IldMRkUySkdIQzdMMTIxQ01PTVU4RzFCVldUUTFOSTgzIiwiaWF0IjoxNTM0NDAwNjQ3LCJleHAiOjE1MzQ0ODcwNDd9.mF_st_2JXAbnA5wuAAT7cKKakO1JbVzj0XoCNNLJqNs [36m304 [0m0.303 ms - -[0m
+App 394481 stdout: [0mGET /api/checktoken?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc2FkbWluIjoxLCJpc21hbmFnZXIiOjEsInVzZXJpZCI6IldMRkUySkdIQzdMMTIxQ01PTVU4RzFCVldUUTFOSTgzIiwiaWF0IjoxNTM0NDAwNjQ3LCJleHAiOjE1MzQ0ODcwNDd9.mF_st_2JXAbnA5wuAAT7cKKakO1JbVzj0XoCNNLJqNs [36m304 [0m0.772 ms - -[0m
+App 394481 stdout: [0mGET /api/wynajem_bill_czynsz?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc2FkbWluIjoxLCJpc21hbmFnZXIiOjEsInVzZXJpZCI6IldMRkUySkdIQzdMMTIxQ01PTVU4RzFCVldUUTFOSTgzIiwiaWF0IjoxNTM0NDAwNjQ3LCJleHAiOjE1MzQ0ODcwNDd9.mF_st_2JXAbnA5wuAAT7cKKakO1JbVzj0XoCNNLJqNs [36m304 [0m2.225 ms - -[0m
+App 394481 stdout: [0mGET /api/checktoken?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc2FkbWluIjoxLCJpc21hbmFnZXIiOjEsInVzZXJpZCI6IldMRkUySkdIQzdMMTIxQ01PTVU4RzFCVldUUTFOSTgzIiwiaWF0IjoxNTM0NDAwNjQ3LCJleHAiOjE1MzQ0ODcwNDd9.mF_st_2JXAbnA5wuAAT7cKKakO1JbVzj0XoCNNLJqNs [36m304 [0m0.561 ms - -[0m
+App 394481 stdout: [0mGET /api/wynajem_bill_czynsz?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc2FkbWluIjoxLCJpc21hbmFnZXIiOjEsInVzZXJpZCI6IldMRkUySkdIQzdMMTIxQ01PTVU4RzFCVldUUTFOSTgzIiwiaWF0IjoxNTM0NDAwNjQ3LCJleHAiOjE1MzQ0ODcwNDd9.mF_st_2JXAbnA5wuAAT7cKKakO1JbVzj0XoCNNLJqNs [36m304 [0m2.129 ms - -[0m
+App 394481 stdout: [0mGET /api/checktoken?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc2FkbWluIjoxLCJpc21hbmFnZXIiOjEsInVzZXJpZCI6IldMRkUySkdIQzdMMTIxQ01PTVU4RzFCVldUUTFOSTgzIiwiaWF0IjoxNTM0NDAwNjQ3LCJleHAiOjE1MzQ0ODcwNDd9.mF_st_2JXAbnA5wuAAT7cKKakO1JbVzj0XoCNNLJqNs [36m304 [0m0.425 ms - -[0m
+App 394481 stdout: [0mGET /api/checktoken?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc2FkbWluIjoxLCJpc21hbmFnZXIiOjEsInVzZXJpZCI6IldMRkUySkdIQzdMMTIxQ01PTVU4RzFCVldUUTFOSTgzIiwiaWF0IjoxNTM0NDAwNjQ3LCJleHAiOjE1MzQ0ODcwNDd9.mF_st_2JXAbnA5wuAAT7cKKakO1JbVzj0XoCNNLJqNs [36m304 [0m0.347 ms - -[0m
+App 394481 stdout: [0mGET /api/checktoken?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc2FkbWluIjoxLCJpc21hbmFnZXIiOjEsInVzZXJpZCI6IldMRkUySkdIQzdMMTIxQ01PTVU4RzFCVldUUTFOSTgzIiwiaWF0IjoxNTM0NDAwNjQ3LCJleHAiOjE1MzQ0ODcwNDd9.mF_st_2JXAbnA5wuAAT7cKKakO1JbVzj0XoCNNLJqNs [36m304 [0m0.400 ms - -[0m
+App 394481 stdout: [0mGET /api/wynajem_bill_czynsz?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc2FkbWluIjoxLCJpc21hbmFnZXIiOjEsInVzZXJpZCI6IldMRkUySkdIQzdMMTIxQ01PTVU4RzFCVldUUTFOSTgzIiwiaWF0IjoxNTM0NDAwNjQ3LCJleHAiOjE1MzQ0ODcwNDd9.mF_st_2JXAbnA5wuAAT7cKKakO1JbVzj0XoCNNLJqNs [36m304 [0m2.535 ms - -[0m
+App 394481 stdout: [0mGET /api/checktoken?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc2FkbWluIjoxLCJpc21hbmFnZXIiOjEsInVzZXJpZCI6IldMRkUySkdIQzdMMTIxQ01PTVU4RzFCVldUUTFOSTgzIiwiaWF0IjoxNTM0NDAwNjQ3LCJleHAiOjE1MzQ0ODcwNDd9.mF_st_2JXAbnA5wuAAT7cKKakO1JbVzj0XoCNNLJqNs [36m304 [0m0.337 ms - -[0m
+App 394481 stdout: [0mGET /api/wynajem_bill_czynsz?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc2FkbWluIjoxLCJpc21hbmFnZXIiOjEsInVzZXJpZCI6IldMRkUySkdIQzdMMTIxQ01PTVU4RzFCVldUUTFOSTgzIiwiaWF0IjoxNTM0NDAwNjQ3LCJleHAiOjE1MzQ0ODcwNDd9.mF_st_2JXAbnA5wuAAT7cKKakO1JbVzj0XoCNNLJqNs [36m304 [0m1.768 ms - -[0m
+App 394481 stdout: [0mGET /api/checktoken?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc2FkbWluIjoxLCJpc21hbmFnZXIiOjEsInVzZXJpZCI6IldMRkUySkdIQzdMMTIxQ01PTVU4RzFCVldUUTFOSTgzIiwiaWF0IjoxNTM0NDAwNjQ3LCJleHAiOjE1MzQ0ODcwNDd9.mF_st_2JXAbnA5wuAAT7cKKakO1JbVzj0XoCNNLJqNs [36m304 [0m3.230 ms - -[0m
+App 394481 stdout: [0mGET /api/checktoken?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc2FkbWluIjoxLCJpc21hbmFnZXIiOjEsInVzZXJpZCI6IldMRkUySkdIQzdMMTIxQ01PTVU4RzFCVldUUTFOSTgzIiwiaWF0IjoxNTM0NDAwNjQ3LCJleHAiOjE1MzQ0ODcwNDd9.mF_st_2JXAbnA5wuAAT7cKKakO1JbVzj0XoCNNLJqNs [36m304 [0m0.359 ms - -[0m
+App 394481 stdout: [0mGET /api/wynajem_bill_czynsz?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc2FkbWluIjoxLCJpc21hbmFnZXIiOjEsInVzZXJpZCI6IldMRkUySkdIQzdMMTIxQ01PTVU4RzFCVldUUTFOSTgzIiwiaWF0IjoxNTM0NDAwNjQ3LCJleHAiOjE1MzQ0ODcwNDd9.mF_st_2JXAbnA5wuAAT7cKKakO1JbVzj0XoCNNLJqNs [36m304 [0m2.601 ms - -[0m
+App 394481 stderr: events.js:167
+App 394481 stderr:       throw er; // Unhandled 'error' event
+App 394481 stderr:       ^
+App 394481 stderr: 
+App 394481 stderr: Error: Connection lost: The server closed the connection.
+App 394481 stderr:     at Protocol.end (/home/malucha/websites/_dev/node_testapi/node_modules/mysql/lib/protocol/Protocol.js:112:13)
+App 394481 stderr:     at Socket.<anonymous> (/home/malucha/websites/_dev/node_testapi/node_modules/mysql/lib/Connection.js:97:28)
+App 394481 stderr:     at Socket.<anonymous> (/home/malucha/websites/_dev/node_testapi/node_modules/mysql/lib/Connection.js:502:10)
+App 394481 stderr:     at Socket.emit (events.js:187:15)
+App 394481 stderr:     at endReadableNT (_stream_readable.js:1081:12)
+App 394481 stderr:     at process._tickCallback (internal/process/next_tick.js:63:19)
+App 394481 stderr: Emitted 'error' event at:
+App 394481 stderr:     at Connection._handleProtocolError (/home/malucha/websites/_dev/node_testapi/node_modules/mysql/lib/Connection.js:425:8)
+App 394481 stderr:     at Protocol.emit (events.js:182:13)
+App 394481 stderr:     at Protocol._delegateError (/home/malucha/websites/_dev/node_testapi/node_modules/mysql/lib/protocol/Protocol.js:390:10)
+App 394481 stderr:     at Protocol.end (/home/malucha/websites/_dev/node_testapi/node_modules/mysql/lib/protocol/Protocol.js:116:8)
+App 394481 stderr:     at Socket.<anonymous> (/home/malucha/websites/_dev/node_testapi/node_modules/mysql/lib/Connection.js:97:28)
+App 394481 stderr:     [... lines matching original stack trace ...]
+App 394481 stderr:     at process._tickCallback (internal/process/next_tick.js:63:19)
+[ W 2018-08-17 15:29:15.0242 2908067/T4 age/Cor/App/Poo/AnalyticsCollection.cpp:102 ]: Process (pid=394481, group=/home/malucha/websites/_dev/node_testapi/public (production)) no longer exists! Detaching it from the pool.
+[ N 2018-08-17 15:29:15.0242 2908067/T4 age/Cor/CoreMain.cpp:994 ]: Checking whether to disconnect long-running connections for process 394481, application /home/malucha/websites/_dev/node_testapi/public (production)
+App 992083 stdout: 
+App 992083 stdout: Server listening at port:3000
+[ E 2018-08-17 16:23:49.7764 2908067/T5 age/Cor/SecurityUpdateChecker.h:376 ]: A security update is available for your version (5.1.11) of Passenger, we strongly recommend upgrading to version 5.3.4.
+[ E 2018-08-17 16:23:49.7765 2908067/T5 age/Cor/SecurityUpdateChecker.h:381 ]:  Additional information: 
+- [Fixed in 5.3.2] [CVE-2018-12026 - 12027 - 12028] There are local denial of service, local information disclosure and local privilege escalation vulnerabilities that could be exploited by malicious applications or malicious users on the system.
+App 992083 stderr: events.js:167
+App 992083 stderr:       throw er; // Unhandled 'error' event
+App 992083 stderr:       ^
+App 992083 stderr: 
+App 992083 stderr: Error: Connection lost: The server closed the connection.
+App 992083 stderr:     at Protocol.end (/home/malucha/websites/_dev/node_testapi/node_modules/mysql/lib/protocol/Protocol.js:112:13)
+App 992083 stderr:     at Socket.<anonymous> (/home/malucha/websites/_dev/node_testapi/node_modules/mysql/lib/Connection.js:97:28)
+App 992083 stderr:     at Socket.<anonymous> (/home/malucha/websites/_dev/node_testapi/node_modules/mysql/lib/Connection.js:502:10)
+App 992083 stderr:     at Socket.emit (events.js:187:15)
+App 992083 stderr:     at endReadableNT (_stream_readable.js:1081:12)
+App 992083 stderr:     at process._tickCallback (internal/process/next_tick.js:63:19)
+App 992083 stderr: Emitted 'error' event at:
+App 992083 stderr:     at Connection._handleProtocolError (/home/malucha/websites/_dev/node_testapi/node_modules/mysql/lib/Connection.js:425:8)
+App 992083 stderr:     at Protocol.emit (events.js:182:13)
+App 992083 stderr:     at Protocol._delegateError (/home/malucha/websites/_dev/node_testapi/node_modules/mysql/lib/protocol/Protocol.js:390:10)
+App 992083 stderr:     at Protocol.end (/home/malucha/websites/_dev/node_testapi/node_modules/mysql/lib/protocol/Protocol.js:116:8)
+App 992083 stderr:     at Socket.<anonymous> (/home/malucha/websites/_dev/node_testapi/node_modules/mysql/lib/Connection.js:97:28)
+App 992083 stderr:     [... lines matching original stack trace ...]
+App 992083 stderr:     at process._tickCallback (internal/process/next_tick.js:63:19)
+[ W 2018-08-17 23:29:20.0218 2908067/T4 age/Cor/App/Poo/AnalyticsCollection.cpp:102 ]: Process (pid=992083, group=/home/malucha/websites/_dev/node_testapi/public (production)) no longer exists! Detaching it from the pool.
+[ N 2018-08-17 23:29:20.0219 2908067/T4 age/Cor/CoreMain.cpp:994 ]: Checking whether to disconnect long-running connections for process 992083, application /home/malucha/websites/_dev/node_testapi/public (production)
+App 1745741 stdout: 
+App 1745741 stdout: Server listening at port:3000
+App 1745741 stderr: events.js:167
+App 1745741 stderr:       throw er; // Unhandled 'error' event
+App 1745741 stderr:       ^
+App 1745741 stderr: 
+App 1745741 stderr: Error: Connection lost: The server closed the connection.
+App 1745741 stderr:     at Protocol.end (/home/malucha/websites/_dev/node_testapi/node_modules/mysql/lib/protocol/Protocol.js:112:13)
+App 1745741 stderr:     at Socket.<anonymous> (/home/malucha/websites/_dev/node_testapi/node_modules/mysql/lib/Connection.js:97:28)
+App 1745741 stderr:     at Socket.<anonymous> (/home/malucha/websites/_dev/node_testapi/node_modules/mysql/lib/Connection.js:502:10)
+App 1745741 stderr:     at Socket.emit (events.js:187:15)
+App 1745741 stderr:     at endReadableNT (_stream_readable.js:1081:12)
+App 1745741 stderr:     at process._tickCallback (internal/process/next_tick.js:63:19)
+App 1745741 stderr: Emitted 'error' event at:
+App 1745741 stderr:     at Connection._handleProtocolError (/home/malucha/websites/_dev/node_testapi/node_modules/mysql/lib/Connection.js:425:8)
+App 1745741 stderr:     at Protocol.emit (events.js:182:13)
+App 1745741 stderr:     at Protocol._delegateError (/home/malucha/websites/_dev/node_testapi/node_modules/mysql/lib/protocol/Protocol.js:390:10)
+App 1745741 stderr:     at Protocol.end (/home/malucha/websites/_dev/node_testapi/node_modules/mysql/lib/protocol/Protocol.js:116:8)
+App 1745741 stderr:     at Socket.<anonymous> (/home/malucha/websites/_dev/node_testapi/node_modules/mysql/lib/Connection.js:97:28)
+App 1745741 stderr:     [... lines matching original stack trace ...]
+App 1745741 stderr:     at process._tickCallback (internal/process/next_tick.js:63:19)
+[ W 2018-08-18 07:29:25.0226 2908067/T4 age/Cor/App/Poo/AnalyticsCollection.cpp:102 ]: Process (pid=1745741, group=/home/malucha/websites/_dev/node_testapi/public (production)) no longer exists! Detaching it from the pool.
+[ N 2018-08-18 07:29:25.0227 2908067/T4 age/Cor/CoreMain.cpp:994 ]: Checking whether to disconnect long-running connections for process 1745741, application /home/malucha/websites/_dev/node_testapi/public (production)
+App 2190817 stdout: 
+App 2190817 stdout: Server listening at port:3000
+App 2190817 stderr: events.js:167
+App 2190817 stderr:       throw er; // Unhandled 'error' event
+App 2190817 stderr:       ^
+App 2190817 stderr: 
+App 2190817 stderr: Error: Connection lost: The server closed the connection.
+App 2190817 stderr:     at Protocol.end (/home/malucha/websites/_dev/node_testapi/node_modules/mysql/lib/protocol/Protocol.js:112:13)
+App 2190817 stderr:     at Socket.<anonymous> (/home/malucha/websites/_dev/node_testapi/node_modules/mysql/lib/Connection.js:97:28)
+App 2190817 stderr:     at Socket.<anonymous> (/home/malucha/websites/_dev/node_testapi/node_modules/mysql/lib/Connection.js:502:10)
+App 2190817 stderr:     at Socket.emit (events.js:187:15)
+App 2190817 stderr:     at endReadableNT (_stream_readable.js:1081:12)
+App 2190817 stderr:     at process._tickCallback (internal/process/next_tick.js:63:19)
+App 2190817 stderr: Emitted 'error' event at:
+App 2190817 stderr:     at Connection._handleProtocolError (/home/malucha/websites/_dev/node_testapi/node_modules/mysql/lib/Connection.js:425:8)
+App 2190817 stderr:     at Protocol.emit (events.js:182:13)
+App 2190817 stderr:     at Protocol._delegateError (/home/malucha/websites/_dev/node_testapi/node_modules/mysql/lib/protocol/Protocol.js:390:10)
+App 2190817 stderr:     at Protocol.end (/home/malucha/websites/_dev/node_testapi/node_modules/mysql/lib/protocol/Protocol.js:116:8)
+App 2190817 stderr:     at Socket.<anonymous> (/home/malucha/websites/_dev/node_testapi/node_modules/mysql/lib/Connection.js:97:28)
+App 2190817 stderr:     [... lines matching original stack trace ...]
+App 2190817 stderr:     at process._tickCallback (internal/process/next_tick.js:63:19)
+[ W 2018-08-18 15:29:30.0236 2908067/T4 age/Cor/App/Poo/AnalyticsCollection.cpp:102 ]: Process (pid=2190817, group=/home/malucha/websites/_dev/node_testapi/public (production)) no longer exists! Detaching it from the pool.
+[ N 2018-08-18 15:29:30.0236 2908067/T4 age/Cor/CoreMain.cpp:994 ]: Checking whether to disconnect long-running connections for process 2190817, application /home/malucha/websites/_dev/node_testapi/public (production)
+App 2672206 stdout: 
+App 2672206 stdout: Server listening at port:3000
+[ E 2018-08-18 18:23:49.9603 2908067/T5 age/Cor/SecurityUpdateChecker.h:376 ]: A security update is available for your version (5.1.11) of Passenger, we strongly recommend upgrading to version 5.3.4.
+[ E 2018-08-18 18:23:49.9603 2908067/T5 age/Cor/SecurityUpdateChecker.h:381 ]:  Additional information: 
+- [Fixed in 5.3.2] [CVE-2018-12026 - 12027 - 12028] There are local denial of service, local information disclosure and local privilege escalation vulnerabilities that could be exploited by malicious applications or malicious users on the system.
+App 2672206 stderr: events.js:167
+App 2672206 stderr:       throw er; // Unhandled 'error' event
+App 2672206 stderr:       ^
+App 2672206 stderr: 
+App 2672206 stderr: Error: Connection lost: The server closed the connection.
+App 2672206 stderr:     at Protocol.end (/home/malucha/websites/_dev/node_testapi/node_modules/mysql/lib/protocol/Protocol.js:112:13)
+App 2672206 stderr:     at Socket.<anonymous> (/home/malucha/websites/_dev/node_testapi/node_modules/mysql/lib/Connection.js:97:28)
+App 2672206 stderr:     at Socket.<anonymous> (/home/malucha/websites/_dev/node_testapi/node_modules/mysql/lib/Connection.js:502:10)
+App 2672206 stderr:     at Socket.emit (events.js:187:15)
+App 2672206 stderr:     at endReadableNT (_stream_readable.js:1081:12)
+App 2672206 stderr:     at process._tickCallback (internal/process/next_tick.js:63:19)
+App 2672206 stderr: Emitted 'error' event at:
+App 2672206 stderr:     at Connection._handleProtocolError (/home/malucha/websites/_dev/node_testapi/node_modules/mysql/lib/Connection.js:425:8)
+App 2672206 stderr:     at Protocol.emit (events.js:182:13)
+App 2672206 stderr:     at Protocol._delegateError (/home/malucha/websites/_dev/node_testapi/node_modules/mysql/lib/protocol/Protocol.js:390:10)
+App 2672206 stderr:     at Protocol.end (/home/malucha/websites/_dev/node_testapi/node_modules/mysql/lib/protocol/Protocol.js:116:8)
+App 2672206 stderr:     at Socket.<anonymous> (/home/malucha/websites/_dev/node_testapi/node_modules/mysql/lib/Connection.js:97:28)
+App 2672206 stderr:     [... lines matching original stack trace ...]
+App 2672206 stderr:     at process._tickCallback (internal/process/next_tick.js:63:19)
+[ W 2018-08-18 23:29:35.0236 2908067/T4 age/Cor/App/Poo/AnalyticsCollection.cpp:102 ]: Process (pid=2672206, group=/home/malucha/websites/_dev/node_testapi/public (production)) no longer exists! Detaching it from the pool.
+[ N 2018-08-18 23:29:35.0236 2908067/T4 age/Cor/CoreMain.cpp:994 ]: Checking whether to disconnect long-running connections for process 2672206, application /home/malucha/websites/_dev/node_testapi/public (production)
+App 3416104 stdout: 
+App 3416104 stdout: Server listening at port:3000
+App 3416104 stderr: events.js:167
+App 3416104 stderr:       throw er; // Unhandled 'error' event
+App 3416104 stderr:       ^
+App 3416104 stderr: 
+App 3416104 stderr: Error: Connection lost: The server closed the connection.
+App 3416104 stderr:     at Protocol.end (/home/malucha/websites/_dev/node_testapi/node_modules/mysql/lib/protocol/Protocol.js:112:13)
+App 3416104 stderr:     at Socket.<anonymous> (/home/malucha/websites/_dev/node_testapi/node_modules/mysql/lib/Connection.js:97:28)
+App 3416104 stderr:     at Socket.<anonymous> (/home/malucha/websites/_dev/node_testapi/node_modules/mysql/lib/Connection.js:502:10)
+App 3416104 stderr:     at Socket.emit (events.js:187:15)
+App 3416104 stderr:     at endReadableNT (_stream_readable.js:1081:12)
+App 3416104 stderr:     at process._tickCallback (internal/process/next_tick.js:63:19)
+App 3416104 stderr: Emitted 'error' event at:
+App 3416104 stderr:     at Connection._handleProtocolError (/home/malucha/websites/_dev/node_testapi/node_modules/mysql/lib/Connection.js:425:8)
+App 3416104 stderr:     at Protocol.emit (events.js:182:13)
+App 3416104 stderr:     at Protocol._delegateError (/home/malucha/websites/_dev/node_testapi/node_modules/mysql/lib/protocol/Protocol.js:390:10)
+App 3416104 stderr:     at Protocol.end (/home/malucha/websites/_dev/node_testapi/node_modules/mysql/lib/protocol/Protocol.js:116:8)
+App 3416104 stderr:     at Socket.<anonymous> (/home/malucha/websites/_dev/node_testapi/node_modules/mysql/lib/Connection.js:97:28)
+App 3416104 stderr:     [... lines matching original stack trace ...]
+App 3416104 stderr:     at process._tickCallback (internal/process/next_tick.js:63:19)
+[ W 2018-08-19 07:29:40.0235 2908067/T4 age/Cor/App/Poo/AnalyticsCollection.cpp:102 ]: Process (pid=3416104, group=/home/malucha/websites/_dev/node_testapi/public (production)) no longer exists! Detaching it from the pool.
+[ N 2018-08-19 07:29:40.0235 2908067/T4 age/Cor/CoreMain.cpp:994 ]: Checking whether to disconnect long-running connections for process 3416104, application /home/malucha/websites/_dev/node_testapi/public (production)
+App 3844585 stdout: 
+App 3844585 stdout: Server listening at port:3000
+[ E 2018-08-19 12:23:50.1631 2908067/T5 age/Cor/SecurityUpdateChecker.h:376 ]: A security update is available for your version (5.1.11) of Passenger, we strongly recommend upgrading to version 5.3.4.
+[ E 2018-08-19 12:23:50.1631 2908067/T5 age/Cor/SecurityUpdateChecker.h:381 ]:  Additional information: 
+- [Fixed in 5.3.2] [CVE-2018-12026 - 12027 - 12028] There are local denial of service, local information disclosure and local privilege escalation vulnerabilities that could be exploited by malicious applications or malicious users on the system.
+App 3844585 stderr: events.js:167
+App 3844585 stderr:       throw er; // Unhandled 'error' event
+App 3844585 stderr:       ^
+App 3844585 stderr: 
+App 3844585 stderr: Error: Connection lost: The server closed the connection.
+App 3844585 stderr:     at Protocol.end (/home/malucha/websites/_dev/node_testapi/node_modules/mysql/lib/protocol/Protocol.js:112:13)
+App 3844585 stderr:     at Socket.<anonymous> (/home/malucha/websites/_dev/node_testapi/node_modules/mysql/lib/Connection.js:97:28)
+App 3844585 stderr:     at Socket.<anonymous> (/home/malucha/websites/_dev/node_testapi/node_modules/mysql/lib/Connection.js:502:10)
+App 3844585 stderr:     at Socket.emit (events.js:187:15)
+App 3844585 stderr:     at endReadableNT (_stream_readable.js:1081:12)
+App 3844585 stderr:     at process._tickCallback (internal/process/next_tick.js:63:19)
+App 3844585 stderr: Emitted 'error' event at:
+App 3844585 stderr:     at Connection._handleProtocolError (/home/malucha/websites/_dev/node_testapi/node_modules/mysql/lib/Connection.js:425:8)
+App 3844585 stderr:     at Protocol.emit (events.js:182:13)
+App 3844585 stderr:     at Protocol._delegateError (/home/malucha/websites/_dev/node_testapi/node_modules/mysql/lib/protocol/Protocol.js:390:10)
+App 3844585 stderr:     at Protocol.end (/home/malucha/websites/_dev/node_testapi/node_modules/mysql/lib/protocol/Protocol.js:116:8)
+App 3844585 stderr:     at Socket.<anonymous> (/home/malucha/websites/_dev/node_testapi/node_modules/mysql/lib/Connection.js:97:28)
+App 3844585 stderr:     [... lines matching original stack trace ...]
+App 3844585 stderr:     at process._tickCallback (internal/process/next_tick.js:63:19)
+[ W 2018-08-19 15:29:45.0229 2908067/T4 age/Cor/App/Poo/AnalyticsCollection.cpp:102 ]: Process (pid=3844585, group=/home/malucha/websites/_dev/node_testapi/public (production)) no longer exists! Detaching it from the pool.
+[ N 2018-08-19 15:29:45.0230 2908067/T4 age/Cor/CoreMain.cpp:994 ]: Checking whether to disconnect long-running connections for process 3844585, application /home/malucha/websites/_dev/node_testapi/public (production)
+App 168748 stdout: 
+App 168748 stdout: Server listening at port:3000
+App 168748 stderr: events.js:167
+App 168748 stderr:       throw er; // Unhandled 'error' event
+App 168748 stderr:       ^
+App 168748 stderr: 
+App 168748 stderr: Error: Connection lost: The server closed the connection.
+App 168748 stderr:     at Protocol.end (/home/malucha/websites/_dev/node_testapi/node_modules/mysql/lib/protocol/Protocol.js:112:13)
+App 168748 stderr:     at Socket.<anonymous> (/home/malucha/websites/_dev/node_testapi/node_modules/mysql/lib/Connection.js:97:28)
+App 168748 stderr:     at Socket.<anonymous> (/home/malucha/websites/_dev/node_testapi/node_modules/mysql/lib/Connection.js:502:10)
+App 168748 stderr:     at Socket.emit (events.js:187:15)
+App 168748 stderr:     at endReadableNT (_stream_readable.js:1081:12)
+App 168748 stderr:     at process._tickCallback (internal/process/next_tick.js:63:19)
+App 168748 stderr: Emitted 'error' event at:
+App 168748 stderr:     at Connection._handleProtocolError (/home/malucha/websites/_dev/node_testapi/node_modules/mysql/lib/Connection.js:425:8)
+App 168748 stderr:     at Protocol.emit (events.js:182:13)
+App 168748 stderr:     at Protocol._delegateError (/home/malucha/websites/_dev/node_testapi/node_modules/mysql/lib/protocol/Protocol.js:390:10)
+App 168748 stderr:     at Protocol.end (/home/malucha/websites/_dev/node_testapi/node_modules/mysql/lib/protocol/Protocol.js:116:8)
+App 168748 stderr:     at Socket.<anonymous> (/home/malucha/websites/_dev/node_testapi/node_modules/mysql/lib/Connection.js:97:28)
+App 168748 stderr:     [... lines matching original stack trace ...]
+App 168748 stderr:     at process._tickCallback (internal/process/next_tick.js:63:19)
+[ W 2018-08-19 23:29:50.0262 2908067/T4 age/Cor/App/Poo/AnalyticsCollection.cpp:102 ]: Process (pid=168748, group=/home/malucha/websites/_dev/node_testapi/public (production)) no longer exists! Detaching it from the pool.
+[ N 2018-08-19 23:29:50.0262 2908067/T4 age/Cor/CoreMain.cpp:994 ]: Checking whether to disconnect long-running connections for process 168748, application /home/malucha/websites/_dev/node_testapi/public (production)
+App 916564 stdout: 
+App 916564 stdout: Server listening at port:3000
+App 916564 stderr: events.js:167
+App 916564 stderr:       throw er; // Unhandled 'error' event
+App 916564 stderr:       ^
+App 916564 stderr: 
+App 916564 stderr: Error: Connection lost: The server closed the connection.
+App 916564 stderr:     at Protocol.end (/home/malucha/websites/_dev/node_testapi/node_modules/mysql/lib/protocol/Protocol.js:112:13)
+App 916564 stderr:     at Socket.<anonymous> (/home/malucha/websites/_dev/node_testapi/node_modules/mysql/lib/Connection.js:97:28)
+App 916564 stderr:     at Socket.<anonymous> (/home/malucha/websites/_dev/node_testapi/node_modules/mysql/lib/Connection.js:502:10)
+App 916564 stderr:     at Socket.emit (events.js:187:15)
+App 916564 stderr:     at endReadableNT (_stream_readable.js:1081:12)
+App 916564 stderr:     at process._tickCallback (internal/process/next_tick.js:63:19)
+App 916564 stderr: Emitted 'error' event at:
+App 916564 stderr:     at Connection._handleProtocolError (/home/malucha/websites/_dev/node_testapi/node_modules/mysql/lib/Connection.js:425:8)
+App 916564 stderr:     at Protocol.emit (events.js:182:13)
+App 916564 stderr:     at Protocol._delegateError (/home/malucha/websites/_dev/node_testapi/node_modules/mysql/lib/protocol/Protocol.js:390:10)
+App 916564 stderr:     at Protocol.end (/home/malucha/websites/_dev/node_testapi/node_modules/mysql/lib/protocol/Protocol.js:116:8)
+App 916564 stderr:     at Socket.<anonymous> (/home/malucha/websites/_dev/node_testapi/node_modules/mysql/lib/Connection.js:97:28)
+App 916564 stderr:     [... lines matching original stack trace ...]
+App 916564 stderr:     at process._tickCallback (internal/process/next_tick.js:63:19)
+[ W 2018-08-20 07:29:55.0255 2908067/T4 age/Cor/App/Poo/AnalyticsCollection.cpp:102 ]: Process (pid=916564, group=/home/malucha/websites/_dev/node_testapi/public (production)) no longer exists! Detaching it from the pool.
+[ N 2018-08-20 07:29:55.0255 2908067/T4 age/Cor/CoreMain.cpp:994 ]: Checking whether to disconnect long-running connections for process 916564, application /home/malucha/websites/_dev/node_testapi/public (production)
+App 1358607 stdout: 
+App 1358607 stdout: Server listening at port:3000
+App 1358607 stderr: events.js:167
+App 1358607 stderr:       throw er; // Unhandled 'error' event
+App 1358607 stderr:       ^
+App 1358607 stderr: 
+App 1358607 stderr: Error: Connection lost: The server closed the connection.
+App 1358607 stderr:     at Protocol.end (/home/malucha/websites/_dev/node_testapi/node_modules/mysql/lib/protocol/Protocol.js:112:13)
+App 1358607 stderr:     at Socket.<anonymous> (/home/malucha/websites/_dev/node_testapi/node_modules/mysql/lib/Connection.js:97:28)
+App 1358607 stderr:     at Socket.<anonymous> (/home/malucha/websites/_dev/node_testapi/node_modules/mysql/lib/Connection.js:502:10)
+App 1358607 stderr:     at Socket.emit (events.js:187:15)
+App 1358607 stderr:     at endReadableNT (_stream_readable.js:1081:12)
+App 1358607 stderr:     at process._tickCallback (internal/process/next_tick.js:63:19)
+App 1358607 stderr: Emitted 'error' event at:
+App 1358607 stderr:     at Connection._handleProtocolError (/home/malucha/websites/_dev/node_testapi/node_modules/mysql/lib/Connection.js:425:8)
+App 1358607 stderr:     at Protocol.emit (events.js:182:13)
+App 1358607 stderr:     at Protocol._delegateError (/home/malucha/websites/_dev/node_testapi/node_modules/mysql/lib/protocol/Protocol.js:390:10)
+App 1358607 stderr:     at Protocol.end (/home/malucha/websites/_dev/node_testapi/node_modules/mysql/lib/protocol/Protocol.js:116:8)
+App 1358607 stderr:     at Socket.<anonymous> (/home/malucha/websites/_dev/node_testapi/node_modules/mysql/lib/Connection.js:97:28)
+App 1358607 stderr:     [... lines matching original stack trace ...]
+App 1358607 stderr:     at process._tickCallback (internal/process/next_tick.js:63:19)
+[ W 2018-08-20 15:30:00.0246 2908067/T4 age/Cor/App/Poo/AnalyticsCollection.cpp:102 ]: Process (pid=1358607, group=/home/malucha/websites/_dev/node_testapi/public (production)) no longer exists! Detaching it from the pool.
+[ N 2018-08-20 15:30:00.0247 2908067/T4 age/Cor/CoreMain.cpp:994 ]: Checking whether to disconnect long-running connections for process 1358607, application /home/malucha/websites/_dev/node_testapi/public (production)
+App 1948178 stdout: 
+App 1948178 stdout: Server listening at port:3000
+App 1948178 stdout: [0mGET /api/checktoken?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc2FkbWluIjoxLCJpc21hbmFnZXIiOjEsInVzZXJpZCI6IldMRkUySkdIQzdMMTIxQ01PTVU4RzFCVldUUTFOSTgzIiwiaWF0IjoxNTM0NDAwNjQ3LCJleHAiOjE1MzQ0ODcwNDd9.mF_st_2JXAbnA5wuAAT7cKKakO1JbVzj0XoCNNLJqNs [32m200 [0m54.274 ms - 59[0m
+App 1948178 stdout: [0mGET /api/wynajem_bill_czynsz?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc2FkbWluIjoxLCJpc21hbmFnZXIiOjEsInVzZXJpZCI6IldMRkUySkdIQzdMMTIxQ01PTVU4RzFCVldUUTFOSTgzIiwiaWF0IjoxNTM0NDAwNjQ3LCJleHAiOjE1MzQ0ODcwNDd9.mF_st_2JXAbnA5wuAAT7cKKakO1JbVzj0XoCNNLJqNs [32m200 [0m0.675 ms - 59[0m
+App 1948178 stdout: [0mGET /api/checktoken?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc2FkbWluIjoxLCJpc21hbmFnZXIiOjEsInVzZXJpZCI6IldMRkUySkdIQzdMMTIxQ01PTVU4RzFCVldUUTFOSTgzIiwiaWF0IjoxNTM0NDAwNjQ3LCJleHAiOjE1MzQ0ODcwNDd9.mF_st_2JXAbnA5wuAAT7cKKakO1JbVzj0XoCNNLJqNs [36m304 [0m1.386 ms - -[0m
+App 1948178 stdout: [0mGET /api/wynajem_bill_czynsz?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc2FkbWluIjoxLCJpc21hbmFnZXIiOjEsInVzZXJpZCI6IldMRkUySkdIQzdMMTIxQ01PTVU4RzFCVldUUTFOSTgzIiwiaWF0IjoxNTM0NDAwNjQ3LCJleHAiOjE1MzQ0ODcwNDd9.mF_st_2JXAbnA5wuAAT7cKKakO1JbVzj0XoCNNLJqNs [36m304 [0m0.419 ms - -[0m
+App 1948178 stdout: [0mGET /api/checktoken?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc2FkbWluIjoxLCJpc21hbmFnZXIiOjEsInVzZXJpZCI6IldMRkUySkdIQzdMMTIxQ01PTVU4RzFCVldUUTFOSTgzIiwiaWF0IjoxNTM0NDAwNjQ3LCJleHAiOjE1MzQ0ODcwNDd9.mF_st_2JXAbnA5wuAAT7cKKakO1JbVzj0XoCNNLJqNs [36m304 [0m0.424 ms - -[0m
+App 1948178 stdout: [0mGET /api/checktoken?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc2FkbWluIjoxLCJpc21hbmFnZXIiOjEsInVzZXJpZCI6IldMRkUySkdIQzdMMTIxQ01PTVU4RzFCVldUUTFOSTgzIiwiaWF0IjoxNTM0NDAwNjQ3LCJleHAiOjE1MzQ0ODcwNDd9.mF_st_2JXAbnA5wuAAT7cKKakO1JbVzj0XoCNNLJqNs [36m304 [0m0.546 ms - -[0m
+App 1948178 stdout: [0mGET /api/wynajem_bill_czynsz?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc2FkbWluIjoxLCJpc21hbmFnZXIiOjEsInVzZXJpZCI6IldMRkUySkdIQzdMMTIxQ01PTVU4RzFCVldUUTFOSTgzIiwiaWF0IjoxNTM0NDAwNjQ3LCJleHAiOjE1MzQ0ODcwNDd9.mF_st_2JXAbnA5wuAAT7cKKakO1JbVzj0XoCNNLJqNs [36m304 [0m6.896 ms - -[0m
+App 1948178 stdout: [0mGET /api/checktoken?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc2FkbWluIjoxLCJpc21hbmFnZXIiOjEsInVzZXJpZCI6IldMRkUySkdIQzdMMTIxQ01PTVU4RzFCVldUUTFOSTgzIiwiaWF0IjoxNTM0NDAwNjQ3LCJleHAiOjE1MzQ0ODcwNDd9.mF_st_2JXAbnA5wuAAT7cKKakO1JbVzj0XoCNNLJqNs [36m304 [0m0.592 ms - -[0m
+App 1948178 stdout: [0mGET /api/wynajem_bill_czynsz?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc2FkbWluIjoxLCJpc21hbmFnZXIiOjEsInVzZXJpZCI6IldMRkUySkdIQzdMMTIxQ01PTVU4RzFCVldUUTFOSTgzIiwiaWF0IjoxNTM0NDAwNjQ3LCJleHAiOjE1MzQ0ODcwNDd9.mF_st_2JXAbnA5wuAAT7cKKakO1JbVzj0XoCNNLJqNs [36m304 [0m0.596 ms - -[0m
+App 1948178 stdout: [0mGET /api/checktoken?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc2FkbWluIjoxLCJpc21hbmFnZXIiOjEsInVzZXJpZCI6IldMRkUySkdIQzdMMTIxQ01PTVU4RzFCVldUUTFOSTgzIiwiaWF0IjoxNTM0NDAwNjQ3LCJleHAiOjE1MzQ0ODcwNDd9.mF_st_2JXAbnA5wuAAT7cKKakO1JbVzj0XoCNNLJqNs [36m304 [0m0.476 ms - -[0m
+App 1948178 stdout: [0mGET /api/wynajem_bill_czynsz?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc2FkbWluIjoxLCJpc21hbmFnZXIiOjEsInVzZXJpZCI6IldMRkUySkdIQzdMMTIxQ01PTVU4RzFCVldUUTFOSTgzIiwiaWF0IjoxNTM0NDAwNjQ3LCJleHAiOjE1MzQ0ODcwNDd9.mF_st_2JXAbnA5wuAAT7cKKakO1JbVzj0XoCNNLJqNs [36m304 [0m0.298 ms - -[0m
+App 1948178 stdout: [0mGET /api/checktoken?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc2FkbWluIjoxLCJpc21hbmFnZXIiOjEsInVzZXJpZCI6IldMRkUySkdIQzdMMTIxQ01PTVU4RzFCVldUUTFOSTgzIiwiaWF0IjoxNTM0NDAwNjQ3LCJleHAiOjE1MzQ0ODcwNDd9.mF_st_2JXAbnA5wuAAT7cKKakO1JbVzj0XoCNNLJqNs [36m304 [0m0.507 ms - -[0m
+App 1948178 stdout: [0mGET /api/wynajem_bill_czynsz?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc2FkbWluIjoxLCJpc21hbmFnZXIiOjEsInVzZXJpZCI6IldMRkUySkdIQzdMMTIxQ01PTVU4RzFCVldUUTFOSTgzIiwiaWF0IjoxNTM0NDAwNjQ3LCJleHAiOjE1MzQ0ODcwNDd9.mF_st_2JXAbnA5wuAAT7cKKakO1JbVzj0XoCNNLJqNs [36m304 [0m0.360 ms - -[0m
+App 1948178 stdout: [0mGET /api/checktoken?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc2FkbWluIjoxLCJpc21hbmFnZXIiOjEsInVzZXJpZCI6IldMRkUySkdIQzdMMTIxQ01PTVU4RzFCVldUUTFOSTgzIiwiaWF0IjoxNTM0NDAwNjQ3LCJleHAiOjE1MzQ0ODcwNDd9.mF_st_2JXAbnA5wuAAT7cKKakO1JbVzj0XoCNNLJqNs [36m304 [0m0.508 ms - -[0m
+App 1948178 stdout: [0mGET /api/wynajem_bill_czynsz?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc2FkbWluIjoxLCJpc21hbmFnZXIiOjEsInVzZXJpZCI6IldMRkUySkdIQzdMMTIxQ01PTVU4RzFCVldUUTFOSTgzIiwiaWF0IjoxNTM0NDAwNjQ3LCJleHAiOjE1MzQ0ODcwNDd9.mF_st_2JXAbnA5wuAAT7cKKakO1JbVzj0XoCNNLJqNs [36m304 [0m0.298 ms - -[0m
+App 1948178 stdout: [0mGET /api/checktoken?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc2FkbWluIjoxLCJpc21hbmFnZXIiOjEsInVzZXJpZCI6IldMRkUySkdIQzdMMTIxQ01PTVU4RzFCVldUUTFOSTgzIiwiaWF0IjoxNTM0NDAwNjQ3LCJleHAiOjE1MzQ0ODcwNDd9.mF_st_2JXAbnA5wuAAT7cKKakO1JbVzj0XoCNNLJqNs [36m304 [0m0.344 ms - -[0m
+App 1948178 stdout: [0mGET /api/wynajem_bill_czynsz?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc2FkbWluIjoxLCJpc21hbmFnZXIiOjEsInVzZXJpZCI6IldMRkUySkdIQzdMMTIxQ01PTVU4RzFCVldUUTFOSTgzIiwiaWF0IjoxNTM0NDAwNjQ3LCJleHAiOjE1MzQ0ODcwNDd9.mF_st_2JXAbnA5wuAAT7cKKakO1JbVzj0XoCNNLJqNs [36m304 [0m0.336 ms - -[0m
+App 1948178 stdout: [0mPOST /api/authenticate [32m200 [0m11.240 ms - 304[0m
+App 1948178 stdout: [0mGET /api/wynajem_bill_czynsz?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc2FkbWluIjoxLCJpc21hbmFnZXIiOjEsInVzZXJpZCI6IldMRkUySkdIQzdMMTIxQ01PTVU4RzFCVldUUTFOSTgzIiwiaWF0IjoxNTM0Nzg0MzUyLCJleHAiOjE1MzQ4NzA3NTJ9.q6zRuN6fco_fhmbw0kgnlXCuViqp7QAQi7KeRdElcRY [32m200 [0m3.307 ms - 4193[0m
+App 1948178 stdout: [0mGET /api/checktoken?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc2FkbWluIjoxLCJpc21hbmFnZXIiOjEsInVzZXJpZCI6IldMRkUySkdIQzdMMTIxQ01PTVU4RzFCVldUUTFOSTgzIiwiaWF0IjoxNTM0Nzg0MzUyLCJleHAiOjE1MzQ4NzA3NTJ9.q6zRuN6fco_fhmbw0kgnlXCuViqp7QAQi7KeRdElcRY [32m200 [0m0.446 ms - 40[0m
+App 1948178 stdout: [0mGET /api/wynajem_bill_czynsz?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc2FkbWluIjoxLCJpc21hbmFnZXIiOjEsInVzZXJpZCI6IldMRkUySkdIQzdMMTIxQ01PTVU4RzFCVldUUTFOSTgzIiwiaWF0IjoxNTM0Nzg0MzUyLCJleHAiOjE1MzQ4NzA3NTJ9.q6zRuN6fco_fhmbw0kgnlXCuViqp7QAQi7KeRdElcRY [36m304 [0m1.795 ms - -[0m
+App 1948178 stdout: [0mGET /api/checktoken?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc2FkbWluIjoxLCJpc21hbmFnZXIiOjEsInVzZXJpZCI6IldMRkUySkdIQzdMMTIxQ01PTVU4RzFCVldUUTFOSTgzIiwiaWF0IjoxNTM0Nzg0MzUyLCJleHAiOjE1MzQ4NzA3NTJ9.q6zRuN6fco_fhmbw0kgnlXCuViqp7QAQi7KeRdElcRY [36m304 [0m0.434 ms - -[0m
+App 1948178 stdout: [0mGET /api/wynajem_bill_czynsz?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc2FkbWluIjoxLCJpc21hbmFnZXIiOjEsInVzZXJpZCI6IldMRkUySkdIQzdMMTIxQ01PTVU4RzFCVldUUTFOSTgzIiwiaWF0IjoxNTM0Nzg0MzUyLCJleHAiOjE1MzQ4NzA3NTJ9.q6zRuN6fco_fhmbw0kgnlXCuViqp7QAQi7KeRdElcRY [36m304 [0m1.793 ms - -[0m
+App 1948178 stdout: [0mGET /api/checktoken?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc2FkbWluIjoxLCJpc21hbmFnZXIiOjEsInVzZXJpZCI6IldMRkUySkdIQzdMMTIxQ01PTVU4RzFCVldUUTFOSTgzIiwiaWF0IjoxNTM0Nzg0MzUyLCJleHAiOjE1MzQ4NzA3NTJ9.q6zRuN6fco_fhmbw0kgnlXCuViqp7QAQi7KeRdElcRY [36m304 [0m0.511 ms - -[0m
+App 1948178 stdout: [0mGET /api/checktoken?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc2FkbWluIjoxLCJpc21hbmFnZXIiOjEsInVzZXJpZCI6IldMRkUySkdIQzdMMTIxQ01PTVU4RzFCVldUUTFOSTgzIiwiaWF0IjoxNTM0Nzg0MzUyLCJleHAiOjE1MzQ4NzA3NTJ9.q6zRuN6fco_fhmbw0kgnlXCuViqp7QAQi7KeRdElcRY [36m304 [0m0.386 ms - -[0m
+App 1948178 stdout: [0mGET /api/wynajem_bill_czynsz?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc2FkbWluIjoxLCJpc21hbmFnZXIiOjEsInVzZXJpZCI6IldMRkUySkdIQzdMMTIxQ01PTVU4RzFCVldUUTFOSTgzIiwiaWF0IjoxNTM0Nzg0MzUyLCJleHAiOjE1MzQ4NzA3NTJ9.q6zRuN6fco_fhmbw0kgnlXCuViqp7QAQi7KeRdElcRY [36m304 [0m24.237 ms - -[0m
+App 1948178 stdout: [0mGET /api/wynajem_bill_czynsz?token= [33m403 [0m0.669 ms - 48[0m
+App 1948178 stdout: [0mGET /api/wynajem_bill_czynsz?token= [33m403 [0m0.327 ms - 48[0m
+App 1948178 stdout: [0mGET /api/wynajem_bill_czynsz?token=[object%20Object] [32m200 [0m0.319 ms - 59[0m
+App 1948178 stdout: [0mGET /api/wynajem_bill_czynsz?token= [33m403 [0m0.258 ms - 48[0m
+App 1948178 stdout: [0mGET /api/wynajem_bill_czynsz?token= [33m403 [0m0.272 ms - 48[0m
+App 1948178 stdout: [0mGET /api/wynajem_bill_czynsz?token= [33m403 [0m0.223 ms - 48[0m
+App 1948178 stdout: [0mGET /api/wynajem_bill_czynsz?token= [33m403 [0m0.191 ms - 48[0m
+App 1948178 stdout: [0mGET /api/wynajem_bill_czynsz?token= [33m403 [0m0.193 ms - 48[0m
+App 1948178 stdout: [0mGET /api/wynajem_bill_czynsz?token= [33m403 [0m0.226 ms - 48[0m
+App 1948178 stdout: [0mGET /api/wynajem_bill_czynsz?token= [33m403 [0m0.276 ms - 48[0m
+App 1948178 stdout: [0mGET /api/wynajem_bill_czynsz?token= [33m403 [0m0.190 ms - 48[0m
+App 1948178 stdout: [0mGET /api/wynajem_bill_czynsz?token= [33m403 [0m0.221 ms - 48[0m
+App 1948178 stdout: [0mGET /api/wynajem_bill_czynsz?token= [33m403 [0m0.223 ms - 48[0m
+App 1948178 stdout: [0mGET /api/wynajem_bill_czynsz?token= [33m403 [0m0.313 ms - 48[0m
+App 1948178 stdout: [0mPOST /api/authenticate [32m200 [0m2.893 ms - 304[0m
+App 1948178 stdout: [0mGET /api/wynajem_bill_czynsz?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc2FkbWluIjoxLCJpc21hbmFnZXIiOjEsInVzZXJpZCI6IldMRkUySkdIQzdMMTIxQ01PTVU4RzFCVldUUTFOSTgzIiwiaWF0IjoxNTM0Nzg2NjE1LCJleHAiOjE1MzQ4NzMwMTV9.TquJWQJTAIy29rAqBJrqlMwuR4L_kfZZ0eH7pnTn7RI [32m200 [0m2.363 ms - 4193[0m
+App 1948178 stdout: [0mGET /api/checktoken?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc2FkbWluIjoxLCJpc21hbmFnZXIiOjEsInVzZXJpZCI6IldMRkUySkdIQzdMMTIxQ01PTVU4RzFCVldUUTFOSTgzIiwiaWF0IjoxNTM0Nzg2NjE1LCJleHAiOjE1MzQ4NzMwMTV9.TquJWQJTAIy29rAqBJrqlMwuR4L_kfZZ0eH7pnTn7RI [32m200 [0m0.540 ms - 40[0m
+App 1948178 stdout: [0mGET /api/wynajem_bill_czynsz?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc2FkbWluIjoxLCJpc21hbmFnZXIiOjEsInVzZXJpZCI6IldMRkUySkdIQzdMMTIxQ01PTVU4RzFCVldUUTFOSTgzIiwiaWF0IjoxNTM0Nzg2NjE1LCJleHAiOjE1MzQ4NzMwMTV9.TquJWQJTAIy29rAqBJrqlMwuR4L_kfZZ0eH7pnTn7RI [36m304 [0m1.854 ms - -[0m
+App 1948178 stdout: [0mGET /api/checktoken?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc2FkbWluIjoxLCJpc21hbmFnZXIiOjEsInVzZXJpZCI6IldMRkUySkdIQzdMMTIxQ01PTVU4RzFCVldUUTFOSTgzIiwiaWF0IjoxNTM0Nzg2NjE1LCJleHAiOjE1MzQ4NzMwMTV9.TquJWQJTAIy29rAqBJrqlMwuR4L_kfZZ0eH7pnTn7RI [36m304 [0m0.387 ms - -[0m
+App 1948178 stdout: [0mGET /api/wynajem_bill_czynsz?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc2FkbWluIjoxLCJpc21hbmFnZXIiOjEsInVzZXJpZCI6IldMRkUySkdIQzdMMTIxQ01PTVU4RzFCVldUUTFOSTgzIiwiaWF0IjoxNTM0Nzg2NjE1LCJleHAiOjE1MzQ4NzMwMTV9.TquJWQJTAIy29rAqBJrqlMwuR4L_kfZZ0eH7pnTn7RI [36m304 [0m1.749 ms - -[0m
+App 1948178 stdout: [0mGET /api/checktoken?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc2FkbWluIjoxLCJpc21hbmFnZXIiOjEsInVzZXJpZCI6IldMRkUySkdIQzdMMTIxQ01PTVU4RzFCVldUUTFOSTgzIiwiaWF0IjoxNTM0Nzg2NjE1LCJleHAiOjE1MzQ4NzMwMTV9.TquJWQJTAIy29rAqBJrqlMwuR4L_kfZZ0eH7pnTn7RI [36m304 [0m0.441 ms - -[0m
+App 1948178 stdout: [0mGET /api/wynajem_bill_czynsz?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc2FkbWluIjoxLCJpc21hbmFnZXIiOjEsInVzZXJpZCI6IldMRkUySkdIQzdMMTIxQ01PTVU4RzFCVldUUTFOSTgzIiwiaWF0IjoxNTM0Nzg2NjE1LCJleHAiOjE1MzQ4NzMwMTV9.TquJWQJTAIy29rAqBJrqlMwuR4L_kfZZ0eH7pnTn7RI [36m304 [0m4.933 ms - -[0m
+App 1948178 stdout: [0mGET /api/checktoken?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc2FkbWluIjoxLCJpc21hbmFnZXIiOjEsInVzZXJpZCI6IldMRkUySkdIQzdMMTIxQ01PTVU4RzFCVldUUTFOSTgzIiwiaWF0IjoxNTM0Nzg2NjE1LCJleHAiOjE1MzQ4NzMwMTV9.TquJWQJTAIy29rAqBJrqlMwuR4L_kfZZ0eH7pnTn7RI [36m304 [0m0.365 ms - -[0m
+App 1948178 stdout: [0mGET /api/checktoken?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc2FkbWluIjoxLCJpc21hbmFnZXIiOjEsInVzZXJpZCI6IldMRkUySkdIQzdMMTIxQ01PTVU4RzFCVldUUTFOSTgzIiwiaWF0IjoxNTM0Nzg2NjE1LCJleHAiOjE1MzQ4NzMwMTV9.TquJWQJTAIy29rAqBJrqlMwuR4L_kfZZ0eH7pnTn7RI [36m304 [0m0.514 ms - -[0m
+App 1948178 stdout: [0mGET /api/checktoken?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc2FkbWluIjoxLCJpc21hbmFnZXIiOjEsInVzZXJpZCI6IldMRkUySkdIQzdMMTIxQ01PTVU4RzFCVldUUTFOSTgzIiwiaWF0IjoxNTM0Nzg2NjE1LCJleHAiOjE1MzQ4NzMwMTV9.TquJWQJTAIy29rAqBJrqlMwuR4L_kfZZ0eH7pnTn7RI [36m304 [0m0.369 ms - -[0m
+App 1948178 stdout: [0mGET /api/wynajem_bill_czynsz?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc2FkbWluIjoxLCJpc21hbmFnZXIiOjEsInVzZXJpZCI6IldMRkUySkdIQzdMMTIxQ01PTVU4RzFCVldUUTFOSTgzIiwiaWF0IjoxNTM0Nzg2NjE1LCJleHAiOjE1MzQ4NzMwMTV9.TquJWQJTAIy29rAqBJrqlMwuR4L_kfZZ0eH7pnTn7RI [36m304 [0m2.004 ms - -[0m
+App 1948178 stdout: [0mGET /api/wynajem_bill_czynsz?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc2FkbWluIjoxLCJpc21hbmFnZXIiOjEsInVzZXJpZCI6IldMRkUySkdIQzdMMTIxQ01PTVU4RzFCVldUUTFOSTgzIiwiaWF0IjoxNTM0Nzg2NjE1LCJleHAiOjE1MzQ4NzMwMTV9.TquJWQJTAIy29rAqBJrqlMwuR4L_kfZZ0eH7pnTn7RI [36m304 [0m72.190 ms - -[0m
+App 1948178 stdout: [0mGET /api/checktoken?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc2FkbWluIjoxLCJpc21hbmFnZXIiOjEsInVzZXJpZCI6IldMRkUySkdIQzdMMTIxQ01PTVU4RzFCVldUUTFOSTgzIiwiaWF0IjoxNTM0Nzg2NjE1LCJleHAiOjE1MzQ4NzMwMTV9.TquJWQJTAIy29rAqBJrqlMwuR4L_kfZZ0eH7pnTn7RI [36m304 [0m0.402 ms - -[0m
+App 1948178 stdout: [0mGET /api/wynajem_bill_czynsz?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc2FkbWluIjoxLCJpc21hbmFnZXIiOjEsInVzZXJpZCI6IldMRkUySkdIQzdMMTIxQ01PTVU4RzFCVldUUTFOSTgzIiwiaWF0IjoxNTM0Nzg2NjE1LCJleHAiOjE1MzQ4NzMwMTV9.TquJWQJTAIy29rAqBJrqlMwuR4L_kfZZ0eH7pnTn7RI [36m304 [0m2.662 ms - -[0m
+App 1948178 stdout: [0mGET /api/checktoken?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc2FkbWluIjoxLCJpc21hbmFnZXIiOjEsInVzZXJpZCI6IldMRkUySkdIQzdMMTIxQ01PTVU4RzFCVldUUTFOSTgzIiwiaWF0IjoxNTM0Nzg2NjE1LCJleHAiOjE1MzQ4NzMwMTV9.TquJWQJTAIy29rAqBJrqlMwuR4L_kfZZ0eH7pnTn7RI [36m304 [0m0.368 ms - -[0m
+App 1948178 stdout: [0mGET /api/wynajem_bill_czynsz?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc2FkbWluIjoxLCJpc21hbmFnZXIiOjEsInVzZXJpZCI6IldMRkUySkdIQzdMMTIxQ01PTVU4RzFCVldUUTFOSTgzIiwiaWF0IjoxNTM0Nzg2NjE1LCJleHAiOjE1MzQ4NzMwMTV9.TquJWQJTAIy29rAqBJrqlMwuR4L_kfZZ0eH7pnTn7RI [36m304 [0m1.846 ms - -[0m
+App 1948178 stdout: [0mGET /api/checktoken?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc2FkbWluIjoxLCJpc21hbmFnZXIiOjEsInVzZXJpZCI6IldMRkUySkdIQzdMMTIxQ01PTVU4RzFCVldUUTFOSTgzIiwiaWF0IjoxNTM0Nzg2NjE1LCJleHAiOjE1MzQ4NzMwMTV9.TquJWQJTAIy29rAqBJrqlMwuR4L_kfZZ0eH7pnTn7RI [36m304 [0m0.380 ms - -[0m
+App 1948178 stdout: [0mGET /api/checktoken?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc2FkbWluIjoxLCJpc21hbmFnZXIiOjEsInVzZXJpZCI6IldMRkUySkdIQzdMMTIxQ01PTVU4RzFCVldUUTFOSTgzIiwiaWF0IjoxNTM0Nzg2NjE1LCJleHAiOjE1MzQ4NzMwMTV9.TquJWQJTAIy29rAqBJrqlMwuR4L_kfZZ0eH7pnTn7RI [36m304 [0m0.382 ms - -[0m
+App 1948178 stdout: [0mGET /api/checktoken?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc2FkbWluIjoxLCJpc21hbmFnZXIiOjEsInVzZXJpZCI6IldMRkUySkdIQzdMMTIxQ01PTVU4RzFCVldUUTFOSTgzIiwiaWF0IjoxNTM0Nzg2NjE1LCJleHAiOjE1MzQ4NzMwMTV9.TquJWQJTAIy29rAqBJrqlMwuR4L_kfZZ0eH7pnTn7RI [36m304 [0m0.678 ms - -[0m
+App 1948178 stdout: [0mGET /api/checktoken?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc2FkbWluIjoxLCJpc21hbmFnZXIiOjEsInVzZXJpZCI6IldMRkUySkdIQzdMMTIxQ01PTVU4RzFCVldUUTFOSTgzIiwiaWF0IjoxNTM0Nzg2NjE1LCJleHAiOjE1MzQ4NzMwMTV9.TquJWQJTAIy29rAqBJrqlMwuR4L_kfZZ0eH7pnTn7RI [36m304 [0m0.560 ms - -[0m
+App 1948178 stdout: [0mGET /api/wynajem_bill_czynsz?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc2FkbWluIjoxLCJpc21hbmFnZXIiOjEsInVzZXJpZCI6IldMRkUySkdIQzdMMTIxQ01PTVU4RzFCVldUUTFOSTgzIiwiaWF0IjoxNTM0Nzg2NjE1LCJleHAiOjE1MzQ4NzMwMTV9.TquJWQJTAIy29rAqBJrqlMwuR4L_kfZZ0eH7pnTn7RI [36m304 [0m4.230 ms - -[0m
+App 1948178 stdout: [0mGET /api/checktoken?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc2FkbWluIjoxLCJpc21hbmFnZXIiOjEsInVzZXJpZCI6IldMRkUySkdIQzdMMTIxQ01PTVU4RzFCVldUUTFOSTgzIiwiaWF0IjoxNTM0Nzg2NjE1LCJleHAiOjE1MzQ4NzMwMTV9.TquJWQJTAIy29rAqBJrqlMwuR4L_kfZZ0eH7pnTn7RI [36m304 [0m0.369 ms - -[0m
+App 1948178 stdout: [0mGET /api/checktoken?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc2FkbWluIjoxLCJpc21hbmFnZXIiOjEsInVzZXJpZCI6IldMRkUySkdIQzdMMTIxQ01PTVU4RzFCVldUUTFOSTgzIiwiaWF0IjoxNTM0Nzg2NjE1LCJleHAiOjE1MzQ4NzMwMTV9.TquJWQJTAIy29rAqBJrqlMwuR4L_kfZZ0eH7pnTn7RI [36m304 [0m0.357 ms - -[0m
+App 1948178 stdout: [0mGET /api/checktoken?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc2FkbWluIjoxLCJpc21hbmFnZXIiOjEsInVzZXJpZCI6IldMRkUySkdIQzdMMTIxQ01PTVU4RzFCVldUUTFOSTgzIiwiaWF0IjoxNTM0Nzg2NjE1LCJleHAiOjE1MzQ4NzMwMTV9.TquJWQJTAIy29rAqBJrqlMwuR4L_kfZZ0eH7pnTn7RI [36m304 [0m0.725 ms - -[0m
+App 1948178 stdout: [0mGET /api/checktoken?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc2FkbWluIjoxLCJpc21hbmFnZXIiOjEsInVzZXJpZCI6IldMRkUySkdIQzdMMTIxQ01PTVU4RzFCVldUUTFOSTgzIiwiaWF0IjoxNTM0Nzg2NjE1LCJleHAiOjE1MzQ4NzMwMTV9.TquJWQJTAIy29rAqBJrqlMwuR4L_kfZZ0eH7pnTn7RI [36m304 [0m0.385 ms - -[0m
+App 1948178 stdout: [0mGET /api/wynajem_bill_czynsz?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc2FkbWluIjoxLCJpc21hbmFnZXIiOjEsInVzZXJpZCI6IldMRkUySkdIQzdMMTIxQ01PTVU4RzFCVldUUTFOSTgzIiwiaWF0IjoxNTM0Nzg2NjE1LCJleHAiOjE1MzQ4NzMwMTV9.TquJWQJTAIy29rAqBJrqlMwuR4L_kfZZ0eH7pnTn7RI [36m304 [0m98.904 ms - -[0m
+App 1948178 stdout: [0mGET /api/checktoken?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc2FkbWluIjoxLCJpc21hbmFnZXIiOjEsInVzZXJpZCI6IldMRkUySkdIQzdMMTIxQ01PTVU4RzFCVldUUTFOSTgzIiwiaWF0IjoxNTM0Nzg2NjE1LCJleHAiOjE1MzQ4NzMwMTV9.TquJWQJTAIy29rAqBJrqlMwuR4L_kfZZ0eH7pnTn7RI [36m304 [0m0.334 ms - -[0m
+App 1948178 stdout: [0mGET /api/wynajem_bill_czynsz?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc2FkbWluIjoxLCJpc21hbmFnZXIiOjEsInVzZXJpZCI6IldMRkUySkdIQzdMMTIxQ01PTVU4RzFCVldUUTFOSTgzIiwiaWF0IjoxNTM0Nzg2NjE1LCJleHAiOjE1MzQ4NzMwMTV9.TquJWQJTAIy29rAqBJrqlMwuR4L_kfZZ0eH7pnTn7RI [36m304 [0m1.447 ms - -[0m
+App 1948178 stdout: [0mGET /api/checktoken?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc2FkbWluIjoxLCJpc21hbmFnZXIiOjEsInVzZXJpZCI6IldMRkUySkdIQzdMMTIxQ01PTVU4RzFCVldUUTFOSTgzIiwiaWF0IjoxNTM0Nzg2NjE1LCJleHAiOjE1MzQ4NzMwMTV9.TquJWQJTAIy29rAqBJrqlMwuR4L_kfZZ0eH7pnTn7RI [36m304 [0m0.719 ms - -[0m
+App 1948178 stdout: [0mGET /api/checktoken?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc2FkbWluIjoxLCJpc21hbmFnZXIiOjEsInVzZXJpZCI6IldMRkUySkdIQzdMMTIxQ01PTVU4RzFCVldUUTFOSTgzIiwiaWF0IjoxNTM0Nzg2NjE1LCJleHAiOjE1MzQ4NzMwMTV9.TquJWQJTAIy29rAqBJrqlMwuR4L_kfZZ0eH7pnTn7RI [36m304 [0m0.385 ms - -[0m
+App 1948178 stdout: [0mGET /api/wynajem_bill_czynsz?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc2FkbWluIjoxLCJpc21hbmFnZXIiOjEsInVzZXJpZCI6IldMRkUySkdIQzdMMTIxQ01PTVU4RzFCVldUUTFOSTgzIiwiaWF0IjoxNTM0Nzg2NjE1LCJleHAiOjE1MzQ4NzMwMTV9.TquJWQJTAIy29rAqBJrqlMwuR4L_kfZZ0eH7pnTn7RI [36m304 [0m2.420 ms - -[0m
+App 1948178 stdout: [0mGET /api/wynajem_bill_czynsz?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc2FkbWluIjoxLCJpc21hbmFnZXIiOjEsInVzZXJpZCI6IldMRkUySkdIQzdMMTIxQ01PTVU4RzFCVldUUTFOSTgzIiwiaWF0IjoxNTM0Nzg2NjE1LCJleHAiOjE1MzQ4NzMwMTV9.TquJWQJTAIy29rAqBJrqlMwuR4L_kfZZ0eH7pnTn7RI [32m200 [0m1.845 ms - 4252[0m
+App 1948178 stdout: [0mGET /api/checktoken?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc2FkbWluIjoxLCJpc21hbmFnZXIiOjEsInVzZXJpZCI6IldMRkUySkdIQzdMMTIxQ01PTVU4RzFCVldUUTFOSTgzIiwiaWF0IjoxNTM0Nzg2NjE1LCJleHAiOjE1MzQ4NzMwMTV9.TquJWQJTAIy29rAqBJrqlMwuR4L_kfZZ0eH7pnTn7RI [36m304 [0m0.376 ms - -[0m
+App 1948178 stdout: [0mGET /api/checktoken?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc2FkbWluIjoxLCJpc21hbmFnZXIiOjEsInVzZXJpZCI6IldMRkUySkdIQzdMMTIxQ01PTVU4RzFCVldUUTFOSTgzIiwiaWF0IjoxNTM0Nzg2NjE1LCJleHAiOjE1MzQ4NzMwMTV9.TquJWQJTAIy29rAqBJrqlMwuR4L_kfZZ0eH7pnTn7RI [36m304 [0m0.380 ms - -[0m
+App 1948178 stdout: [0mGET /api/wynajem_bill_czynsz?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc2FkbWluIjoxLCJpc21hbmFnZXIiOjEsInVzZXJpZCI6IldMRkUySkdIQzdMMTIxQ01PTVU4RzFCVldUUTFOSTgzIiwiaWF0IjoxNTM0Nzg2NjE1LCJleHAiOjE1MzQ4NzMwMTV9.TquJWQJTAIy29rAqBJrqlMwuR4L_kfZZ0eH7pnTn7RI [36m304 [0m3.678 ms - -[0m
+App 1948178 stdout: [0mGET /api/checktoken?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc2FkbWluIjoxLCJpc21hbmFnZXIiOjEsInVzZXJpZCI6IldMRkUySkdIQzdMMTIxQ01PTVU4RzFCVldUUTFOSTgzIiwiaWF0IjoxNTM0Nzg2NjE1LCJleHAiOjE1MzQ4NzMwMTV9.TquJWQJTAIy29rAqBJrqlMwuR4L_kfZZ0eH7pnTn7RI [36m304 [0m0.604 ms - -[0m
+App 1948178 stdout: [0mGET /api/wynajem_bill_czynsz?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc2FkbWluIjoxLCJpc21hbmFnZXIiOjEsInVzZXJpZCI6IldMRkUySkdIQzdMMTIxQ01PTVU4RzFCVldUUTFOSTgzIiwiaWF0IjoxNTM0Nzg2NjE1LCJleHAiOjE1MzQ4NzMwMTV9.TquJWQJTAIy29rAqBJrqlMwuR4L_kfZZ0eH7pnTn7RI [36m304 [0m1.771 ms - -[0m
+App 1948178 stdout: [0mGET /api/checktoken?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc2FkbWluIjoxLCJpc21hbmFnZXIiOjEsInVzZXJpZCI6IldMRkUySkdIQzdMMTIxQ01PTVU4RzFCVldUUTFOSTgzIiwiaWF0IjoxNTM0Nzg2NjE1LCJleHAiOjE1MzQ4NzMwMTV9.TquJWQJTAIy29rAqBJrqlMwuR4L_kfZZ0eH7pnTn7RI [36m304 [0m0.327 ms - -[0m
+App 1948178 stdout: [0mGET /api/wynajem_bill_czynsz?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc2FkbWluIjoxLCJpc21hbmFnZXIiOjEsInVzZXJpZCI6IldMRkUySkdIQzdMMTIxQ01PTVU4RzFCVldUUTFOSTgzIiwiaWF0IjoxNTM0Nzg2NjE1LCJleHAiOjE1MzQ4NzMwMTV9.TquJWQJTAIy29rAqBJrqlMwuR4L_kfZZ0eH7pnTn7RI [36m304 [0m7.984 ms - -[0m
+App 1948178 stdout: [0mGET /api/checktoken?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc2FkbWluIjoxLCJpc21hbmFnZXIiOjEsInVzZXJpZCI6IldMRkUySkdIQzdMMTIxQ01PTVU4RzFCVldUUTFOSTgzIiwiaWF0IjoxNTM0Nzg2NjE1LCJleHAiOjE1MzQ4NzMwMTV9.TquJWQJTAIy29rAqBJrqlMwuR4L_kfZZ0eH7pnTn7RI [36m304 [0m0.358 ms - -[0m
+App 1948178 stdout: [0mGET /api/wynajem_bill_czynsz?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc2FkbWluIjoxLCJpc21hbmFnZXIiOjEsInVzZXJpZCI6IldMRkUySkdIQzdMMTIxQ01PTVU4RzFCVldUUTFOSTgzIiwiaWF0IjoxNTM0Nzg2NjE1LCJleHAiOjE1MzQ4NzMwMTV9.TquJWQJTAIy29rAqBJrqlMwuR4L_kfZZ0eH7pnTn7RI [36m304 [0m2.805 ms - -[0m
+App 1948178 stdout: [0mGET /api/checktoken?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc2FkbWluIjoxLCJpc21hbmFnZXIiOjEsInVzZXJpZCI6IldMRkUySkdIQzdMMTIxQ01PTVU4RzFCVldUUTFOSTgzIiwiaWF0IjoxNTM0Nzg2NjE1LCJleHAiOjE1MzQ4NzMwMTV9.TquJWQJTAIy29rAqBJrqlMwuR4L_kfZZ0eH7pnTn7RI [36m304 [0m0.366 ms - -[0m
+App 1948178 stdout: [0mGET /api/wynajem_bill_czynsz?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc2FkbWluIjoxLCJpc21hbmFnZXIiOjEsInVzZXJpZCI6IldMRkUySkdIQzdMMTIxQ01PTVU4RzFCVldUUTFOSTgzIiwiaWF0IjoxNTM0Nzg2NjE1LCJleHAiOjE1MzQ4NzMwMTV9.TquJWQJTAIy29rAqBJrqlMwuR4L_kfZZ0eH7pnTn7RI [36m304 [0m4.994 ms - -[0m
+App 1948178 stdout: [0mGET /api/checktoken?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc2FkbWluIjoxLCJpc21hbmFnZXIiOjEsInVzZXJpZCI6IldMRkUySkdIQzdMMTIxQ01PTVU4RzFCVldUUTFOSTgzIiwiaWF0IjoxNTM0Nzg2NjE1LCJleHAiOjE1MzQ4NzMwMTV9.TquJWQJTAIy29rAqBJrqlMwuR4L_kfZZ0eH7pnTn7RI [36m304 [0m0.374 ms - -[0m
+App 1948178 stdout: [0mGET /api/wynajem_bill_czynsz?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc2FkbWluIjoxLCJpc21hbmFnZXIiOjEsInVzZXJpZCI6IldMRkUySkdIQzdMMTIxQ01PTVU4RzFCVldUUTFOSTgzIiwiaWF0IjoxNTM0Nzg2NjE1LCJleHAiOjE1MzQ4NzMwMTV9.TquJWQJTAIy29rAqBJrqlMwuR4L_kfZZ0eH7pnTn7RI [36m304 [0m4.090 ms - -[0m
+App 1948178 stdout: [0mGET /api/checktoken?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc2FkbWluIjoxLCJpc21hbmFnZXIiOjEsInVzZXJpZCI6IldMRkUySkdIQzdMMTIxQ01PTVU4RzFCVldUUTFOSTgzIiwiaWF0IjoxNTM0Nzg2NjE1LCJleHAiOjE1MzQ4NzMwMTV9.TquJWQJTAIy29rAqBJrqlMwuR4L_kfZZ0eH7pnTn7RI [36m304 [0m0.320 ms - -[0m
+App 1948178 stdout: [0mGET /api/wynajem_bill_czynsz?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc2FkbWluIjoxLCJpc21hbmFnZXIiOjEsInVzZXJpZCI6IldMRkUySkdIQzdMMTIxQ01PTVU4RzFCVldUUTFOSTgzIiwiaWF0IjoxNTM0Nzg2NjE1LCJleHAiOjE1MzQ4NzMwMTV9.TquJWQJTAIy29rAqBJrqlMwuR4L_kfZZ0eH7pnTn7RI [36m304 [0m9.979 ms - -[0m
+App 1948178 stdout: [0mGET /api/checktoken?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc2FkbWluIjoxLCJpc21hbmFnZXIiOjEsInVzZXJpZCI6IldMRkUySkdIQzdMMTIxQ01PTVU4RzFCVldUUTFOSTgzIiwiaWF0IjoxNTM0Nzg2NjE1LCJleHAiOjE1MzQ4NzMwMTV9.TquJWQJTAIy29rAqBJrqlMwuR4L_kfZZ0eH7pnTn7RI [36m304 [0m0.485 ms - -[0m
+App 1948178 stdout: [0mGET /api/wynajem_bill_czynsz?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc2FkbWluIjoxLCJpc21hbmFnZXIiOjEsInVzZXJpZCI6IldMRkUySkdIQzdMMTIxQ01PTVU4RzFCVldUUTFOSTgzIiwiaWF0IjoxNTM0Nzg2NjE1LCJleHAiOjE1MzQ4NzMwMTV9.TquJWQJTAIy29rAqBJrqlMwuR4L_kfZZ0eH7pnTn7RI [36m304 [0m2.259 ms - -[0m
+App 1948178 stdout: [0mGET /api/checktoken?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc2FkbWluIjoxLCJpc21hbmFnZXIiOjEsInVzZXJpZCI6IldMRkUySkdIQzdMMTIxQ01PTVU4RzFCVldUUTFOSTgzIiwiaWF0IjoxNTM0Nzg2NjE1LCJleHAiOjE1MzQ4NzMwMTV9.TquJWQJTAIy29rAqBJrqlMwuR4L_kfZZ0eH7pnTn7RI [36m304 [0m0.389 ms - -[0m
+App 1948178 stdout: [0mGET /api/wynajem_bill_czynsz?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc2FkbWluIjoxLCJpc21hbmFnZXIiOjEsInVzZXJpZCI6IldMRkUySkdIQzdMMTIxQ01PTVU4RzFCVldUUTFOSTgzIiwiaWF0IjoxNTM0Nzg2NjE1LCJleHAiOjE1MzQ4NzMwMTV9.TquJWQJTAIy29rAqBJrqlMwuR4L_kfZZ0eH7pnTn7RI [36m304 [0m1.450 ms - -[0m
+App 1948178 stdout: [0mGET /api/checktoken?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc2FkbWluIjoxLCJpc21hbmFnZXIiOjEsInVzZXJpZCI6IldMRkUySkdIQzdMMTIxQ01PTVU4RzFCVldUUTFOSTgzIiwiaWF0IjoxNTM0Nzg2NjE1LCJleHAiOjE1MzQ4NzMwMTV9.TquJWQJTAIy29rAqBJrqlMwuR4L_kfZZ0eH7pnTn7RI [36m304 [0m0.353 ms - -[0m
+App 1948178 stdout: [0mGET /api/checktoken?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc2FkbWluIjoxLCJpc21hbmFnZXIiOjEsInVzZXJpZCI6IldMRkUySkdIQzdMMTIxQ01PTVU4RzFCVldUUTFOSTgzIiwiaWF0IjoxNTM0Nzg2NjE1LCJleHAiOjE1MzQ4NzMwMTV9.TquJWQJTAIy29rAqBJrqlMwuR4L_kfZZ0eH7pnTn7RI [36m304 [0m0.343 ms - -[0m
+App 1948178 stdout: [0mGET /api/wynajem_bill_czynsz?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc2FkbWluIjoxLCJpc21hbmFnZXIiOjEsInVzZXJpZCI6IldMRkUySkdIQzdMMTIxQ01PTVU4RzFCVldUUTFOSTgzIiwiaWF0IjoxNTM0Nzg2NjE1LCJleHAiOjE1MzQ4NzMwMTV9.TquJWQJTAIy29rAqBJrqlMwuR4L_kfZZ0eH7pnTn7RI [36m304 [0m1.706 ms - -[0m
+App 1948178 stdout: [0mGET /api/checktoken?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc2FkbWluIjoxLCJpc21hbmFnZXIiOjEsInVzZXJpZCI6IldMRkUySkdIQzdMMTIxQ01PTVU4RzFCVldUUTFOSTgzIiwiaWF0IjoxNTM0Nzg2NjE1LCJleHAiOjE1MzQ4NzMwMTV9.TquJWQJTAIy29rAqBJrqlMwuR4L_kfZZ0eH7pnTn7RI [36m304 [0m0.370 ms - -[0m
+App 1948178 stdout: [0mGET /api/wynajem_bill_czynsz?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc2FkbWluIjoxLCJpc21hbmFnZXIiOjEsInVzZXJpZCI6IldMRkUySkdIQzdMMTIxQ01PTVU4RzFCVldUUTFOSTgzIiwiaWF0IjoxNTM0Nzg2NjE1LCJleHAiOjE1MzQ4NzMwMTV9.TquJWQJTAIy29rAqBJrqlMwuR4L_kfZZ0eH7pnTn7RI [36m304 [0m4.201 ms - -[0m
+
+[ N 2018-08-20 20:25:50.0431 2908067/T7 age/Cor/CoreMain.cpp:589 ]: Signal received. Gracefully shutting down... (send signal 2 more time(s) to force shutdown)
+[ N 2018-08-20 20:25:50.0432 2908067/T1 age/Cor/CoreMain.cpp:1080 ]: Received command to shutdown gracefully. Waiting until all clients have disconnected...
+[ N 2018-08-20 20:25:50.0432 2908067/T1 age/Cor/CoreMain.cpp:994 ]: Checking whether to disconnect long-running connections for process 1948178, application /home/malucha/websites/_dev/node_testapi/public (production)
+[ N 2018-08-20 20:25:50.0437 2908067/T7 Ser/Server.h:886 ]: [ServerThr.1] Freed 128 spare client objects
+[ N 2018-08-20 20:25:50.0438 2908067/T7 Ser/Server.h:531 ]: [ServerThr.1] Shutdown finished
+[ N 2018-08-20 20:25:50.0442 2908067/T9 Ser/Server.h:886 ]: [ServerThr.2] Freed 128 spare client objects
+[ N 2018-08-20 20:25:50.0442 2908067/Td Ser/Server.h:886 ]: [ServerThr.4] Freed 128 spare client objects
+[ N 2018-08-20 20:25:50.0442 2908067/T9 Ser/Server.h:531 ]: [ServerThr.2] Shutdown finished
+[ N 2018-08-20 20:25:50.0443 2908067/Tb Ser/Server.h:886 ]: [ServerThr.3] Freed 128 spare client objects
+[ N 2018-08-20 20:25:50.0443 2908067/Td Ser/Server.h:531 ]: [ServerThr.4] Shutdown finished
+[ N 2018-08-20 20:25:50.0443 2908067/Tb Ser/Server.h:531 ]: [ServerThr.3] Shutdown finished
+[ N 2018-08-20 20:25:50.0444 2908067/Tf Ser/Server.h:886 ]: [ServerThr.5] Freed 128 spare client objects
+[ N 2018-08-20 20:25:50.0444 2908067/Tf Ser/Server.h:531 ]: [ServerThr.5] Shutdown finished
+[ N 2018-08-20 20:25:50.0448 2908067/Tj Ser/Server.h:886 ]: [ServerThr.7] Freed 128 spare client objects
+[ N 2018-08-20 20:25:50.0448 2908067/Th Ser/Server.h:886 ]: [ServerThr.6] Freed 128 spare client objects
+[ N 2018-08-20 20:25:50.0448 2908067/Tj Ser/Server.h:531 ]: [ServerThr.7] Shutdown finished
+[ N 2018-08-20 20:25:50.0449 2908067/Th Ser/Server.h:531 ]: [ServerThr.6] Shutdown finished
+[ N 2018-08-20 20:25:50.0451 2908067/Tl Ser/Server.h:886 ]: [ServerThr.8] Freed 128 spare client objects
+[ N 2018-08-20 20:25:50.0452 2908067/Tl Ser/Server.h:531 ]: [ServerThr.8] Shutdown finished
+[ N 2018-08-20 20:25:50.0452 2908067/Tp Ser/Server.h:886 ]: [ServerThr.10] Freed 128 spare client objects
+[ N 2018-08-20 20:25:50.0452 2908067/Tp Ser/Server.h:531 ]: [ServerThr.10] Shutdown finished
+[ N 2018-08-20 20:25:50.0453 2908067/Tr Ser/Server.h:886 ]: [ServerThr.11] Freed 128 spare client objects
+[ N 2018-08-20 20:25:50.0453 2908067/Tr Ser/Server.h:531 ]: [ServerThr.11] Shutdown finished
+[ N 2018-08-20 20:25:50.0453 2908067/Tn Ser/Server.h:886 ]: [ServerThr.9] Freed 128 spare client objects
+[ N 2018-08-20 20:25:50.0454 2908067/Tn Ser/Server.h:531 ]: [ServerThr.9] Shutdown finished
+[ N 2018-08-20 20:25:50.0457 2908067/Tv Ser/Server.h:886 ]: [ServerThr.13] Freed 128 spare client objects
+[ N 2018-08-20 20:25:50.0457 2908067/Tt Ser/Server.h:886 ]: [ServerThr.12] Freed 128 spare client objects
+[ N 2018-08-20 20:25:50.0457 2908067/Tv Ser/Server.h:531 ]: [ServerThr.13] Shutdown finished
+[ N 2018-08-20 20:25:50.0458 2908067/Tt Ser/Server.h:531 ]: [ServerThr.12] Shutdown finished
+[ N 2018-08-20 20:25:50.0459 2908067/Tz Ser/Server.h:886 ]: [ServerThr.15] Freed 128 spare client objects
+[ N 2018-08-20 20:25:50.0459 2908067/Tx Ser/Server.h:886 ]: [ServerThr.14] Freed 128 spare client objects
+[ N 2018-08-20 20:25:50.0460 2908067/Tz Ser/Server.h:531 ]: [ServerThr.15] Shutdown finished
+[ N 2018-08-20 20:25:50.0460 2908067/Tx Ser/Server.h:531 ]: [ServerThr.14] Shutdown finished
+[ N 2018-08-20 20:25:50.0460 2908067/T11 Ser/Server.h:886 ]: [ServerThr.16] Freed 128 spare client objects
+[ N 2018-08-20 20:25:50.0460 2908067/T11 Ser/Server.h:531 ]: [ServerThr.16] Shutdown finished
+[ N 2018-08-20 20:25:50.0462 2908067/T13 Ser/Server.h:886 ]: [ApiServer] Freed 0 spare client objects
+[ N 2018-08-20 20:25:50.0462 2908067/T13 Ser/Server.h:531 ]: [ApiServer] Shutdown finished
+[ N 2018-08-20 20:25:50.0463 2908067/T1 age/Cor/CoreMain.cpp:994 ]: Checking whether to disconnect long-running connections for process 1948178, application /home/malucha/websites/_dev/node_testapi/public (production)
+[ N 2018-08-20 20:25:50.5333 2908067/T1 age/Cor/CoreMain.cpp:1150 ]: Passenger core shutdown finished
+[ N 2018-08-20 20:25:57.3530 2287194/T1 age/Wat/WatchdogMain.cpp:1267 ]: Starting Passenger watchdog...
+[ N 2018-08-20 20:25:57.3592 2287197/T1 age/Cor/CoreMain.cpp:1165 ]: Starting Passenger core...
+[ N 2018-08-20 20:25:57.3594 2287197/T1 age/Cor/CoreMain.cpp:249 ]: Passenger core running in multi-application mode.
+[ N 2018-08-20 20:25:57.3740 2287197/T1 age/Cor/CoreMain.cpp:905 ]: Passenger core online, PID 2287197
+App 2287288 stdout: 
+[ E 2018-08-20 20:25:59.7705 2287197/T5 age/Cor/SecurityUpdateChecker.h:376 ]: A security update is available for your version (5.1.11) of Passenger, we strongly recommend upgrading to version 5.3.4.
+[ E 2018-08-20 20:25:59.7705 2287197/T5 age/Cor/SecurityUpdateChecker.h:381 ]:  Additional information: 
+- [Fixed in 5.3.2] [CVE-2018-12026 - 12027 - 12028] There are local denial of service, local information disclosure and local privilege escalation vulnerabilities that could be exploited by malicious applications or malicious users on the system.
+App 2287288 stdout: Server listening at port:3000
+App 2287288 stdout: [0mHEAD /home/malucha/sockets/node_testapi [33m404 [0m2.816 ms - 173[0m
+App 2287288 stdout: [0mGET /api/checktoken?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc2FkbWluIjoxLCJpc21hbmFnZXIiOjEsInVzZXJpZCI6IldMRkUySkdIQzdMMTIxQ01PTVU4RzFCVldUUTFOSTgzIiwiaWF0IjoxNTM0Nzg2NjE1LCJleHAiOjE1MzQ4NzMwMTV9.TquJWQJTAIy29rAqBJrqlMwuR4L_kfZZ0eH7pnTn7RI [36m304 [0m7.933 ms - -[0m
+App 2287288 stdout: [0mGET /api/wynajem_bill_czynsz?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc2FkbWluIjoxLCJpc21hbmFnZXIiOjEsInVzZXJpZCI6IldMRkUySkdIQzdMMTIxQ01PTVU4RzFCVldUUTFOSTgzIiwiaWF0IjoxNTM0Nzg2NjE1LCJleHAiOjE1MzQ4NzMwMTV9.TquJWQJTAIy29rAqBJrqlMwuR4L_kfZZ0eH7pnTn7RI [32m200 [0m6.221 ms - 4252[0m
+App 2287288 stdout: [0mGET /api/wynajem_bill_czynsz?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc2FkbWluIjoxLCJpc21hbmFnZXIiOjEsInVzZXJpZCI6IldMRkUySkdIQzdMMTIxQ01PTVU4RzFCVldUUTFOSTgzIiwiaWF0IjoxNTM0Nzg2NjE1LCJleHAiOjE1MzQ4NzMwMTV9.TquJWQJTAIy29rAqBJrqlMwuR4L_kfZZ0eH7pnTn7RI [32m200 [0m6.242 ms - 4372[0m
+App 2287288 stdout: [0mGET /api/wynajem_bill_czynsz?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc2FkbWluIjoxLCJpc21hbmFnZXIiOjEsInVzZXJpZCI6IldMRkUySkdIQzdMMTIxQ01PTVU4RzFCVldUUTFOSTgzIiwiaWF0IjoxNTM0Nzg2NjE1LCJleHAiOjE1MzQ4NzMwMTV9.TquJWQJTAIy29rAqBJrqlMwuR4L_kfZZ0eH7pnTn7RI [36m304 [0m1.725 ms - -[0m
+App 2287288 stdout: [0mGET /api/wynajem_bill_czynsz?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc2FkbWluIjoxLCJpc21hbmFnZXIiOjEsInVzZXJpZCI6IldMRkUySkdIQzdMMTIxQ01PTVU4RzFCVldUUTFOSTgzIiwiaWF0IjoxNTM0Nzg2NjE1LCJleHAiOjE1MzQ4NzMwMTV9.TquJWQJTAIy29rAqBJrqlMwuR4L_kfZZ0eH7pnTn7RI [36m304 [0m1.663 ms - -[0m
+App 2287288 stdout: [0mGET /api/checktoken?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc2FkbWluIjoxLCJpc21hbmFnZXIiOjEsInVzZXJpZCI6IldMRkUySkdIQzdMMTIxQ01PTVU4RzFCVldUUTFOSTgzIiwiaWF0IjoxNTM0Nzg2NjE1LCJleHAiOjE1MzQ4NzMwMTV9.TquJWQJTAIy29rAqBJrqlMwuR4L_kfZZ0eH7pnTn7RI [36m304 [0m0.402 ms - -[0m
+App 2287288 stdout: [0mGET /api/checktoken?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc2FkbWluIjoxLCJpc21hbmFnZXIiOjEsInVzZXJpZCI6IldMRkUySkdIQzdMMTIxQ01PTVU4RzFCVldUUTFOSTgzIiwiaWF0IjoxNTM0Nzg2NjE1LCJleHAiOjE1MzQ4NzMwMTV9.TquJWQJTAIy29rAqBJrqlMwuR4L_kfZZ0eH7pnTn7RI [36m304 [0m0.399 ms - -[0m
+App 2287288 stdout: [0mGET /api/wynajem_bill_czynsz?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc2FkbWluIjoxLCJpc21hbmFnZXIiOjEsInVzZXJpZCI6IldMRkUySkdIQzdMMTIxQ01PTVU4RzFCVldUUTFOSTgzIiwiaWF0IjoxNTM0Nzg2NjE1LCJleHAiOjE1MzQ4NzMwMTV9.TquJWQJTAIy29rAqBJrqlMwuR4L_kfZZ0eH7pnTn7RI [32m200 [0m2.026 ms - 4431[0m
+App 2287288 stdout: [0mGET /api/wynajem_bill_czynsz?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc2FkbWluIjoxLCJpc21hbmFnZXIiOjEsInVzZXJpZCI6IldMRkUySkdIQzdMMTIxQ01PTVU4RzFCVldUUTFOSTgzIiwiaWF0IjoxNTM0Nzg2NjE1LCJleHAiOjE1MzQ4NzMwMTV9.TquJWQJTAIy29rAqBJrqlMwuR4L_kfZZ0eH7pnTn7RI [36m304 [0m1.835 ms - -[0m
+App 2287288 stdout: [0mGET /api/wynajem_bill_czynsz?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc2FkbWluIjoxLCJpc21hbmFnZXIiOjEsInVzZXJpZCI6IldMRkUySkdIQzdMMTIxQ01PTVU4RzFCVldUUTFOSTgzIiwiaWF0IjoxNTM0Nzg2NjE1LCJleHAiOjE1MzQ4NzMwMTV9.TquJWQJTAIy29rAqBJrqlMwuR4L_kfZZ0eH7pnTn7RI [36m304 [0m4.203 ms - -[0m
+App 2287288 stdout: [0mGET /api/wynajem_bill_czynsz?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc2FkbWluIjoxLCJpc21hbmFnZXIiOjEsInVzZXJpZCI6IldMRkUySkdIQzdMMTIxQ01PTVU4RzFCVldUUTFOSTgzIiwiaWF0IjoxNTM0Nzg2NjE1LCJleHAiOjE1MzQ4NzMwMTV9.TquJWQJTAIy29rAqBJrqlMwuR4L_kfZZ0eH7pnTn7RI [36m304 [0m4.394 ms - -[0m
+App 2287288 stdout: [0mGET /api/wynajem_bill_czynsz?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc2FkbWluIjoxLCJpc21hbmFnZXIiOjEsInVzZXJpZCI6IldMRkUySkdIQzdMMTIxQ01PTVU4RzFCVldUUTFOSTgzIiwiaWF0IjoxNTM0Nzg2NjE1LCJleHAiOjE1MzQ4NzMwMTV9.TquJWQJTAIy29rAqBJrqlMwuR4L_kfZZ0eH7pnTn7RI [36m304 [0m1.703 ms - -[0m
+App 2287288 stdout: [0mGET /api/checktoken?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc2FkbWluIjoxLCJpc21hbmFnZXIiOjEsInVzZXJpZCI6IldMRkUySkdIQzdMMTIxQ01PTVU4RzFCVldUUTFOSTgzIiwiaWF0IjoxNTM0Nzg2NjE1LCJleHAiOjE1MzQ4NzMwMTV9.TquJWQJTAIy29rAqBJrqlMwuR4L_kfZZ0eH7pnTn7RI [36m304 [0m0.340 ms - -[0m
+App 2287288 stdout: [0mGET /api/wynajem_bill_czynsz?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc2FkbWluIjoxLCJpc21hbmFnZXIiOjEsInVzZXJpZCI6IldMRkUySkdIQzdMMTIxQ01PTVU4RzFCVldUUTFOSTgzIiwiaWF0IjoxNTM0Nzg2NjE1LCJleHAiOjE1MzQ4NzMwMTV9.TquJWQJTAIy29rAqBJrqlMwuR4L_kfZZ0eH7pnTn7RI [36m304 [0m9.290 ms - -[0m
+App 2287288 stdout: [0mGET /api/checktoken?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc2FkbWluIjoxLCJpc21hbmFnZXIiOjEsInVzZXJpZCI6IldMRkUySkdIQzdMMTIxQ01PTVU4RzFCVldUUTFOSTgzIiwiaWF0IjoxNTM0Nzg2NjE1LCJleHAiOjE1MzQ4NzMwMTV9.TquJWQJTAIy29rAqBJrqlMwuR4L_kfZZ0eH7pnTn7RI [36m304 [0m0.365 ms - -[0m
+App 2287288 stdout: [0mGET /api/checktoken?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc2FkbWluIjoxLCJpc21hbmFnZXIiOjEsInVzZXJpZCI6IldMRkUySkdIQzdMMTIxQ01PTVU4RzFCVldUUTFOSTgzIiwiaWF0IjoxNTM0Nzg2NjE1LCJleHAiOjE1MzQ4NzMwMTV9.TquJWQJTAIy29rAqBJrqlMwuR4L_kfZZ0eH7pnTn7RI [36m304 [0m0.346 ms - -[0m
+App 2287288 stdout: [0mGET /api/wynajem_bill_czynsz?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc2FkbWluIjoxLCJpc21hbmFnZXIiOjEsInVzZXJpZCI6IldMRkUySkdIQzdMMTIxQ01PTVU4RzFCVldUUTFOSTgzIiwiaWF0IjoxNTM0Nzg2NjE1LCJleHAiOjE1MzQ4NzMwMTV9.TquJWQJTAIy29rAqBJrqlMwuR4L_kfZZ0eH7pnTn7RI [36m304 [0m5.213 ms - -[0m
+App 2287288 stdout: [0mGET /api/wynajem_bill_czynsz?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc2FkbWluIjoxLCJpc21hbmFnZXIiOjEsInVzZXJpZCI6IldMRkUySkdIQzdMMTIxQ01PTVU4RzFCVldUUTFOSTgzIiwiaWF0IjoxNTM0Nzg2NjE1LCJleHAiOjE1MzQ4NzMwMTV9.TquJWQJTAIy29rAqBJrqlMwuR4L_kfZZ0eH7pnTn7RI [36m304 [0m1.833 ms - -[0m
+App 2287288 stdout: [0mGET /api/checktoken?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc2FkbWluIjoxLCJpc21hbmFnZXIiOjEsInVzZXJpZCI6IldMRkUySkdIQzdMMTIxQ01PTVU4RzFCVldUUTFOSTgzIiwiaWF0IjoxNTM0Nzg2NjE1LCJleHAiOjE1MzQ4NzMwMTV9.TquJWQJTAIy29rAqBJrqlMwuR4L_kfZZ0eH7pnTn7RI [36m304 [0m0.349 ms - -[0m
+App 2287288 stdout: [0mGET /api/wynajem_bill_czynsz?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc2FkbWluIjoxLCJpc21hbmFnZXIiOjEsInVzZXJpZCI6IldMRkUySkdIQzdMMTIxQ01PTVU4RzFCVldUUTFOSTgzIiwiaWF0IjoxNTM0Nzg2NjE1LCJleHAiOjE1MzQ4NzMwMTV9.TquJWQJTAIy29rAqBJrqlMwuR4L_kfZZ0eH7pnTn7RI [36m304 [0m5.985 ms - -[0m
+App 2287288 stdout: [0mGET /api/checktoken?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc2FkbWluIjoxLCJpc21hbmFnZXIiOjEsInVzZXJpZCI6IldMRkUySkdIQzdMMTIxQ01PTVU4RzFCVldUUTFOSTgzIiwiaWF0IjoxNTM0Nzg2NjE1LCJleHAiOjE1MzQ4NzMwMTV9.TquJWQJTAIy29rAqBJrqlMwuR4L_kfZZ0eH7pnTn7RI [36m304 [0m0.596 ms - -[0m
+App 2287288 stdout: [0mGET /api/wynajem_bill_czynsz?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc2FkbWluIjoxLCJpc21hbmFnZXIiOjEsInVzZXJpZCI6IldMRkUySkdIQzdMMTIxQ01PTVU4RzFCVldUUTFOSTgzIiwiaWF0IjoxNTM0Nzg2NjE1LCJleHAiOjE1MzQ4NzMwMTV9.TquJWQJTAIy29rAqBJrqlMwuR4L_kfZZ0eH7pnTn7RI [36m304 [0m2.423 ms - -[0m
+App 2287288 stdout: [0mGET /api/checktoken?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc2FkbWluIjoxLCJpc21hbmFnZXIiOjEsInVzZXJpZCI6IldMRkUySkdIQzdMMTIxQ01PTVU4RzFCVldUUTFOSTgzIiwiaWF0IjoxNTM0Nzg2NjE1LCJleHAiOjE1MzQ4NzMwMTV9.TquJWQJTAIy29rAqBJrqlMwuR4L_kfZZ0eH7pnTn7RI [36m304 [0m0.464 ms - -[0m
+App 2287288 stdout: [0mGET /api/wynajem_bill_czynsz?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc2FkbWluIjoxLCJpc21hbmFnZXIiOjEsInVzZXJpZCI6IldMRkUySkdIQzdMMTIxQ01PTVU4RzFCVldUUTFOSTgzIiwiaWF0IjoxNTM0Nzg2NjE1LCJleHAiOjE1MzQ4NzMwMTV9.TquJWQJTAIy29rAqBJrqlMwuR4L_kfZZ0eH7pnTn7RI [36m304 [0m1.994 ms - -[0m
+App 2287288 stdout: [0mGET /api/wynajem_bill_czynsz?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc2FkbWluIjoxLCJpc21hbmFnZXIiOjEsInVzZXJpZCI6IldMRkUySkdIQzdMMTIxQ01PTVU4RzFCVldUUTFOSTgzIiwiaWF0IjoxNTM0Nzg2NjE1LCJleHAiOjE1MzQ4NzMwMTV9.TquJWQJTAIy29rAqBJrqlMwuR4L_kfZZ0eH7pnTn7RI [36m304 [0m6.355 ms - -[0m
+App 2287288 stdout: [0mGET /api/checktoken?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc2FkbWluIjoxLCJpc21hbmFnZXIiOjEsInVzZXJpZCI6IldMRkUySkdIQzdMMTIxQ01PTVU4RzFCVldUUTFOSTgzIiwiaWF0IjoxNTM0Nzg2NjE1LCJleHAiOjE1MzQ4NzMwMTV9.TquJWQJTAIy29rAqBJrqlMwuR4L_kfZZ0eH7pnTn7RI [36m304 [0m0.377 ms - -[0m
+App 2287288 stdout: [0mGET /api/wynajem_bill_czynsz?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc2FkbWluIjoxLCJpc21hbmFnZXIiOjEsInVzZXJpZCI6IldMRkUySkdIQzdMMTIxQ01PTVU4RzFCVldUUTFOSTgzIiwiaWF0IjoxNTM0Nzg2NjE1LCJleHAiOjE1MzQ4NzMwMTV9.TquJWQJTAIy29rAqBJrqlMwuR4L_kfZZ0eH7pnTn7RI [36m304 [0m1.868 ms - -[0m
+App 2287288 stdout: [0mGET /api/checktoken?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc2FkbWluIjoxLCJpc21hbmFnZXIiOjEsInVzZXJpZCI6IldMRkUySkdIQzdMMTIxQ01PTVU4RzFCVldUUTFOSTgzIiwiaWF0IjoxNTM0Nzg2NjE1LCJleHAiOjE1MzQ4NzMwMTV9.TquJWQJTAIy29rAqBJrqlMwuR4L_kfZZ0eH7pnTn7RI [36m304 [0m0.359 ms - -[0m
+App 2287288 stdout: [0mGET /api/wynajem_bill_czynsz?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc2FkbWluIjoxLCJpc21hbmFnZXIiOjEsInVzZXJpZCI6IldMRkUySkdIQzdMMTIxQ01PTVU4RzFCVldUUTFOSTgzIiwiaWF0IjoxNTM0Nzg2NjE1LCJleHAiOjE1MzQ4NzMwMTV9.TquJWQJTAIy29rAqBJrqlMwuR4L_kfZZ0eH7pnTn7RI [36m304 [0m2.820 ms - -[0m
+App 2287288 stdout: [0mGET /api/checktoken?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc2FkbWluIjoxLCJpc21hbmFnZXIiOjEsInVzZXJpZCI6IldMRkUySkdIQzdMMTIxQ01PTVU4RzFCVldUUTFOSTgzIiwiaWF0IjoxNTM0Nzg2NjE1LCJleHAiOjE1MzQ4NzMwMTV9.TquJWQJTAIy29rAqBJrqlMwuR4L_kfZZ0eH7pnTn7RI [36m304 [0m0.349 ms - -[0m
+App 2287288 stdout: [0mGET /api/wynajem_bill_czynsz?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc2FkbWluIjoxLCJpc21hbmFnZXIiOjEsInVzZXJpZCI6IldMRkUySkdIQzdMMTIxQ01PTVU4RzFCVldUUTFOSTgzIiwiaWF0IjoxNTM0Nzg2NjE1LCJleHAiOjE1MzQ4NzMwMTV9.TquJWQJTAIy29rAqBJrqlMwuR4L_kfZZ0eH7pnTn7RI [36m304 [0m4.793 ms - -[0m
+App 2287288 stdout: [0mGET / [32m200 [0m0.523 ms - 34[0m
+
+[ N 2018-08-20 21:59:26.9087 2287197/T7 age/Cor/CoreMain.cpp:589 ]: Signal received. Gracefully shutting down... (send signal 2 more time(s) to force shutdown)
+[ N 2018-08-20 21:59:26.9088 2287197/T1 age/Cor/CoreMain.cpp:1080 ]: Received command to shutdown gracefully. Waiting until all clients have disconnected...
+[ N 2018-08-20 21:59:26.9088 2287197/T1 age/Cor/CoreMain.cpp:994 ]: Checking whether to disconnect long-running connections for process 2287288, application /home/malucha/websites/_dev/node_testapi/public (production)
+[ N 2018-08-20 21:59:26.9091 2287197/T7 Ser/Server.h:886 ]: [ServerThr.1] Freed 128 spare client objects
+[ N 2018-08-20 21:59:26.9092 2287197/T7 Ser/Server.h:531 ]: [ServerThr.1] Shutdown finished
+[ N 2018-08-20 21:59:26.9094 2287197/T9 Ser/Server.h:886 ]: [ServerThr.2] Freed 128 spare client objects
+[ N 2018-08-20 21:59:26.9094 2287197/T9 Ser/Server.h:531 ]: [ServerThr.2] Shutdown finished
+[ N 2018-08-20 21:59:26.9095 2287197/Tb Ser/Server.h:886 ]: [ServerThr.3] Freed 128 spare client objects
+[ N 2018-08-20 21:59:26.9095 2287197/Td Ser/Server.h:886 ]: [ServerThr.4] Freed 128 spare client objects
+[ N 2018-08-20 21:59:26.9096 2287197/Tb Ser/Server.h:531 ]: [ServerThr.3] Shutdown finished
+[ N 2018-08-20 21:59:26.9096 2287197/Td Ser/Server.h:531 ]: [ServerThr.4] Shutdown finished
+[ N 2018-08-20 21:59:26.9102 2287197/Th Ser/Server.h:886 ]: [ServerThr.6] Freed 128 spare client objects
+[ N 2018-08-20 21:59:26.9102 2287197/Th Ser/Server.h:531 ]: [ServerThr.6] Shutdown finished
+[ N 2018-08-20 21:59:26.9104 2287197/Tt Ser/Server.h:886 ]: [ServerThr.12] Freed 128 spare client objects
+[ N 2018-08-20 21:59:26.9104 2287197/Tt Ser/Server.h:531 ]: [ServerThr.12] Shutdown finished
+[ N 2018-08-20 21:59:26.9106 2287197/Tf Ser/Server.h:886 ]: [ServerThr.5] Freed 128 spare client objects
+[ N 2018-08-20 21:59:26.9106 2287197/Tf Ser/Server.h:531 ]: [ServerThr.5] Shutdown finished
+[ N 2018-08-20 21:59:26.9108 2287197/Tj Ser/Server.h:886 ]: [ServerThr.7] Freed 128 spare client objects
+[ N 2018-08-20 21:59:26.9109 2287197/Tj Ser/Server.h:531 ]: [ServerThr.7] Shutdown finished
+[ N 2018-08-20 21:59:26.9109 2287197/T13 Ser/Server.h:886 ]: [ApiServer] Freed 0 spare client objects
+[ N 2018-08-20 21:59:26.9109 2287197/T13 Ser/Server.h:531 ]: [ApiServer] Shutdown finished
+[ N 2018-08-20 21:59:26.9110 2287197/Tv Ser/Server.h:886 ]: [ServerThr.13] Freed 128 spare client objects
+[ N 2018-08-20 21:59:26.9111 2287197/Tv Ser/Server.h:531 ]: [ServerThr.13] Shutdown finished
+[ N 2018-08-20 21:59:26.9111 2287197/Tx Ser/Server.h:886 ]: [ServerThr.14] Freed 128 spare client objects
+[ N 2018-08-20 21:59:26.9111 2287197/Tx Ser/Server.h:531 ]: [ServerThr.14] Shutdown finished
+[ N 2018-08-20 21:59:26.9111 2287197/Tr Ser/Server.h:886 ]: [ServerThr.11] Freed 128 spare client objects
+[ N 2018-08-20 21:59:26.9112 2287197/Tr Ser/Server.h:531 ]: [ServerThr.11] Shutdown finished
+[ N 2018-08-20 21:59:26.9112 2287197/Tp Ser/Server.h:886 ]: [ServerThr.10] Freed 128 spare client objects
+[ N 2018-08-20 21:59:26.9112 2287197/Tl Ser/Server.h:886 ]: [ServerThr.8] Freed 128 spare client objects
+[ N 2018-08-20 21:59:26.9112 2287197/Tp Ser/Server.h:531 ]: [ServerThr.10] Shutdown finished
+[ N 2018-08-20 21:59:26.9112 2287197/Tl Ser/Server.h:531 ]: [ServerThr.8] Shutdown finished
+[ N 2018-08-20 21:59:26.9113 2287197/Tz Ser/Server.h:886 ]: [ServerThr.15] Freed 128 spare client objects
+[ N 2018-08-20 21:59:26.9113 2287197/Tz Ser/Server.h:531 ]: [ServerThr.15] Shutdown finished
+[ N 2018-08-20 21:59:26.9113 2287197/Tn Ser/Server.h:886 ]: [ServerThr.9] Freed 128 spare client objects
+[ N 2018-08-20 21:59:26.9113 2287197/Tn Ser/Server.h:531 ]: [ServerThr.9] Shutdown finished
+[ N 2018-08-20 21:59:26.9114 2287197/T11 Ser/Server.h:886 ]: [ServerThr.16] Freed 128 spare client objects
+[ N 2018-08-20 21:59:26.9114 2287197/T11 Ser/Server.h:531 ]: [ServerThr.16] Shutdown finished
+[ N 2018-08-20 21:59:26.9115 2287197/T1 age/Cor/CoreMain.cpp:994 ]: Checking whether to disconnect long-running connections for process 2287288, application /home/malucha/websites/_dev/node_testapi/public (production)
+[ N 2018-08-20 21:59:27.3980 2287197/T1 age/Cor/CoreMain.cpp:1150 ]: Passenger core shutdown finished
+[ N 2018-08-20 21:59:36.1658 2623338/T1 age/Wat/WatchdogMain.cpp:1267 ]: Starting Passenger watchdog...
+[ N 2018-08-20 21:59:36.1716 2623341/T1 age/Cor/CoreMain.cpp:1165 ]: Starting Passenger core...
+[ N 2018-08-20 21:59:36.1719 2623341/T1 age/Cor/CoreMain.cpp:249 ]: Passenger core running in multi-application mode.
+[ N 2018-08-20 21:59:36.1862 2623341/T1 age/Cor/CoreMain.cpp:905 ]: Passenger core online, PID 2623341
+App 2623423 stdout: 
+[ E 2018-08-20 21:59:38.4869 2623341/T5 age/Cor/SecurityUpdateChecker.h:376 ]: A security update is available for your version (5.1.11) of Passenger, we strongly recommend upgrading to version 5.3.4.
+[ E 2018-08-20 21:59:38.4869 2623341/T5 age/Cor/SecurityUpdateChecker.h:381 ]:  Additional information: 
+- [Fixed in 5.3.2] [CVE-2018-12026 - 12027 - 12028] There are local denial of service, local information disclosure and local privilege escalation vulnerabilities that could be exploited by malicious applications or malicious users on the system.
+App 2623423 stdout: Server listening at port:3000
+App 2623423 stdout: [0mHEAD /home/malucha/sockets/node_testapi [33m404 [0m3.059 ms - 173[0m
+App 2623423 stdout: [0mGET /api/checktoken?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc2FkbWluIjoxLCJpc21hbmFnZXIiOjEsInVzZXJpZCI6IldMRkUySkdIQzdMMTIxQ01PTVU4RzFCVldUUTFOSTgzIiwiaWF0IjoxNTM0Nzg2NjE1LCJleHAiOjE1MzQ4NzMwMTV9.TquJWQJTAIy29rAqBJrqlMwuR4L_kfZZ0eH7pnTn7RI [36m304 [0m4.807 ms - -[0m
+App 2623423 stdout: [0mGET /api/wynajem_bill_czynsz?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc2FkbWluIjoxLCJpc21hbmFnZXIiOjEsInVzZXJpZCI6IldMRkUySkdIQzdMMTIxQ01PTVU4RzFCVldUUTFOSTgzIiwiaWF0IjoxNTM0Nzg2NjE1LCJleHAiOjE1MzQ4NzMwMTV9.TquJWQJTAIy29rAqBJrqlMwuR4L_kfZZ0eH7pnTn7RI [33m404 [0m2.671 ms - 162[0m
+App 2623423 stdout: [0mGET /api/checktoken?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc2FkbWluIjoxLCJpc21hbmFnZXIiOjEsInVzZXJpZCI6IldMRkUySkdIQzdMMTIxQ01PTVU4RzFCVldUUTFOSTgzIiwiaWF0IjoxNTM0Nzg2NjE1LCJleHAiOjE1MzQ4NzMwMTV9.TquJWQJTAIy29rAqBJrqlMwuR4L_kfZZ0eH7pnTn7RI [36m304 [0m0.472 ms - -[0m
+App 2623423 stdout: [0mGET /api/checktoken?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc2FkbWluIjoxLCJpc21hbmFnZXIiOjEsInVzZXJpZCI6IldMRkUySkdIQzdMMTIxQ01PTVU4RzFCVldUUTFOSTgzIiwiaWF0IjoxNTM0Nzg2NjE1LCJleHAiOjE1MzQ4NzMwMTV9.TquJWQJTAIy29rAqBJrqlMwuR4L_kfZZ0eH7pnTn7RI [36m304 [0m0.424 ms - -[0m
+App 2623423 stdout: [0mGET /api/rentapp_rents?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc2FkbWluIjoxLCJpc21hbmFnZXIiOjEsInVzZXJpZCI6IldMRkUySkdIQzdMMTIxQ01PTVU4RzFCVldUUTFOSTgzIiwiaWF0IjoxNTM0Nzg2NjE1LCJleHAiOjE1MzQ4NzMwMTV9.TquJWQJTAIy29rAqBJrqlMwuR4L_kfZZ0eH7pnTn7RI [32m200 [0m21.432 ms - 6009[0m
+App 2623423 stdout: [0mGET /api/checktoken?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc2FkbWluIjoxLCJpc21hbmFnZXIiOjEsInVzZXJpZCI6IldMRkUySkdIQzdMMTIxQ01PTVU4RzFCVldUUTFOSTgzIiwiaWF0IjoxNTM0Nzg2NjE1LCJleHAiOjE1MzQ4NzMwMTV9.TquJWQJTAIy29rAqBJrqlMwuR4L_kfZZ0eH7pnTn7RI [36m304 [0m0.339 ms - -[0m
+App 2623423 stdout: [0mGET /api/checktoken?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc2FkbWluIjoxLCJpc21hbmFnZXIiOjEsInVzZXJpZCI6IldMRkUySkdIQzdMMTIxQ01PTVU4RzFCVldUUTFOSTgzIiwiaWF0IjoxNTM0Nzg2NjE1LCJleHAiOjE1MzQ4NzMwMTV9.TquJWQJTAIy29rAqBJrqlMwuR4L_kfZZ0eH7pnTn7RI [36m304 [0m0.382 ms - -[0m
+App 2623423 stdout: [0mGET /api/checktoken?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc2FkbWluIjoxLCJpc21hbmFnZXIiOjEsInVzZXJpZCI6IldMRkUySkdIQzdMMTIxQ01PTVU4RzFCVldUUTFOSTgzIiwiaWF0IjoxNTM0Nzg2NjE1LCJleHAiOjE1MzQ4NzMwMTV9.TquJWQJTAIy29rAqBJrqlMwuR4L_kfZZ0eH7pnTn7RI [36m304 [0m0.364 ms - -[0m
+App 2623423 stdout: [0mGET /api/checktoken?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc2FkbWluIjoxLCJpc21hbmFnZXIiOjEsInVzZXJpZCI6IldMRkUySkdIQzdMMTIxQ01PTVU4RzFCVldUUTFOSTgzIiwiaWF0IjoxNTM0Nzg2NjE1LCJleHAiOjE1MzQ4NzMwMTV9.TquJWQJTAIy29rAqBJrqlMwuR4L_kfZZ0eH7pnTn7RI [36m304 [0m3.329 ms - -[0m
+App 2623423 stdout: [0mGET /api/checktoken?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc2FkbWluIjoxLCJpc21hbmFnZXIiOjEsInVzZXJpZCI6IldMRkUySkdIQzdMMTIxQ01PTVU4RzFCVldUUTFOSTgzIiwiaWF0IjoxNTM0Nzg2NjE1LCJleHAiOjE1MzQ4NzMwMTV9.TquJWQJTAIy29rAqBJrqlMwuR4L_kfZZ0eH7pnTn7RI [36m304 [0m0.296 ms - -[0m
+App 2623423 stdout: [0mGET /api/checktoken?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc2FkbWluIjoxLCJpc21hbmFnZXIiOjEsInVzZXJpZCI6IldMRkUySkdIQzdMMTIxQ01PTVU4RzFCVldUUTFOSTgzIiwiaWF0IjoxNTM0Nzg2NjE1LCJleHAiOjE1MzQ4NzMwMTV9.TquJWQJTAIy29rAqBJrqlMwuR4L_kfZZ0eH7pnTn7RI [36m304 [0m0.305 ms - -[0m
+App 2623423 stdout: [0mGET /api/checktoken?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc2FkbWluIjoxLCJpc21hbmFnZXIiOjEsInVzZXJpZCI6IldMRkUySkdIQzdMMTIxQ01PTVU4RzFCVldUUTFOSTgzIiwiaWF0IjoxNTM0Nzg2NjE1LCJleHAiOjE1MzQ4NzMwMTV9.TquJWQJTAIy29rAqBJrqlMwuR4L_kfZZ0eH7pnTn7RI [36m304 [0m0.567 ms - -[0m
+App 2623423 stdout: [0mGET /api/checktoken?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc2FkbWluIjoxLCJpc21hbmFnZXIiOjEsInVzZXJpZCI6IldMRkUySkdIQzdMMTIxQ01PTVU4RzFCVldUUTFOSTgzIiwiaWF0IjoxNTM0Nzg2NjE1LCJleHAiOjE1MzQ4NzMwMTV9.TquJWQJTAIy29rAqBJrqlMwuR4L_kfZZ0eH7pnTn7RI [36m304 [0m0.345 ms - -[0m
+App 2623423 stdout: [0mGET /api/checktoken?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc2FkbWluIjoxLCJpc21hbmFnZXIiOjEsInVzZXJpZCI6IldMRkUySkdIQzdMMTIxQ01PTVU4RzFCVldUUTFOSTgzIiwiaWF0IjoxNTM0Nzg2NjE1LCJleHAiOjE1MzQ4NzMwMTV9.TquJWQJTAIy29rAqBJrqlMwuR4L_kfZZ0eH7pnTn7RI [36m304 [0m0.324 ms - -[0m
+App 2623423 stdout: [0mGET /api/checktoken?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc2FkbWluIjoxLCJpc21hbmFnZXIiOjEsInVzZXJpZCI6IldMRkUySkdIQzdMMTIxQ01PTVU4RzFCVldUUTFOSTgzIiwiaWF0IjoxNTM0Nzg2NjE1LCJleHAiOjE1MzQ4NzMwMTV9.TquJWQJTAIy29rAqBJrqlMwuR4L_kfZZ0eH7pnTn7RI [36m304 [0m0.340 ms - -[0m
+App 2623423 stdout: [0mGET /api/rentapp_rents?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc2FkbWluIjoxLCJpc21hbmFnZXIiOjEsInVzZXJpZCI6IldMRkUySkdIQzdMMTIxQ01PTVU4RzFCVldUUTFOSTgzIiwiaWF0IjoxNTM0Nzg2NjE1LCJleHAiOjE1MzQ4NzMwMTV9.TquJWQJTAIy29rAqBJrqlMwuR4L_kfZZ0eH7pnTn7RI [36m304 [0m2.352 ms - -[0m
+App 2623423 stdout: [0mGET /api/checktoken?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc2FkbWluIjoxLCJpc21hbmFnZXIiOjEsInVzZXJpZCI6IldMRkUySkdIQzdMMTIxQ01PTVU4RzFCVldUUTFOSTgzIiwiaWF0IjoxNTM0Nzg2NjE1LCJleHAiOjE1MzQ4NzMwMTV9.TquJWQJTAIy29rAqBJrqlMwuR4L_kfZZ0eH7pnTn7RI [36m304 [0m0.361 ms - -[0m
+App 2623423 stdout: [0mGET /api/checktoken?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc2FkbWluIjoxLCJpc21hbmFnZXIiOjEsInVzZXJpZCI6IldMRkUySkdIQzdMMTIxQ01PTVU4RzFCVldUUTFOSTgzIiwiaWF0IjoxNTM0Nzg2NjE1LCJleHAiOjE1MzQ4NzMwMTV9.TquJWQJTAIy29rAqBJrqlMwuR4L_kfZZ0eH7pnTn7RI [36m304 [0m0.299 ms - -[0m
+App 2623423 stdout: [0mGET /api/checktoken?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc2FkbWluIjoxLCJpc21hbmFnZXIiOjEsInVzZXJpZCI6IldMRkUySkdIQzdMMTIxQ01PTVU4RzFCVldUUTFOSTgzIiwiaWF0IjoxNTM0Nzg2NjE1LCJleHAiOjE1MzQ4NzMwMTV9.TquJWQJTAIy29rAqBJrqlMwuR4L_kfZZ0eH7pnTn7RI [36m304 [0m0.363 ms - -[0m
+App 2623423 stdout: [0mGET /api/checktoken?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc2FkbWluIjoxLCJpc21hbmFnZXIiOjEsInVzZXJpZCI6IldMRkUySkdIQzdMMTIxQ01PTVU4RzFCVldUUTFOSTgzIiwiaWF0IjoxNTM0Nzg2NjE1LCJleHAiOjE1MzQ4NzMwMTV9.TquJWQJTAIy29rAqBJrqlMwuR4L_kfZZ0eH7pnTn7RI [36m304 [0m0.431 ms - -[0m
+App 2623423 stdout: [0mGET /api/checktoken?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc2FkbWluIjoxLCJpc21hbmFnZXIiOjEsInVzZXJpZCI6IldMRkUySkdIQzdMMTIxQ01PTVU4RzFCVldUUTFOSTgzIiwiaWF0IjoxNTM0Nzg2NjE1LCJleHAiOjE1MzQ4NzMwMTV9.TquJWQJTAIy29rAqBJrqlMwuR4L_kfZZ0eH7pnTn7RI [36m304 [0m0.372 ms - -[0m
+App 2623423 stderr: events.js:167
+App 2623423 stderr:       throw er; // Unhandled 'error' event
+App 2623423 stderr:       ^
+App 2623423 stderr: 
+App 2623423 stderr: Error: Connection lost: The server closed the connection.
+App 2623423 stderr:     at Protocol.end (/home/malucha/websites/_dev/node_testapi/node_modules/mysql/lib/protocol/Protocol.js:112:13)
+App 2623423 stderr:     at Socket.<anonymous> (/home/malucha/websites/_dev/node_testapi/node_modules/mysql/lib/Connection.js:97:28)
+App 2623423 stderr:     at Socket.<anonymous> (/home/malucha/websites/_dev/node_testapi/node_modules/mysql/lib/Connection.js:502:10)
+App 2623423 stderr:     at Socket.emit (events.js:187:15)
+App 2623423 stderr:     at endReadableNT (_stream_readable.js:1081:12)
+App 2623423 stderr:     at process._tickCallback (internal/process/next_tick.js:63:19)
+App 2623423 stderr: Emitted 'error' event at:
+App 2623423 stderr:     at Connection._handleProtocolError (/home/malucha/websites/_dev/node_testapi/node_modules/mysql/lib/Connection.js:425:8)
+App 2623423 stderr:     at Protocol.emit (events.js:182:13)
+App 2623423 stderr:     at Protocol._delegateError (/home/malucha/websites/_dev/node_testapi/node_modules/mysql/lib/protocol/Protocol.js:390:10)
+App 2623423 stderr:     at Protocol.end (/home/malucha/websites/_dev/node_testapi/node_modules/mysql/lib/protocol/Protocol.js:116:8)
+App 2623423 stderr:     at Socket.<anonymous> (/home/malucha/websites/_dev/node_testapi/node_modules/mysql/lib/Connection.js:97:28)
+App 2623423 stderr:     [... lines matching original stack trace ...]
+App 2623423 stderr:     at process._tickCallback (internal/process/next_tick.js:63:19)
+[ W 2018-08-21 06:43:05.0201 2623341/T3 age/Cor/App/Poo/AnalyticsCollection.cpp:102 ]: Process (pid=2623423, group=/home/malucha/websites/_dev/node_testapi/public (production)) no longer exists! Detaching it from the pool.
+[ N 2018-08-21 06:43:05.0202 2623341/T3 age/Cor/CoreMain.cpp:994 ]: Checking whether to disconnect long-running connections for process 2623423, application /home/malucha/websites/_dev/node_testapi/public (production)
+App 3104283 stdout: 
+App 3104283 stdout: Server listening at port:3000
+App 3104283 stdout: [0mGET / [32m200 [0m3.234 ms - 34[0m
+App 3104283 stdout: [0mGET /favicon.ico [33m404 [0m1.478 ms - 150[0m
+App 3104283 stdout: [0mGET /favicon.ico [33m404 [0m0.309 ms - 150[0m
+App 3104283 stdout: [0mGET / [36m304 [0m0.665 ms - -[0m
+
+[ N 2018-08-21 09:28:25.3868 2623341/T7 age/Cor/CoreMain.cpp:589 ]: Signal received. Gracefully shutting down... (send signal 2 more time(s) to force shutdown)
+[ N 2018-08-21 09:28:25.3869 2623341/T1 age/Cor/CoreMain.cpp:1080 ]: Received command to shutdown gracefully. Waiting until all clients have disconnected...
+[ N 2018-08-21 09:28:25.3869 2623341/T1 age/Cor/CoreMain.cpp:994 ]: Checking whether to disconnect long-running connections for process 3104283, application /home/malucha/websites/_dev/node_testapi/public (production)
+[ N 2018-08-21 09:28:25.3892 2623341/Tx Ser/Server.h:886 ]: [ServerThr.14] Freed 128 spare client objects
+[ N 2018-08-21 09:28:25.3893 2623341/Tx Ser/Server.h:531 ]: [ServerThr.14] Shutdown finished
+[ N 2018-08-21 09:28:25.3893 2623341/Td Ser/Server.h:886 ]: [ServerThr.4] Freed 128 spare client objects
+[ N 2018-08-21 09:28:25.3893 2623341/Td Ser/Server.h:531 ]: [ServerThr.4] Shutdown finished
+[ N 2018-08-21 09:28:25.3898 2623341/Tn Ser/Server.h:886 ]: [ServerThr.9] Freed 128 spare client objects
+[ N 2018-08-21 09:28:25.3898 2623341/T13 Ser/Server.h:886 ]: [ApiServer] Freed 0 spare client objects
+[ N 2018-08-21 09:28:25.3899 2623341/Tn Ser/Server.h:531 ]: [ServerThr.9] Shutdown finished
+[ N 2018-08-21 09:28:25.3899 2623341/T13 Ser/Server.h:531 ]: [ApiServer] Shutdown finished
+[ N 2018-08-21 09:28:25.3903 2623341/Tv Ser/Server.h:886 ]: [ServerThr.13] Freed 128 spare client objects
+[ N 2018-08-21 09:28:25.3903 2623341/Tv Ser/Server.h:531 ]: [ServerThr.13] Shutdown finished
+[ N 2018-08-21 09:28:25.3903 2623341/Tb Ser/Server.h:886 ]: [ServerThr.3] Freed 128 spare client objects
+[ N 2018-08-21 09:28:25.3903 2623341/Tp Ser/Server.h:886 ]: [ServerThr.10] Freed 128 spare client objects
+[ N 2018-08-21 09:28:25.3903 2623341/Tb Ser/Server.h:531 ]: [ServerThr.3] Shutdown finished
+[ N 2018-08-21 09:28:25.3904 2623341/Tp Ser/Server.h:531 ]: [ServerThr.10] Shutdown finished
+[ N 2018-08-21 09:28:25.3904 2623341/T9 Ser/Server.h:886 ]: [ServerThr.2] Freed 128 spare client objects
+[ N 2018-08-21 09:28:25.3904 2623341/T9 Ser/Server.h:531 ]: [ServerThr.2] Shutdown finished
+[ N 2018-08-21 09:28:25.3904 2623341/Tl Ser/Server.h:886 ]: [ServerThr.8] Freed 128 spare client objects
+[ N 2018-08-21 09:28:25.3904 2623341/Tl Ser/Server.h:531 ]: [ServerThr.8] Shutdown finished
+[ N 2018-08-21 09:28:25.3905 2623341/T7 Ser/Server.h:886 ]: [ServerThr.1] Freed 128 spare client objects
+[ N 2018-08-21 09:28:25.3905 2623341/T7 Ser/Server.h:531 ]: [ServerThr.1] Shutdown finished
+[ N 2018-08-21 09:28:25.3905 2623341/Tz Ser/Server.h:886 ]: [ServerThr.15] Freed 128 spare client objects
+[ N 2018-08-21 09:28:25.3906 2623341/Tz Ser/Server.h:531 ]: [ServerThr.15] Shutdown finished
+[ N 2018-08-21 09:28:25.3906 2623341/Tf Ser/Server.h:886 ]: [ServerThr.5] Freed 128 spare client objects
+[ N 2018-08-21 09:28:25.3906 2623341/Tj Ser/Server.h:886 ]: [ServerThr.7] Freed 128 spare client objects
+[ N 2018-08-21 09:28:25.3906 2623341/T11 Ser/Server.h:886 ]: [ServerThr.16] Freed 128 spare client objects
+[ N 2018-08-21 09:28:25.3906 2623341/Tj Ser/Server.h:531 ]: [ServerThr.7] Shutdown finished
+[ N 2018-08-21 09:28:25.3906 2623341/Tf Ser/Server.h:531 ]: [ServerThr.5] Shutdown finished
+[ N 2018-08-21 09:28:25.3906 2623341/Tr Ser/Server.h:886 ]: [ServerThr.11] Freed 128 spare client objects
+[ N 2018-08-21 09:28:25.3906 2623341/T11 Ser/Server.h:531 ]: [ServerThr.16] Shutdown finished
+[ N 2018-08-21 09:28:25.3906 2623341/Tr Ser/Server.h:531 ]: [ServerThr.11] Shutdown finished
+[ N 2018-08-21 09:28:25.3906 2623341/Tt Ser/Server.h:886 ]: [ServerThr.12] Freed 128 spare client objects
+[ N 2018-08-21 09:28:25.3907 2623341/Tt Ser/Server.h:531 ]: [ServerThr.12] Shutdown finished
+[ N 2018-08-21 09:28:25.3913 2623341/Th Ser/Server.h:886 ]: [ServerThr.6] Freed 128 spare client objects
+[ N 2018-08-21 09:28:25.3913 2623341/Th Ser/Server.h:531 ]: [ServerThr.6] Shutdown finished
+[ N 2018-08-21 09:28:25.3914 2623341/T1 age/Cor/CoreMain.cpp:994 ]: Checking whether to disconnect long-running connections for process 3104283, application /home/malucha/websites/_dev/node_testapi/public (production)
+[ N 2018-08-21 09:28:25.7779 2623341/T1 age/Cor/CoreMain.cpp:1150 ]: Passenger core shutdown finished
