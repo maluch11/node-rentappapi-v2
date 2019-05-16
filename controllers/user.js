@@ -149,9 +149,10 @@ let User = {
                             // we don't want to pass in the entire user since that has the password
                             //todo add CLAIMS to PAYLOAD HERE (from DB)
                             const payload = {
-                                isadmin: usr[0].isuseradmin,
-                                ismanager: usr[0].isusermanager,
-                                userid: usr[0].userid
+                                userrole: usr[0].userrole,
+                                contextid: usr[0].contextid,
+                                userid: usr[0].userid,
+                                username: usr[0].username
                             };
                             let token = jwt.sign(payload, config.supersecret, {
                                 expiresIn: config.tokenLifeTime // expires in 1 hours = 1440
