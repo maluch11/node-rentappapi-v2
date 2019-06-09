@@ -28,9 +28,10 @@ app.use(bodyParser.json());
 app.options('*', cors());
 
 app.use(function(req, res, next) {
-    res.setHeader("Access-Control-Allow-Origin", "http://localhost:3000");
+    res.setHeader("Access-Control-Allow-Origin", ''+config.apporigin);
+    //res.setHeader("Access-Control-Allow-Origin", "http://rentapp.malucha.eu");
     res.setHeader("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept, Method");
-//    res.setHeader('Access-Control-Allow-Methods', 'GET, POST, OPTIONS, PUT, PATCH, DELETE');
+    // res.setHeader('Access-Control-Allow-Methods', 'GET, POST, OPTIONS, PUT, PATCH, DELETE');
     
 //    // Website you wish to allow to connect
 //    res.setHeader('Access-Control-Allow-Origin', 'http://localhost:8888');
@@ -59,7 +60,7 @@ app.use(morgan('dev')); //todo change to production
 // =====================================================================
 // basic route
 app.get('/', function(req, res) {
-    res.send('Hello! The API is at PORT:' + port + '/api');
+    res.send('Hello! The API is at PORT:' + port + '/api Allowed-Origin: '+res.getHeader("Access-Control-Allow-Origin"));
 });
 
 // API ROUTES ==========================================================
@@ -156,12 +157,13 @@ apiRoutes.post('/rentapp_read/:id', (req, res) => Generic.postItem(req, res)); /
 
 apiRoutes.get('/rentapp_water_prices', (req, res) => Generic.getAllItems(req, res)); //SELECT ALL odczyty
 apiRoutes.get('/rentapp_water_prices/:wherekey/:wherevalue', (req, res) => Generic.getItems(req, res)); //SELECT ALL where key:value
-apiRoutes.post('/rentapp_water_price', (req, res) => Generic.postItem(req, res)); //INSERT (Generated:id) //fields and values in BODY
+apiRoutes.post('/rentapp_water_price/:id', (req, res) => Generic.postItem(req, res)); //INSERT or UPDATE (:id) //fields and values in BODY
 
 apiRoutes.get('/rentapp_energy_prices', (req, res) => Generic.getAllItems(req, res)); //SELECT ALL odczyty
 apiRoutes.get('/rentapp_energy_prices/:wherekey/:wherevalue', (req, res) => Generic.getItems(req, res)); //SELECT ALL where key:value
-apiRoutes.post('/rentapp_energy_price', (req, res) => Generic.postItem(req, res)); //INSERT (Generated:id) //fields and values in BODY
+apiRoutes.post('/rentapp_energy_price/:id', (req, res) => Generic.postItem(req, res)); //INSERT or UPDATE (:id) //fields and values in BODY
 
+apiRoutes.get('/rentapp_users_contexts', (req, res) => Generic.getAllItems(req, res)); //SELECT ALL
 apiRoutes.get('/rentapp_users_contexts/:wherekey/:wherevalue', (req, res) => Generic.getItems(req, res)); //SELECT ALL where key:value
 apiRoutes.get('/rentapp_contexts/:wherekey/:wherevalue', (req, res) => Generic.getItems(req, res)); //SELECT ALL where key:value
 

@@ -15,6 +15,8 @@ module.exports = {
     'mysqlpassword' : process.env.DATABASE_PASSWORD,
     'mysqldatabase' : process.env.DATABASE_NAME,
 
+    'apporigin' : process.env.APPORIGIN,
+
     // //initializes supersecret
     // getSuperSecret: function(){
     //
